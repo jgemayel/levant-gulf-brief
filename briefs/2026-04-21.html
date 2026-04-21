@@ -41,13 +41,53 @@
   .nav-back {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    font-size: 13px;
-    color: var(--muted);
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
     text-decoration: none;
-    margin-bottom: 14px;
+    padding: 11px 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    min-height: 44px;
+    box-sizing: border-box;
   }
-  .nav-back:hover { color: var(--accent); }
+  .nav-back:hover, .nav-back:active {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .nav-back .arrow {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .bottom-nav {
+    margin-top: 28px;
+    display: flex;
+    gap: 10px;
+  }
+  .bottom-nav a {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--bg);
+    background: var(--accent);
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 12px;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+  .bottom-nav a.secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
   header {
     padding: 6px 0 22px;
     border-bottom: 1px solid var(--border);
@@ -203,14 +243,14 @@
     background: var(--surface-2);
     color: var(--text);
     border: none;
-    border-radius: 8px;
-    width: 36px;
-    height: 36px;
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background 0.15s;
   }
   .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
@@ -256,7 +296,7 @@
 </head>
 <body>
 <div class="wrap">
-  <a href="../index.html" class="nav-back">&larr; Dashboard</a>
+  <a href="../index.html" class="nav-back"><span class="arrow">&larr;</span> Back to dashboard</a>
   <header>
     <div class="eyebrow">Morning Brief</div>
     <h1>Levant &amp; Gulf</h1>
@@ -412,6 +452,11 @@
   </section>
   <!-- BRIEF_END -->
 
+  <div class="bottom-nav">
+    <a href="../index.html"><span class="arrow">&larr;</span> Dashboard</a>
+    <a href="#" class="secondary" id="top-link">Top of page</a>
+  </div>
+
   <footer>
     Built for Jimmy. Refreshed weekday mornings.
   </footer>
@@ -429,14 +474,17 @@
   document.querySelectorAll('[data-share]').forEach(btn => {
     btn.addEventListener('click', async (e) => {
       const story = e.target.closest('.story');
-      const id = story.id;
       const headline = story.querySelector('h3').innerText;
       const summary = story.querySelector('p').innerText;
       const src = story.querySelector('a.src');
+      const sourceUrl = src ? src.href : '';
       const sourceName = src ? src.innerText : '';
-      const url = window.location.origin + window.location.pathname + '#' + id;
-      const text = headline + '\n\n' + summary + (sourceName ? ('\n\nSource: ' + sourceName) : '') + '\n\n' + url;
-      const data = { title: headline, text: text, url: url };
+      const parts = [headline, '', summary];
+      if (sourceName) parts.push('', 'Via ' + sourceName);
+      if (sourceUrl) parts.push(sourceUrl);
+      const text = parts.join('\n');
+      const data = { title: headline, text: text };
+      if (sourceUrl) data.url = sourceUrl;
       if (navigator.share) {
         try { await navigator.share(data); } catch(err) {}
       } else if (navigator.clipboard) {
@@ -446,6 +494,14 @@
       }
     });
   });
+
+  const topLink = document.getElementById('top-link');
+  if (topLink) {
+    topLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 </script>
 </body>
 </html>
