@@ -20,6 +20,8 @@
     --muted: #94a3b8;
     --accent: #f59e0b;
     --border: #334155;
+    --critical: #ef4444;
+    --critical-tint: rgba(239, 68, 68, 0.08);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
@@ -92,6 +94,23 @@
   .story:target {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25);
+  }
+  .story[data-priority="high"] {
+    border-left: 4px solid var(--critical);
+    background: linear-gradient(to right, var(--critical-tint), var(--surface) 60%);
+  }
+  .priority-flag {
+    display: inline-block;
+    background: var(--critical);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+    vertical-align: 1px;
   }
   .story-head {
     display: flex;
@@ -246,10 +265,10 @@
   <!-- BRIEF_START -->
   <section>
     <h2>Syria</h2>
-    <div class="story" id="syria-1">
+    <div class="story" id="syria-1" data-priority="high">
       <div class="story-head">
         <div class="story-meta">
-          <span class="date">Apr 20, 2026 · Policy</span>
+          <span class="date">Apr 20, 2026 · Policy<span class="priority-flag">High impact</span></span>
           <h3>EU proposes full resumption of cooperation agreement</h3>
         </div>
         <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
@@ -289,10 +308,10 @@
 
   <section>
     <h2>Iraq</h2>
-    <div class="story" id="iraq-1">
+    <div class="story" id="iraq-1" data-priority="high">
       <div class="story-head">
         <div class="story-meta">
-          <span class="date">Apr 20, 2026 · Government</span>
+          <span class="date">Apr 20, 2026 · Government<span class="priority-flag">High impact</span></span>
           <h3>Coordination Framework races April 26 PM deadline</h3>
         </div>
         <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
@@ -321,10 +340,10 @@
         <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">Investor confidence drag affects FDI pipeline and the pacing of strategic infrastructure deals we're tracking.</span></div>
       </div>
     </div>
-    <div class="story" id="iraq-3">
+    <div class="story" id="iraq-3" data-priority="high">
       <div class="story-head">
         <div class="story-meta">
-          <span class="date">Apr 17, 2026 · Sanctions</span>
+          <span class="date">Apr 17, 2026 · Sanctions<span class="priority-flag">High impact</span></span>
           <h3>U.S. Treasury sanctions Iran-aligned militia commanders</h3>
         </div>
         <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
