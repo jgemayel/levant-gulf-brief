@@ -60,5 +60,7 @@ Write `briefs/YYYY-MM-DD.html` using the template established by prior briefs. R
 - Share button on each story using source URL
 - Top back-to-dashboard pill + bottom nav + footer
 
-## Publish
-PUT to `https://api.github.com/repos/jgemayel/levant-gulf-brief/contents/briefs/YYYY-MM-DD.html` with the GitHub token. If the file exists, include its SHA. Commit message `Daily brief YYYY-MM-DD`. No index.html edits needed; the dashboard pulls today's brief dynamically.
+## Publish (mandatory final step)
+Every run ends with a GitHub push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days.
+
+PUT to `https://api.github.com/repos/jgemayel/levant-gulf-brief/contents/briefs/YYYY-MM-DD.html` with the GitHub token. If the file exists, include its SHA; if new, omit SHA. Commit message `Daily brief YYYY-MM-DD`. Confirm the PUT response contains a `commit.sha` before declaring the run done. On failure, retry with a fresh SHA fetch. No index.html edits needed; the dashboard pulls today's brief dynamically.
