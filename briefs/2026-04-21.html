@@ -138,6 +138,46 @@
     margin-top: 8px;
   }
   .story a.src:hover { text-decoration: underline; }
+  .relevance {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+  .rel-label {
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .rel-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  .rel-item:last-child { margin-bottom: 0; }
+  .rel-chip {
+    flex-shrink: 0;
+    background: rgba(245, 158, 11, 0.16);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11.5px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+  .rel-note {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  @media (prefers-color-scheme: light) {
+    .rel-chip { background: rgba(180, 83, 9, 0.12); }
+  }
   .share-btn {
     flex-shrink: 0;
     background: var(--surface-2);
@@ -216,6 +256,12 @@
       </div>
       <p>The European Commission proposed restoring the EU-Syria Cooperation Agreement across three pillars: a political partnership, a trade and economic framework, and roughly €620M in financial support for 2026-2027.</p>
       <a class="src" href="https://policy.trade.ec.europa.eu/news/commission-proposes-full-resumption-eu-syria-cooperation-agreement-2026-04-20_en" target="_blank" rel="noopener">European Commission</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">Reintegration with EU financial system raises the practical case for restoring correspondent banking and SWIFT-adjacent flows.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Trade framework and €620M support package would unblock trade finance, FX availability, and EU bank counterparties.</span></div>
+        <div class="rel-item"><span class="rel-chip">Capital markets</span><span class="rel-note">Re-engagement signals to foreign investors and could pull forward a sovereign reissuance and listing reforms timeline.</span></div>
+      </div>
     </div>
     <div class="story" id="syria-2">
       <div class="story-head">
@@ -253,6 +299,11 @@
       </div>
       <p>Iraq's largest Shia bloc has not yet named a PM candidate five months after elections. Al-Sudani seeks a second term; al-Maliki's candidacy faces U.S. opposition. Constitutional nomination deadline is April 26.</p>
       <a class="src" href="https://www.aljazeera.com/news/2026/4/20/iraqs-ruling-shia-bloc-races-to-choose-pm-as-us-iran-watch" target="_blank" rel="noopener">Al Jazeera</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">Government-formation delay freezes budget amendments and any near-term fiscal legislation we've been advising on.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">A Maliki-led outcome would likely slow the structural reform track; al-Sudani continuity keeps current reform workstreams on the table.</span></div>
+      </div>
     </div>
     <div class="story" id="iraq-2">
       <div class="story-head">
@@ -264,6 +315,11 @@
       </div>
       <p>The National argues recent regional conflict and militia activity are displacing Iraq's domestic priorities and complicating investor confidence.</p>
       <a class="src" href="https://www.thenationalnews.com/opinion/comment/2026/04/20/iraq-domestic-politics-iran-us-development-agenda-militias-proxies/" target="_blank" rel="noopener">The National</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">Shrinking political bandwidth pushes reforms down the queue; adjust sequencing of asks and donor coordination accordingly.</span></div>
+        <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">Investor confidence drag affects FDI pipeline and the pacing of strategic infrastructure deals we're tracking.</span></div>
+      </div>
     </div>
     <div class="story" id="iraq-3">
       <div class="story-head">
@@ -275,6 +331,11 @@
       </div>
       <p>Treasury designated seven commanders across Asa'ib Ahl al-Haq, Kata'ib Hezbollah, Harakat al-Nujaba, and Kata'ib Sayyid al-Shuhada over attacks on U.S. personnel and undermining Iraqi sovereignty.</p>
       <a class="src" href="https://www.washingtontimes.com/news/2026/apr/17/treasury-sanctions-iran-backed-militias-iraq-part-pressure-campaign/" target="_blank" rel="noopener">Washington Times</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">CBI faces fresh OFAC screening burden and dollar-access risk; any USD auction or correspondent relationships touching named entities need immediate review.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Iraqi banks must requalify counterparty exposure; expect tighter KYC on cross-border flows and potential de-risking by U.S. correspondents.</span></div>
+      </div>
     </div>
   </section>
 
@@ -290,6 +351,11 @@
       </div>
       <p>UK PM and Kuwait's Crown Prince condemned a drone strike on a Kuwaiti refinery and announced UK air defence deployment, alongside a coordinated plan to reopen shipping through the Strait of Hormuz.</p>
       <a class="src" href="https://www.gov.uk/government/news/pm-call-with-the-crown-prince-of-kuwait-3-april-2026" target="_blank" rel="noopener">GOV.UK</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Sovereign fund</span><span class="rel-note">Refinery disruption and Hormuz risk bleed into oil receipts, KIA inflow forecasts, and the risk budget on portfolio allocation discussions.</span></div>
+        <div class="rel-item"><span class="rel-chip">Government</span><span class="rel-note">UK security partnership reshapes Kuwait's near-term geopolitical posture and gives air cover to push forward the broader reform dialogue.</span></div>
+      </div>
     </div>
     <div class="story" id="kuwait-2">
       <div class="story-head">
@@ -301,6 +367,11 @@
       </div>
       <p>Ministry of Commerce and Industry issued a resolution strengthening business disclosure of beneficial owners, with fines up to KD 10,000 for non-compliance, tightening Kuwait's AML posture.</p>
       <a class="src" href="https://timeskuwait.com/" target="_blank" rel="noopener">Times Kuwait</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Economic Agenda</span><span class="rel-note">Direct piece of the transparency and AML/CFT pillar; gives leverage to accelerate linked corporate-registry and licensing reforms.</span></div>
+        <div class="rel-item"><span class="rel-chip">Government</span><span class="rel-note">Signals the MoCI is willing to use enforcement levers, which raises the ceiling for the broader reform ask across ministries.</span></div>
+      </div>
     </div>
     <div class="story" id="kuwait-3">
       <div class="story-head">
@@ -312,6 +383,11 @@
       </div>
       <p>Times Kuwait reports the economy is positioned for 2026 growth on the back of fiscal reforms and steady oil receipts, with non-oil activity picking up.</p>
       <a class="src" href="https://timeskuwait.com/despite-global-headwinds-kuwait-economy-to-grow-in-2026/" target="_blank" rel="noopener">Times Kuwait</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal agenda (MoF)</span><span class="rel-note">Positive macro framing supports the case for subsidy, wage-bill, and non-oil revenue measures MoF has been weighing.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic Agenda</span><span class="rel-note">Non-oil momentum is a concrete proof point for the diversification narrative in upcoming stakeholder engagement.</span></div>
+      </div>
     </div>
   </section>
   <!-- BRIEF_END -->
