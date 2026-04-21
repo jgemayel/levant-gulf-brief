@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f172a">
+<title>Levant &amp; Gulf Brief · April 21, 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%B0</text></svg>">
+<meta property="og:title" content="Levant & Gulf Brief · April 21, 2026">
+<meta property="og:description" content="Daily morning briefing on Syria, Iraq, and Kuwait policy, economy, and government news.">
+<meta property="og:type" content="article">
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-2: #334155;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --accent: #f59e0b;
+    --border: #334155;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 18px 80px;
+  }
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 14px;
+  }
+  .nav-back:hover { color: var(--accent); }
+  header {
+    padding: 6px 0 22px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: -0.5px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  section { margin-bottom: 28px; }
+  h2 {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .story {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    position: relative;
+    scroll-margin-top: 16px;
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  }
+  .story:target {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25);
+  }
+  .story-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .story-meta { flex: 1; min-width: 0; }
+  .story .date {
+    font-size: 11.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .story .lang {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    background: var(--surface-2);
+    color: var(--muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+  }
+  .story h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.35;
+  }
+  .story p {
+    font-size: 14.5px;
+    color: #cbd5e1;
+  }
+  .story a.src {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .story a.src:hover { text-decoration: underline; }
+  .share-btn {
+    flex-shrink: 0;
+    background: var(--surface-2);
+    color: var(--text);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.15s;
+  }
+  .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
+  .share-btn:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--accent);
+    color: #0f172a;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 100;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #b45309;
+      --border: #e2e8f0;
+    }
+    .story p { color: #475569; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="../index.html" class="nav-back">&larr; Dashboard</a>
+  <header>
+    <div class="eyebrow">Morning Brief</div>
+    <h1>Levant &amp; Gulf</h1>
+    <div class="meta">Tuesday, April 21, 2026 · Syria · Iraq · Kuwait</div>
+  </header>
+
+  <!-- BRIEF_START -->
+  <section>
+    <h2>Syria</h2>
+    <div class="story" id="syria-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 20, 2026 · Policy</span>
+          <h3>EU proposes full resumption of cooperation agreement</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The European Commission proposed restoring the EU-Syria Cooperation Agreement across three pillars: a political partnership, a trade and economic framework, and roughly €620M in financial support for 2026-2027.</p>
+      <a class="src" href="https://policy.trade.ec.europa.eu/news/commission-proposes-full-resumption-eu-syria-cooperation-agreement-2026-04-20_en" target="_blank" rel="noopener">European Commission</a>
+    </div>
+    <div class="story" id="syria-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 16, 2026 · Security</span>
+          <h3>Attempted coup by Assad loyalists thwarted</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Syria's Ministry of Interior announced security forces disrupted a coup plot by officers loyal to the former regime, acting on an internal tip-off before execution.</p>
+      <a class="src" href="https://www.securitycouncilreport.org/monthly-forecast/2026-04/syria-90.php" target="_blank" rel="noopener">Security Council Report</a>
+    </div>
+    <div class="story" id="syria-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 1, 2026 · Diplomacy</span>
+          <h3>Al-Sharaa positions Syria outside Iran war</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>President Ahmed al-Sharaa used a Chatham House address on March 31 to reaffirm Syria will stay out of the Iran conflict while laying out reconstruction and foreign-policy priorities.</p>
+      <a class="src" href="https://www.chathamhouse.org/2026/04/syrian-president-al-sharaa-iran-war-syria-will-remain-outside-conflict" target="_blank" rel="noopener">Chatham House</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Iraq</h2>
+    <div class="story" id="iraq-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 20, 2026 · Government</span>
+          <h3>Coordination Framework races April 26 PM deadline</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Iraq's largest Shia bloc has not yet named a PM candidate five months after elections. Al-Sudani seeks a second term; al-Maliki's candidacy faces U.S. opposition. Constitutional nomination deadline is April 26.</p>
+      <a class="src" href="https://www.aljazeera.com/news/2026/4/20/iraqs-ruling-shia-bloc-races-to-choose-pm-as-us-iran-watch" target="_blank" rel="noopener">Al Jazeera</a>
+    </div>
+    <div class="story" id="iraq-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 20, 2026 · Economy</span>
+          <h3>Iran war sets back Iraq's development agenda</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The National argues recent regional conflict and militia activity are displacing Iraq's domestic priorities and complicating investor confidence.</p>
+      <a class="src" href="https://www.thenationalnews.com/opinion/comment/2026/04/20/iraq-domestic-politics-iran-us-development-agenda-militias-proxies/" target="_blank" rel="noopener">The National</a>
+    </div>
+    <div class="story" id="iraq-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 17, 2026 · Sanctions</span>
+          <h3>U.S. Treasury sanctions Iran-aligned militia commanders</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Treasury designated seven commanders across Asa'ib Ahl al-Haq, Kata'ib Hezbollah, Harakat al-Nujaba, and Kata'ib Sayyid al-Shuhada over attacks on U.S. personnel and undermining Iraqi sovereignty.</p>
+      <a class="src" href="https://www.washingtontimes.com/news/2026/apr/17/treasury-sanctions-iran-backed-militias-iraq-part-pressure-campaign/" target="_blank" rel="noopener">Washington Times</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kuwait</h2>
+    <div class="story" id="kuwait-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 3, 2026 · Security</span>
+          <h3>UK to deploy Rapid Sentry air defence after refinery drone attack</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>UK PM and Kuwait's Crown Prince condemned a drone strike on a Kuwaiti refinery and announced UK air defence deployment, alongside a coordinated plan to reopen shipping through the Strait of Hormuz.</p>
+      <a class="src" href="https://www.gov.uk/government/news/pm-call-with-the-crown-prince-of-kuwait-3-april-2026" target="_blank" rel="noopener">GOV.UK</a>
+    </div>
+    <div class="story" id="kuwait-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 2026 · Economy</span>
+          <h3>New beneficial-ownership disclosure rules</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Ministry of Commerce and Industry issued a resolution strengthening business disclosure of beneficial owners, with fines up to KD 10,000 for non-compliance, tightening Kuwait's AML posture.</p>
+      <a class="src" href="https://timeskuwait.com/" target="_blank" rel="noopener">Times Kuwait</a>
+    </div>
+    <div class="story" id="kuwait-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 2026 · Economy</span>
+          <h3>Kuwait economy forecast to grow despite global headwinds</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Times Kuwait reports the economy is positioned for 2026 growth on the back of fiscal reforms and steady oil receipts, with non-oil activity picking up.</p>
+      <a class="src" href="https://timeskuwait.com/despite-global-headwinds-kuwait-economy-to-grow-in-2026/" target="_blank" rel="noopener">Times Kuwait</a>
+    </div>
+  </section>
+  <!-- BRIEF_END -->
+
+  <footer>
+    Built for Jimmy. Refreshed weekday mornings.
+  </footer>
+</div>
+
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+  const toast = document.getElementById('toast');
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  }
+  document.querySelectorAll('[data-share]').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      const story = e.target.closest('.story');
+      const id = story.id;
+      const headline = story.querySelector('h3').innerText;
+      const summary = story.querySelector('p').innerText;
+      const src = story.querySelector('a.src');
+      const sourceName = src ? src.innerText : '';
+      const url = window.location.origin + window.location.pathname + '#' + id;
+      const text = headline + '\n\n' + summary + (sourceName ? ('\n\nSource: ' + sourceName) : '') + '\n\n' + url;
+      const data = { title: headline, text: text, url: url };
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(err) {}
+      } else if (navigator.clipboard) {
+        try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
+      } else {
+        prompt('Copy this:', text);
+      }
+    });
+  });
+</script>
+</body>
+</html>
