@@ -109,17 +109,52 @@
     border-top: 1px solid var(--border);
   }
   section.country {
-    margin-bottom: 22px;
+    margin-bottom: 30px;
+    position: relative;
   }
+  section.country + section.country {
+    margin-top: 6px;
+  }
+  section.country[data-country] {
+    padding-left: 14px;
+  }
+  section.country[data-country]::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    bottom: 6px;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--country-accent, var(--accent));
+    opacity: 0.85;
+  }
+  section.country[data-country="syria"]  { --country-accent: #38bdf8; --country-tint: rgba(56, 189, 248, 0.12); }
+  section.country[data-country="iraq"]   { --country-accent: #34d399; --country-tint: rgba(52, 211, 153, 0.12); }
+  section.country[data-country="kuwait"] { --country-accent: #c084fc; --country-tint: rgba(192, 132, 252, 0.14); }
   section.country h3 {
-    font-size: 12px;
-    letter-spacing: 1.5px;
+    font-size: 13px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
+    color: var(--country-accent, var(--accent));
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
     border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  section.country h3 .count {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    color: var(--muted);
+    font-weight: 600;
+    background: var(--country-tint, var(--surface-2));
+    padding: 3px 9px;
+    border-radius: 999px;
+    text-transform: uppercase;
   }
   .story {
     background: var(--surface);
@@ -326,6 +361,9 @@
       --today-border: #b45309;
     }
     .story p { color: #475569; }
+    section.country[data-country="syria"]  { --country-accent: #0284c7; --country-tint: rgba(2, 132, 199, 0.10); }
+    section.country[data-country="iraq"]   { --country-accent: #059669; --country-tint: rgba(5, 150, 105, 0.10); }
+    section.country[data-country="kuwait"] { --country-accent: #9333ea; --country-tint: rgba(147, 51, 234, 0.10); }
   }
 </style>
 </head>
@@ -419,7 +457,23 @@ async function loadBriefs() {
             newH.innerHTML = h.innerHTML;
             h.replaceWith(newH);
           });
-          if (clone.tagName === 'SECTION') clone.classList.add('country');
+          if (clone.tagName === 'SECTION') {
+            clone.classList.add('country');
+            const headingEl = clone.querySelector(':scope > h3');
+            if (headingEl) {
+              const name = headingEl.textContent.trim().toLowerCase();
+              if (['syria', 'iraq', 'kuwait'].includes(name)) {
+                clone.dataset.country = name;
+                const storyCount = clone.querySelectorAll('.story').length;
+                if (storyCount) {
+                  const countSpan = document.createElement('span');
+                  countSpan.className = 'count';
+                  countSpan.textContent = storyCount + (storyCount === 1 ? ' story' : ' stories');
+                  headingEl.appendChild(countSpan);
+                }
+              }
+            }
+          }
           clone.querySelectorAll('.story h3').forEach(h => {
             const newH = document.createElement('h4');
             newH.innerHTML = h.innerHTML;
