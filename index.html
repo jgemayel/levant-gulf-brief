@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0f172a">
-<title>Levant & Gulf Brief</title>
+<title>Levant &amp; Gulf Brief</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%B0</text></svg>">
 <style>
   :root {
@@ -16,7 +16,10 @@
     --text: #f1f5f9;
     --muted: #94a3b8;
     --accent: #f59e0b;
+    --accent-glow: rgba(245, 158, 11, 0.18);
     --border: #334155;
+    --today-bg: #1c2742;
+    --today-border: #f59e0b;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
@@ -55,10 +58,136 @@
     font-size: 13px;
     margin-top: 6px;
   }
-  section {
-    margin-bottom: 28px;
+  .today-card {
+    background: var(--today-bg);
+    border: 2px solid var(--today-border);
+    border-radius: 16px;
+    padding: 18px 18px;
+    margin-bottom: 26px;
+    box-shadow: 0 0 24px var(--accent-glow);
+    position: relative;
   }
-  h2 {
+  .today-badge {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    background: var(--accent);
+    color: #0f172a;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 3px 9px;
+    border-radius: 999px;
+    text-transform: uppercase;
+  }
+  .today-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+  .today-card .day-meta {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .today-card .open-link {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .today-card .open-link:hover { text-decoration: underline; }
+  .today-content {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  section.country {
+    margin-bottom: 22px;
+  }
+  section.country h3 {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border);
+  }
+  .story {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  .story-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .story-meta { flex: 1; min-width: 0; }
+  .story .date {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+  }
+  .story .lang {
+    display: inline-block;
+    font-size: 9.5px;
+    letter-spacing: 0.5px;
+    background: var(--surface-2);
+    color: var(--muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+  }
+  .story h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 1.35;
+  }
+  .story p {
+    font-size: 14px;
+    color: #cbd5e1;
+  }
+  .story a.src {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 12.5px;
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .story a.src:hover { text-decoration: underline; }
+  .share-btn {
+    flex-shrink: 0;
+    background: var(--surface-2);
+    color: var(--text);
+    border: none;
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.15s;
+  }
+  .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
+  .archive-section h2 {
     font-size: 13px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -68,40 +197,39 @@
     padding-bottom: 6px;
     border-bottom: 1px solid var(--border);
   }
-  .story {
+  .archive-list {
+    list-style: none;
+  }
+  .archive-list li {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: border-color 0.15s;
   }
-  .story h3 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    line-height: 1.35;
-  }
-  .story .date {
-    font-size: 11.5px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: var(--muted);
-    font-weight: 500;
-    margin-bottom: 6px;
-    display: block;
-  }
-  .story p {
-    font-size: 14.5px;
-    color: #cbd5e1;
-  }
-  .story a {
-    color: var(--accent);
+  .archive-list li:hover { border-color: var(--accent); }
+  .archive-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    color: var(--text);
     text-decoration: none;
-    font-size: 13px;
-    display: inline-block;
-    margin-top: 8px;
+    font-size: 14.5px;
   }
-  .story a:hover { text-decoration: underline; }
+  .archive-list .arrow { color: var(--muted); font-size: 14px; }
+  .empty {
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+  .loading {
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+    padding: 30px;
+  }
   footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -110,6 +238,23 @@
     font-size: 12px;
     text-align: center;
   }
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--accent);
+    color: #0f172a;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 100;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
   @media (prefers-color-scheme: light) {
     :root {
       --bg: #fafaf9;
@@ -118,7 +263,10 @@
       --text: #1e293b;
       --muted: #64748b;
       --accent: #b45309;
+      --accent-glow: rgba(180, 83, 9, 0.15);
       --border: #e2e8f0;
+      --today-bg: #fffbeb;
+      --today-border: #b45309;
     }
     .story p { color: #475569; }
   }
@@ -129,88 +277,160 @@
   <header>
     <div class="eyebrow">Morning Brief</div>
     <h1>Levant &amp; Gulf</h1>
-    <div class="meta">Updated <span id="updated">Tuesday, April 21, 2026</span> · Syria · Iraq · Kuwait</div>
+    <div class="meta">Syria · Iraq · Kuwait · Updated weekday mornings at 8 AM</div>
   </header>
 
-  <!-- BRIEF_START -->
-  <section>
-    <h2>Syria</h2>
-    <div class="story">
-      <span class="date">Apr 20, 2026 · Policy</span>
-      <h3>EU proposes full resumption of cooperation agreement</h3>
-      <p>The European Commission proposed restoring the EU-Syria Cooperation Agreement across three pillars: a political partnership, a trade and economic framework, and roughly €620M in financial support for 2026-2027.</p>
-      <a href="https://policy.trade.ec.europa.eu/news/commission-proposes-full-resumption-eu-syria-cooperation-agreement-2026-04-20_en" target="_blank" rel="noopener">European Commission</a>
+  <div class="today-card" id="today-card">
+    <span class="today-badge">Today</span>
+    <h2 id="today-title">Loading latest brief...</h2>
+    <div class="day-meta" id="today-day"></div>
+    <a class="open-link" id="today-open" href="#">Open full page &rarr;</a>
+    <div class="today-content" id="today-content">
+      <div class="loading">Fetching today's stories...</div>
     </div>
-    <div class="story">
-      <span class="date">Apr 16, 2026 · Security</span>
-      <h3>Attempted coup by Assad loyalists thwarted</h3>
-      <p>Syria's Ministry of Interior announced security forces disrupted a coup plot by officers loyal to the former regime, acting on an internal tip-off before execution.</p>
-      <a href="https://www.securitycouncilreport.org/monthly-forecast/2026-04/syria-90.php" target="_blank" rel="noopener">Security Council Report</a>
-    </div>
-    <div class="story">
-      <span class="date">Apr 1, 2026 · Diplomacy</span>
-      <h3>Al-Sharaa positions Syria outside Iran war</h3>
-      <p>President Ahmed al-Sharaa used a Chatham House address on March 31 to reaffirm Syria will stay out of the Iran conflict while laying out reconstruction and foreign-policy priorities.</p>
-      <a href="https://www.chathamhouse.org/2026/04/syrian-president-al-sharaa-iran-war-syria-will-remain-outside-conflict" target="_blank" rel="noopener">Chatham House</a>
-    </div>
-  </section>
+  </div>
 
-  <section>
-    <h2>Iraq</h2>
-    <div class="story">
-      <span class="date">Apr 20, 2026 · Government</span>
-      <h3>Coordination Framework races April 26 PM deadline</h3>
-      <p>Iraq's largest Shia bloc has not yet named a PM candidate five months after elections. Al-Sudani seeks a second term; al-Maliki's candidacy faces U.S. opposition. Constitutional nomination deadline is April 26.</p>
-      <a href="https://www.aljazeera.com/news/2026/4/20/iraqs-ruling-shia-bloc-races-to-choose-pm-as-us-iran-watch" target="_blank" rel="noopener">Al Jazeera</a>
-    </div>
-    <div class="story">
-      <span class="date">Apr 20, 2026 · Economy</span>
-      <h3>Iran war sets back Iraq's development agenda</h3>
-      <p>The National argues recent regional conflict and militia activity are displacing Iraq's domestic priorities and complicating investor confidence.</p>
-      <a href="https://www.thenationalnews.com/opinion/comment/2026/04/20/iraq-domestic-politics-iran-us-development-agenda-militias-proxies/" target="_blank" rel="noopener">The National</a>
-    </div>
-    <div class="story">
-      <span class="date">Apr 17, 2026 · Sanctions</span>
-      <h3>U.S. Treasury sanctions Iran-aligned militia commanders</h3>
-      <p>Treasury designated seven commanders across Asa'ib Ahl al-Haq, Kata'ib Hezbollah, Harakat al-Nujaba, and Kata'ib Sayyid al-Shuhada over attacks on U.S. personnel and undermining Iraqi sovereignty.</p>
-      <a href="https://www.washingtontimes.com/news/2026/apr/17/treasury-sanctions-iran-backed-militias-iraq-part-pressure-campaign/" target="_blank" rel="noopener">Washington Times</a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Kuwait</h2>
-    <div class="story">
-      <span class="date">Apr 3, 2026 · Security</span>
-      <h3>UK to deploy Rapid Sentry air defence after refinery drone attack</h3>
-      <p>UK PM and Kuwait's Crown Prince condemned a drone strike on a Kuwaiti refinery and announced UK air defence deployment, alongside a coordinated plan to reopen shipping through the Strait of Hormuz.</p>
-      <a href="https://www.gov.uk/government/news/pm-call-with-the-crown-prince-of-kuwait-3-april-2026" target="_blank" rel="noopener">GOV.UK</a>
-    </div>
-    <div class="story">
-      <span class="date">Apr 2026 · Economy</span>
-      <h3>New beneficial-ownership disclosure rules</h3>
-      <p>Ministry of Commerce and Industry issued a resolution strengthening business disclosure of beneficial owners, with fines up to KD 10,000 for non-compliance, tightening Kuwait's AML posture.</p>
-      <a href="https://timeskuwait.com/" target="_blank" rel="noopener">Times Kuwait</a>
-    </div>
-    <div class="story">
-      <span class="date">Apr 2026 · Economy</span>
-      <h3>Kuwait economy forecast to grow despite global headwinds</h3>
-      <p>Times Kuwait reports the economy is still positioned for 2026 growth on the back of fiscal reforms and steady oil receipts, with non-oil activity picking up.</p>
-      <a href="https://timeskuwait.com/despite-global-headwinds-kuwait-economy-to-grow-in-2026/" target="_blank" rel="noopener">Times Kuwait</a>
-    </div>
-  </section>
-  <!-- BRIEF_END -->
+  <div class="archive-section">
+    <h2>Archive</h2>
+    <ul class="archive-list" id="archive-list">
+      <li class="loading">Loading past briefs...</li>
+    </ul>
+  </div>
 
   <footer>
-    Refreshed automatically every weekday at 8:00 AM. Built for Jimmy.
+    Built for Jimmy. Data refreshes weekday mornings.
   </footer>
 </div>
+
+<div class="toast" id="toast">Link copied</div>
+
 <script>
-  // Show local time of last update
-  const u = document.getElementById('updated');
-  if (u && u.dataset.iso) {
-    const d = new Date(u.dataset.iso);
-    u.textContent = d.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+const REPO = 'jgemayel/levant-gulf-brief';
+const PAGES_BASE = 'https://jgemayel.github.io/levant-gulf-brief';
+
+const toast = document.getElementById('toast');
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 1800);
+}
+
+function formatDateLong(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+async function loadBriefs() {
+  const archiveList = document.getElementById('archive-list');
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/briefs`);
+    if (!res.ok) throw new Error('GitHub API ' + res.status);
+    const files = await res.json();
+    const briefs = files
+      .filter(f => /^\d{4}-\d{2}-\d{2}\.html$/.test(f.name))
+      .map(f => ({ date: f.name.replace('.html', ''), path: 'briefs/' + f.name }))
+      .sort((a, b) => b.date.localeCompare(a.date));
+
+    if (briefs.length === 0) {
+      document.getElementById('today-content').innerHTML = '<div class="empty">No briefs yet. The first will arrive tomorrow morning.</div>';
+      archiveList.innerHTML = '<li class="empty">No archive yet.</li>';
+      return;
+    }
+
+    const today = briefs[0];
+    document.getElementById('today-title').textContent = formatDateLong(today.date);
+    document.getElementById('today-day').textContent = 'Latest brief';
+    document.getElementById('today-open').href = today.path;
+
+    // Load today's content inline
+    const briefRes = await fetch(today.path);
+    const html = await briefRes.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const briefStartComment = findCommentNode(doc.body, 'BRIEF_START');
+    const briefEndComment = findCommentNode(doc.body, 'BRIEF_END');
+    const container = document.getElementById('today-content');
+    container.innerHTML = '';
+    if (briefStartComment && briefEndComment) {
+      let node = briefStartComment.nextSibling;
+      while (node && node !== briefEndComment) {
+        if (node.nodeType === 1) {
+          // Convert h2 to h3, story h3 to h4 to fit dashboard hierarchy
+          const clone = node.cloneNode(true);
+          clone.querySelectorAll('h2').forEach(h => {
+            const newH = document.createElement('h3');
+            newH.innerHTML = h.innerHTML;
+            h.replaceWith(newH);
+          });
+          if (clone.tagName === 'SECTION') clone.classList.add('country');
+          clone.querySelectorAll('.story h3').forEach(h => {
+            const newH = document.createElement('h4');
+            newH.innerHTML = h.innerHTML;
+            h.replaceWith(newH);
+          });
+          // Update share buttons to use full brief URL
+          clone.querySelectorAll('[data-share]').forEach(btn => {
+            btn.dataset.briefPath = today.path;
+          });
+          container.appendChild(clone);
+        }
+        node = node.nextSibling;
+      }
+      attachShareHandlers(container, today.path);
+    } else {
+      container.innerHTML = '<div class="empty"><a href="' + today.path + '" style="color:var(--accent)">Open today\'s brief</a></div>';
+    }
+
+    // Archive list (everything except today)
+    archiveList.innerHTML = '';
+    if (briefs.length === 1) {
+      archiveList.innerHTML = '<li class="empty">Past briefs will appear here.</li>';
+    } else {
+      briefs.slice(1).forEach(b => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${b.path}"><span>${formatDateLong(b.date)}</span><span class="arrow">&rarr;</span></a>`;
+        archiveList.appendChild(li);
+      });
+    }
+  } catch (err) {
+    document.getElementById('today-content').innerHTML = `<div class="empty">Could not load briefs: ${err.message}</div>`;
+    archiveList.innerHTML = '';
   }
+}
+
+function findCommentNode(root, marker) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_COMMENT, null);
+  let n;
+  while ((n = walker.nextNode())) {
+    if (n.nodeValue && n.nodeValue.includes(marker)) return n;
+  }
+  return null;
+}
+
+function attachShareHandlers(scope, briefPath) {
+  scope.querySelectorAll('[data-share]').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      const story = e.target.closest('.story');
+      const id = story.id;
+      const headline = story.querySelector('h4, h3').innerText;
+      const summary = story.querySelector('p').innerText;
+      const src = story.querySelector('a.src');
+      const sourceName = src ? src.innerText : '';
+      const url = `${PAGES_BASE}/${briefPath}#${id}`;
+      const text = headline + '\n\n' + summary + (sourceName ? ('\n\nSource: ' + sourceName) : '') + '\n\n' + url;
+      const data = { title: headline, text: text, url: url };
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(err) {}
+      } else if (navigator.clipboard) {
+        try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
+      } else {
+        prompt('Copy this:', text);
+      }
+    });
+  });
+}
+
+loadBriefs();
 </script>
 </body>
 </html>
