@@ -233,14 +233,14 @@
     background: var(--surface-2);
     color: var(--text);
     border: none;
-    border-radius: 8px;
-    width: 34px;
-    height: 34px;
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     transition: background 0.15s;
   }
   .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
@@ -433,7 +433,7 @@ async function loadBriefs() {
         }
         node = node.nextSibling;
       }
-      attachShareHandlers(container, today.path);
+      attachShareHandlers(container);
     } else {
       container.innerHTML = '<div class="empty"><a href="' + today.path + '" style="color:var(--accent)">Open today\'s brief</a></div>';
     }
@@ -464,18 +464,21 @@ function findCommentNode(root, marker) {
   return null;
 }
 
-function attachShareHandlers(scope, briefPath) {
+function attachShareHandlers(scope) {
   scope.querySelectorAll('[data-share]').forEach(btn => {
     btn.addEventListener('click', async (e) => {
       const story = e.target.closest('.story');
-      const id = story.id;
       const headline = story.querySelector('h4, h3').innerText;
       const summary = story.querySelector('p').innerText;
       const src = story.querySelector('a.src');
+      const sourceUrl = src ? src.href : '';
       const sourceName = src ? src.innerText : '';
-      const url = `${PAGES_BASE}/${briefPath}#${id}`;
-      const text = headline + '\n\n' + summary + (sourceName ? ('\n\nSource: ' + sourceName) : '') + '\n\n' + url;
-      const data = { title: headline, text: text, url: url };
+      const parts = [headline, '', summary];
+      if (sourceName) parts.push('', 'Via ' + sourceName);
+      if (sourceUrl) parts.push(sourceUrl);
+      const text = parts.join('\n');
+      const data = { title: headline, text: text };
+      if (sourceUrl) data.url = sourceUrl;
       if (navigator.share) {
         try { await navigator.share(data); } catch(err) {}
       } else if (navigator.clipboard) {
