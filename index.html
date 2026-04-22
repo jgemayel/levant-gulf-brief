@@ -25,6 +25,7 @@
     --soft: #2a2f3a;
     --line: #1d2029;
     --accent: #e8ebf1;
+    --accent-warm: #d4a574;
     --critical: #ef4444;
     --rule: rgba(232, 235, 241, 0.08);
     --chrome: rgba(11, 13, 18, 0.82);
@@ -131,15 +132,26 @@
     transition: color 0.15s;
   }
   .open-link:hover { color: var(--text); }
-  section.country { margin-bottom: 28px; }
+  section.country { margin-bottom: 36px; }
+  section.country + section.country { margin-top: 8px; }
   section.country h3 {
     font-family: var(--sans);
-    font-size: 10.5px;
+    font-size: 12px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--accent-warm);
     font-weight: 600;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  section.country h3::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.3;
   }
   .story {
     padding: 18px 0;
@@ -397,6 +409,7 @@
       --soft: #d8d5cd;
       --line: #e8e5dd;
       --accent: #15171c;
+      --accent-warm: #b15c1c;
       --rule: rgba(21, 23, 28, 0.12);
       --chrome: rgba(251, 250, 247, 0.82);
     }
