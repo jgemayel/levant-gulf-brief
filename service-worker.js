@@ -1,4 +1,4 @@
-const CACHE = 'lg-roundup-v2';
+const CACHE = 'lg-roundup-v3';
 const SHELL = [
   './',
   './index.html',
@@ -26,11 +26,10 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
 
   const url = new URL(req.url);
-  const isBrief = url.pathname.includes('/briefs/');
-  const isGithubApi = url.hostname === 'api.github.com';
   const sameOrigin = url.origin === self.location.origin;
+  const isGithubApi = url.hostname === 'api.github.com';
 
-  if (isBrief || isGithubApi) {
+  if (sameOrigin || isGithubApi) {
     event.respondWith(
       fetch(req)
         .then((res) => {
@@ -40,22 +39,7 @@ self.addEventListener('fetch', (event) => {
           }
           return res;
         })
-        .catch(() => caches.match(req))
-    );
-    return;
-  }
-
-  if (sameOrigin) {
-    event.respondWith(
-      caches.match(req).then((hit) => {
-        return hit || fetch(req).then((res) => {
-          if (res && res.ok) {
-            const copy = res.clone();
-            caches.open(CACHE).then((c) => c.put(req, copy));
-          }
-          return res;
-        }).catch(() => caches.match('./index.html'));
-      })
+        .catch(() => caches.match(req).then((hit) => hit || caches.match('./index.html')))
     );
   }
 });
