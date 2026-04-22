@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f172a">
+<title>Levant &amp; Gulf Brief · April 22, 2026</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:title" content="Levant & Gulf Brief · April 22, 2026">
+<meta property="og:description" content="Daily morning briefing on Syria, Iraq, and Kuwait policy, economy, and government news.">
+<meta property="og:type" content="article">
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-2: #334155;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --accent: #f59e0b;
+    --border: #334155;
+    --critical: #ef4444;
+    --critical-tint: rgba(239, 68, 68, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 18px 80px;
+  }
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  .nav-back:hover, .nav-back:active {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .nav-back .arrow {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .bottom-nav {
+    margin-top: 28px;
+    display: flex;
+    gap: 10px;
+  }
+  .bottom-nav a {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--bg);
+    background: var(--accent);
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 12px;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+  .bottom-nav a.secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  header {
+    padding: 6px 0 22px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: -0.5px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  section { margin-bottom: 28px; }
+  h2 {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .story {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    position: relative;
+    scroll-margin-top: 16px;
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  }
+  .story:target {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25);
+  }
+  .story[data-priority="high"] {
+    border-left: 4px solid var(--critical);
+    background: linear-gradient(to right, var(--critical-tint), var(--surface) 60%);
+  }
+  .priority-flag {
+    display: inline-block;
+    background: var(--critical);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+    vertical-align: 1px;
+  }
+  .story-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .story-meta { flex: 1; min-width: 0; }
+  .story .date {
+    font-size: 11.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .story .lang {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    background: var(--surface-2);
+    color: var(--muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+  }
+  .story h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.35;
+  }
+  .story p {
+    font-size: 14.5px;
+    color: #cbd5e1;
+  }
+  .story a.src {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .story a.src:hover { text-decoration: underline; }
+  .relevance {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+  .rel-label {
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .rel-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  .rel-item:last-child { margin-bottom: 0; }
+  .rel-chip {
+    flex-shrink: 0;
+    background: rgba(245, 158, 11, 0.16);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11.5px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+  .rel-note {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  @media (prefers-color-scheme: light) {
+    .rel-chip { background: rgba(180, 83, 9, 0.12); }
+  }
+  .share-btn {
+    flex-shrink: 0;
+    background: var(--surface-2);
+    color: var(--text);
+    border: none;
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.15s;
+  }
+  .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
+  .share-btn:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--accent);
+    color: #0f172a;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 100;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #b45309;
+      --border: #e2e8f0;
+    }
+    .story p { color: #475569; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="../index.html" class="nav-back"><span class="arrow">&larr;</span> Back to dashboard</a>
+  <header>
+    <div class="eyebrow">Morning Brief</div>
+    <h1>Levant &amp; Gulf</h1>
+    <div class="meta">Wednesday, April 22, 2026 · Syria · Iraq · Kuwait</div>
+  </header>
+
+  <!-- BRIEF_START -->
+  <section>
+    <h2>Syria</h2>
+    <div class="story" id="syria-1" data-priority="high">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 20, 2026 · EU Policy<span class="priority-flag">High impact</span></span>
+          <h3>European Commission proposes full revival of EU-Syria Cooperation Agreement with 620m euro package</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The Commission formally proposed reactivating the 1978 EU-Syria Cooperation Agreement, partially suspended in 2011, alongside a 620 million euro financial envelope spanning humanitarian aid, early recovery, and bilateral support for 2026 and 2027. Adoption by Council is next, with the EU-Syria High Level Political Dialogue set for May 11.</p>
+      <a class="src" href="https://policy.trade.ec.europa.eu/news/commission-proposes-full-resumption-eu-syria-cooperation-agreement-2026-04-20_en" target="_blank" rel="noopener">European Commission</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">Formal EU framework is the policy anchor for correspondent banking and EIB engagement around the CBS modernisation track.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Trade and economic pillar underpins euro-denominated trade finance flows and the post-sanctions counterparty reset for Syrian banks.</span></div>
+        <div class="rel-item"><span class="rel-chip">Capital markets</span><span class="rel-note">Structured EU support package firms up the bid-side for any sovereign reissuance and sequences a credible EU investor roadshow.</span></div>
+      </div>
+    </div>
+    <div class="story" id="syria-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Gulf Diplomacy</span>
+          <h3>Sharaa opens Gulf tour in Jeddah with MBS, eyes investment and regional linking projects</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>President Ahmad al-Sharaa met Crown Prince Mohammed bin Salman in Jeddah for his first stop on a Gulf tour, with talks focused on expanding economic and investment partnerships and regional linking projects. He also met the Saudi-Syrian Business Council and heads to Doha for talks with Qatar's Emir on Wednesday, building on the 2 billion dollar Saudi package signed in February.</p>
+      <a class="src" href="https://sana.sy/en/presidency/2312069/" target="_blank" rel="noopener">SANA</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Gulf capital channels firm up the funding side for recapitalisation and for rebuilding dollar clearing through GCC counterparties.</span></div>
+        <div class="rel-item"><span class="rel-chip">Capital markets</span><span class="rel-note">GCC anchor base is the most realistic early demand pool for any sovereign or corporate Syrian issuance, ahead of EU or US books.</span></div>
+      </div>
+    </div>
+    <div class="story" id="syria-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · US Policy</span>
+          <h3>Barnieh calls US terror delisting the "last milestone" for Syria's financial reconnection</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Finance Minister Yisr Barnieh, wrapping the Syrian delegation's Washington visit, said removal from the US state sponsor of terrorism list is the final gate to unlock American investment and full banking normalisation. CBS Governor Husrieh added that the Fed New York account cannot be used for commercial activity while the designation stands, limiting the early-stage reconnection to a symbolic line.</p>
+      <a class="src" href="https://www.thenationalnews.com/news/us/2026/04/21/syria-hopes-last-milestone-for-global-financial-reconnection-is-within-reach/" target="_blank" rel="noopener">The National</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">Terror delisting is the binary gate for usable Fed and USD correspondent flows, the gating item for CBS reserves and FX operations.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Until delisting, US banks remain off the table and the dollar trade finance curve stays capped at GCC and EU lines.</span></div>
+        <div class="rel-item"><span class="rel-chip">Capital markets</span><span class="rel-note">US investor access sits behind the delisting, which determines the ceiling on any eventual sovereign book build.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Iraq</h2>
+    <div class="story" id="iraq-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Government</span>
+          <h3>Sudani offers to step aside if Maliki takes the slot as Coordination Framework meets Wednesday</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>In a direct meeting with Nouri al-Maliki, caretaker PM al-Sudani signalled he would withdraw his candidacy if Maliki personally stepped forward as the Framework's nominee. Maliki is resisting the top slot and pushing a State of Law proxy, leaving Bassem al-Badri and Ihsan al-Awadi back in contention with the Wednesday vote falling four days before the April 26 constitutional deadline.</p>
+      <a class="src" href="https://www.iraqinews.com/iraq/sudani-maliki-meeting-pm-negotiations-2026/" target="_blank" rel="noopener">Iraqi News</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">A proxy candidate tied to Maliki would reshape the reform-ownership map and likely slow the Sudani-era economic agenda.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">Deadline pressure raises the odds of a consensus technocrat, which would materially change the 2026 budget authoring and borrowing reset.</span></div>
+        <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">Continued uncertainty on the premiership keeps contract authority frozen and extends the paralysis for the Development Road and port expansion tracks.</span></div>
+      </div>
+    </div>
+    <div class="story" id="iraq-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Economic Policy</span>
+          <h3>PM financial advisor pushes non-oil base as output drops from 4m to 1.4m bpd</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Financial advisor Mudher Saleh told QNA the government is expanding support for agriculture, industry, and private-sector absorption to reduce the 90% oil dependency that left the economy exposed to the crisis. Production has fallen from over 4 million bpd before the Iran war to about 1.4 million by mid-March, with the Planning Ministry flagging structural fragility in public statements.</p>
+      <a class="src" href="https://qna.org.qa/en/news/special-news-details?id=escalating-regional-tensions-renew-warnings-of-fragility-of-iraqs-oil-dependent-economy-report&date=21/04/2026" target="_blank" rel="noopener">QNA</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">Explicit PM-office endorsement of diversification gives the next-government reform package concrete talking points and priorities.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">The 1.4m bpd print hardens the case for the non-oil revenue and wage-bill agenda and reshapes the budget baseline assumptions.</span></div>
+        <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">Diversification push lifts the priority of industrial and agro-industrial mega projects over pure hydrocarbon capex in the pipeline.</span></div>
+      </div>
+    </div>
+    <div class="story" id="iraq-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 20, 2026 · Fiscal</span>
+          <h3>Baghdad triggers emergency borrowing plan to plug 9.5bn dollar fiscal gap</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The caretaker government activated an emergency borrowing framework to close a 9.5 billion dollar fiscal funding gap as southern export disruption hits receipts, with reserves already described as approaching critical levels by IMF staff. The IMF 2025 Article IV baseline saw reserves falling from 100.3 billion dollars at end-2024 to 79.2 billion at end-2026 before the Hormuz shock.</p>
+      <a class="src" href="https://www.iraqinews.com/iraq/iraq-fiscal-funding-gap-strategy-2026" target="_blank" rel="noopener">Iraqi News</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">Emergency borrowing pulls forward the non-oil revenue, subsidy, and wage-bill conversation that any incoming cabinet must own.</span></div>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">Reserve trajectory tightens the FX auction constraint and raises the bar for the CBI's dinar defence through year-end.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Domestic T-bill reliance widens and raises crowding-out pressure on bank balance sheets, reshaping the 2026 credit pipeline.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kuwait</h2>
+    <div class="story" id="kuwait-1" data-priority="high">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Regional Security<span class="priority-flag">High impact</span></span>
+          <h3>Trump extends Iran ceasefire indefinitely but keeps Iranian port blockade in place</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>President Trump extended the two-week US-Iran ceasefire one day before expiry, saying it will run until Tehran's "fractured" leadership submits a unified proposal, while keeping the US naval blockade on Iranian ports active. The move, requested by Pakistani mediators, leaves the Strait of Hormuz closure from April 18 unresolved and pushes Kuwait's oil-export pause into a seventh week.</p>
+      <a class="src" href="https://www.aljazeera.com/news/2026/4/21/trump-announces-extending-iran-ceasefire-but-says-blockade-remains" target="_blank" rel="noopener">Al Jazeera</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal agenda (MoF)</span><span class="rel-note">Indefinite extension pushes revenue shortfall beyond the 9.8bn dinar deficit path in the 2026-27 budget and tightens the financing plan.</span></div>
+        <div class="rel-item"><span class="rel-chip">Sovereign fund</span><span class="rel-note">Longer export pause pulls forward KIA drawdown and GRF transfer conversations and resets the medium-term liquidity buffer.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic Agenda</span><span class="rel-note">Prolonged crisis hardens the case for accelerating the non-oil revenue track and rethinking strategic stockholding and energy resilience.</span></div>
+        <div class="rel-item"><span class="rel-chip">Public sector</span><span class="rel-note">Deficit trajectory intensifies pressure on the 25% public-sector pay uplift and the wage and subsidy line that anchors the budget.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kuwait-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Diplomacy</span>
+          <h3>Arab League convenes emergency FM session on Iranian attacks, cites UNSC Resolution 2817</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>An extraordinary Arab League foreign ministers' session chaired by Bahrain's Abdullatif Al-Zayani condemned continued Iranian strikes on Jordan, the UAE, Bahrain, Saudi Arabia, Oman, Qatar, Kuwait, and Iraq, citing non-compliance with UN Security Council Resolution 2817 (2026). Kuwait's Cabinet separately reaffirmed solidarity with the UAE after Abu Dhabi dismantled a terror cell and reiterated rejection of sea-route weaponisation.</p>
+      <a class="src" href="https://barlamantoday.com/2026/04/21/arab-league-condemns-iranian-attacks-urges-un-action/" target="_blank" rel="noopener">Barlaman Today</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Government</span><span class="rel-note">Multilateral posture hardening strengthens Kuwait's case for accelerated air and missile defence acquisition and integrated Gulf procurement.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic Agenda</span><span class="rel-note">Regional consensus on Iran risk anchors the resilience pillar in the next Vision 2035 cycle and reshapes energy-corridor planning.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kuwait-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Public Safety</span>
+          <h3>Kuwait EOD teams work through Tuesday evening on explosive remnants, cabinet warns against rumours</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The General Staff said Land Force Engineering EOD teams handled shrapnel and explosive remnants through 6pm Tuesday, and attributed audible detonations to controlled disposal rather than fresh strikes. The Cabinet urged the public to rely on official channels as information discipline becomes a live fiscal and security management variable.</p>
+      <a class="src" href="https://kuwaittimes.com/article/42027/kuwait/other-news/cabinet-urges-public-to-follow-official-guidance-avoid-rumors/" target="_blank" rel="noopener">Kuwait Times</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Public sector</span><span class="rel-note">Sustained EOD and civil defence operations embed new recurring costs into the public-sector operating envelope.</span></div>
+        <div class="rel-item"><span class="rel-chip">Municipality</span><span class="rel-note">Damage-clearing workload falls on municipality and infrastructure lines, reshaping capex prioritisation for the next cycle.</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- BRIEF_END -->
+
+  <div class="bottom-nav">
+    <a href="../index.html"><span class="arrow">&larr;</span> Dashboard</a>
+    <a href="#" class="secondary" id="top-link">Top of page</a>
+  </div>
+
+  <footer>
+    Built for Jimmy. Refreshed weekday mornings.
+  </footer>
+</div>
+
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+  const toast = document.getElementById('toast');
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  }
+  document.querySelectorAll('[data-share]').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      const story = e.target.closest('.story');
+      const headline = story.querySelector('h3').innerText;
+      const summary = story.querySelector('p').innerText;
+      const src = story.querySelector('a.src');
+      const sourceUrl = src ? src.href : '';
+      const sourceName = src ? src.innerText : '';
+      const parts = [headline, '', summary];
+      if (sourceName) parts.push('', 'Via ' + sourceName);
+      if (sourceUrl) parts.push(sourceUrl);
+      const text = parts.join('\n');
+      const data = { title: headline, text: text };
+      if (sourceUrl) data.url = sourceUrl;
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(err) {}
+      } else if (navigator.clipboard) {
+        try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
+      } else {
+        prompt('Copy this:', text);
+      }
+    });
+  });
+
+  const topLink = document.getElementById('top-link');
+  if (topLink) {
+    topLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>
