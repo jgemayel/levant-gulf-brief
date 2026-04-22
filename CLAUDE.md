@@ -6,22 +6,29 @@ These rules apply to every daily brief. The scheduled task `levant-gulf-morning-
 The public-facing product is called `Daily news roundup`. Do not write "Built for Jimmy" or any variant in visible output (dashboard, briefs, PWA manifest, share sheets). Internal references to Jimmy as the reader are fine inside this file.
 
 ## Audience
-Jimmy advises on Syria, Iraq, and Kuwait policy, economy, and government workstreams. Some of the items in the relevance blocks are live engagements, others are future opportunities. Keep the framing flexible.
+Jimmy advises on Syria, Iraq, Kuwait, and the Kurdistan Region of Iraq (KRG) on policy, economy, and government workstreams. Some of the items in the relevance blocks are live engagements, others are future opportunities. Keep the framing flexible.
+
+## Country scope
+Four sections every run, in this order: Syria, Iraq, Kuwait, Kurdistan. Kurdistan covers KRG-level government, fiscal and tax, power sector, oil and gas, banking, and major Erbil-level news. Federal Iraq stories stay in the Iraq section, Erbil-originated and KRG-specific stories go under Kurdistan. When a single event has both federal and KRG angles (budget transfers, Development Road, oil export regime), file it where the primary decision-maker sits and cross-reference in the summary.
+
+## Major news rule
+Beyond workstream-relevant items, surface any materially major country story from the 24 to 48 hour window even when it does not map neatly to a relevance bucket. Binding political outcomes, senior leadership changes, mass-casualty security events, FX or sovereign-rating moves, and headline macro prints qualify. Relevance block can be omitted for pure major-news items.
 
 ## Source sweep
 Every run covers two layers in parallel. Both are mandatory.
 
 Local layer, by country:
 - Syria: Reuters, AP, AFP, BBC Arabic, Al Jazeera EN and AR, SANA (sana.sy, translate from AR), Enab Baladi EN and AR, The Syria Report, Syria Direct, Al-Monitor Syria, Chatham House MENA.
-- Iraq: Reuters, AP, Al Jazeera, The National, Iraqi News, Rudaw EN and AR and Kurdish, Shafaq News EN and AR, Al-Sabaah (official, translate from AR), Iraq Oil Report, Kurdistan24.
+- Iraq (federal): Reuters, AP, Al Jazeera, The National, Iraqi News, Shafaq News EN and AR, Al-Sabaah (official, translate from AR), Iraq Oil Report, Al-Monitor Iraq.
 - Kuwait: Kuwait News Agency (KUNA) EN and AR, Al-Qabas AR (translate), Al-Rai AR (translate), Kuwait Times, Arab Times, Times Kuwait, AGBI Kuwait, Arab News Kuwait, Gulf News Kuwait, Zawya Kuwait.
+- Kurdistan (KRG): Rudaw EN, AR, and Kurdish (translate AR and Kurdish), Kurdistan24, Shafaq News Kurdistan desk, KRG official (gov.krd) press service, Iraq Oil Report (KRG energy), The National KRG file, Al-Monitor Kurdistan. Cover government formation, cabinet decrees, fiscal and tax, Erbil-Baghdad budget transfers, power sector, oil and gas exports, banking, and major security or political news.
 
 Global layer, applied to every run:
 - EU institutions: European Commission, Council of the EU, EEAS, European Parliament.
 - US government: Treasury / OFAC, State Department, White House.
 - IFIs and UN: IMF (Spring and Annual Meetings, Article IV, staff reports), World Bank, UNDP, UN Security Council, OHCHR.
 - Energy bodies: OPEC+ decisions, IEA monthly reports.
-- Regional security: Iran / US posture, Strait of Hormuz, Red Sea shipping, Turkey / Syria border, Israel / Lebanon / Gaza spillover. Only when the link to Syria, Iraq, or Kuwait is concrete.
+- Regional security: Iran / US posture, Strait of Hormuz, Red Sea shipping, Turkey / Syria border, Turkey / KRG (PKK, airspace, trade), Israel / Lebanon / Gaza spillover. Only when the link to Syria, Iraq, Kuwait, or Kurdistan is concrete.
 
 Global stories slot into the relevant country section, never a separate bucket.
 
@@ -44,8 +51,9 @@ Label the block `Relevant projects / opportunities`. Buckets by country:
 - Syria: Central Bank, Banking sector, Insurance, Capital markets
 - Iraq: Central Bank, Banking sector, Fiscal reforms, Economic reforms, Mega projects
 - Kuwait: Government, Fiscal agenda (MoF), Economic Agenda, Public sector, Public housing & welfare, Municipality, Sovereign fund
+- Kurdistan: Government, Fiscal & tax, Power sector, Oil & gas, Banking sector, Economic reforms
 
-Include a block only when the link is concrete. Empty stories are fine.
+Include a block only when the link is concrete. Empty stories are fine, and major-news items that do not fit a bucket can run without a relevance block.
 
 ## Writing style
 - No em dashes anywhere
@@ -58,14 +66,15 @@ Include a block only when the link is concrete. Empty stories are fine.
 Write `briefs/YYYY-MM-DD.html` using the template established by prior briefs. Required:
 - Favicon `../favicon.svg` and `../apple-touch-icon.png`
 - `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` markers
-- Three sections (Syria, Iraq, Kuwait). No hard cap on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams, including items sourced from Arabic-only local outlets. Do not hold material back to preserve a 3 by 3 shape, and do not pad thin days just to bulk up a section.
-- Story IDs follow `syria-N`, `iraq-N`, `kuwait-N` where N runs 1 upward per country, as long as needed
+- Four sections in order: Syria, Iraq, Kuwait, Kurdistan. No hard cap on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams plus any headline-level major news, including items sourced from Arabic-only or Kurdish-only local outlets. Do not hold material back to preserve a uniform shape, and do not pad thin days just to bulk up a section.
+- Story IDs follow `syria-N`, `iraq-N`, `kuwait-N`, `kurdistan-N` where N runs 1 upward per country, as long as needed
+- Header meta line reads `[Weekday], [Month] [Day], [Year] · Syria · Iraq · Kuwait · Kurdistan`
 - Share button on each story using source URL
 - Top back-to-dashboard pill + bottom nav + footer
 - Footer text reads exactly `Daily news roundup. Refreshed weekday mornings.`
 
-## Local Arabic coverage
-Arabic-only local outlets are first-class sources, not afterthoughts. Sweep them on every run (SANA, Enab Baladi AR, BBC Arabic, Al Jazeera AR for Syria; Al-Sabaah, Shafaq AR, Rudaw AR for Iraq; Al-Qabas AR, Al-Rai AR, KUNA AR for Kuwait). When the core fact is strongest in Arabic, lead with that source. Provide a translated English summary in the story body, mark the date tag with `<span class="lang">AR</span>`, and append `Translated from [source].` at the end of the summary.
+## Local Arabic and Kurdish coverage
+Arabic-only and Kurdish-only local outlets are first-class sources, not afterthoughts. Sweep them on every run (SANA, Enab Baladi AR, BBC Arabic, Al Jazeera AR for Syria; Al-Sabaah, Shafaq AR for Iraq; Al-Qabas AR, Al-Rai AR, KUNA AR for Kuwait; Rudaw AR and Kurdish, Shafaq KRG, KRG gov.krd AR for Kurdistan). When the core fact is strongest in Arabic or Kurdish, lead with that source. Provide a translated English summary in the story body, mark the date tag with `<span class="lang">AR</span>` or `<span class="lang">KU</span>`, and append `Translated from [source].` at the end of the summary.
 
 ## Dashboard (PWA)
 The root `index.html` is a progressive web app called `Daily news roundup`. It renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file) and lists prior briefs as an archive. Companion files: `manifest.webmanifest`, `service-worker.js`. The dashboard pulls today's brief dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, or service worker change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
