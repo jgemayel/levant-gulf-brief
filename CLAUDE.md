@@ -58,11 +58,14 @@ Include a block only when the link is concrete. Empty stories are fine.
 Write `briefs/YYYY-MM-DD.html` using the template established by prior briefs. Required:
 - Favicon `../favicon.svg` and `../apple-touch-icon.png`
 - `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` markers
-- Three sections (Syria, Iraq, Kuwait), up to 3 stories per country, 9 total on a full day
-- Story IDs syria-1..3, iraq-1..3, kuwait-1..3
+- Three sections (Syria, Iraq, Kuwait). No hard cap on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams, including items sourced from Arabic-only local outlets. Do not hold material back to preserve a 3 by 3 shape, and do not pad thin days just to bulk up a section.
+- Story IDs follow `syria-N`, `iraq-N`, `kuwait-N` where N runs 1 upward per country, as long as needed
 - Share button on each story using source URL
 - Top back-to-dashboard pill + bottom nav + footer
 - Footer text reads exactly `Daily news roundup. Refreshed weekday mornings.`
+
+## Local Arabic coverage
+Arabic-only local outlets are first-class sources, not afterthoughts. Sweep them on every run (SANA, Enab Baladi AR, BBC Arabic, Al Jazeera AR for Syria; Al-Sabaah, Shafaq AR, Rudaw AR for Iraq; Al-Qabas AR, Al-Rai AR, KUNA AR for Kuwait). When the core fact is strongest in Arabic, lead with that source. Provide a translated English summary in the story body, mark the date tag with `<span class="lang">AR</span>`, and append `Translated from [source].` at the end of the summary.
 
 ## Dashboard (PWA)
 The root `index.html` is a progressive web app called `Daily news roundup`. It renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file) and lists prior briefs as an archive. Companion files: `manifest.webmanifest`, `service-worker.js`. The dashboard pulls today's brief dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, or service worker change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
