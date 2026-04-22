@@ -2,6 +2,9 @@
 
 These rules apply to every daily brief. The scheduled task `levant-gulf-morning-brief` and any manual refresh must follow them.
 
+## Product naming
+The public-facing product is called `Daily news roundup`. Do not write "Built for Jimmy" or any variant in visible output (dashboard, briefs, PWA manifest, share sheets). Internal references to Jimmy as the reader are fine inside this file.
+
 ## Audience
 Jimmy advises on Syria, Iraq, and Kuwait policy, economy, and government workstreams. Some of the items in the relevance blocks are live engagements, others are future opportunities. Keep the framing flexible.
 
@@ -26,7 +29,7 @@ Global stories slot into the relevant country section, never a separate bucket.
 Only include stories published in the last 24 to 48 hours. Assume anything older was caught the day before. Do not reach back further just to pad a section. Light days are fine and preferable to stale content.
 
 ## De-duplication
-Every run must cross-check against the last 5 daily briefs. Fetch them from the GitHub contents API, extract all `<h3>` headlines between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->`, and refuse to publish any story whose core event is already covered. If the event is still developing, advance the angle with a specifically new fact, or skip it.
+Every run must cross-check against the last 5 daily briefs before drafting. Use the GitHub contents API at `repos/jgemayel/levant-gulf-brief/contents/briefs` to list, fetch the five most recent dated files, and extract every `<h3>` headline between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->`. Refuse to publish any story whose core event is already in that set. If an event is still developing, only include it when there is a specifically new fact beyond what the prior brief already stated. When in doubt, skip rather than restate. This check is mandatory, not optional.
 
 ## High impact flag
 Be calculated. Flag a story `data-priority="high"` with the "High impact" badge only when it genuinely belongs there:
@@ -59,6 +62,10 @@ Write `briefs/YYYY-MM-DD.html` using the template established by prior briefs. R
 - Story IDs syria-1..3, iraq-1..3, kuwait-1..3
 - Share button on each story using source URL
 - Top back-to-dashboard pill + bottom nav + footer
+- Footer text reads exactly `Daily news roundup. Refreshed weekday mornings.`
+
+## Dashboard (PWA)
+The root `index.html` is a progressive web app called `Daily news roundup`. It renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file) and lists prior briefs as an archive. Companion files: `manifest.webmanifest`, `service-worker.js`. The dashboard pulls today's brief dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, or service worker change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
 
 ## Publish (mandatory final step)
 Every run ends with a GitHub push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days.

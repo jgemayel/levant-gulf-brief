@@ -4,308 +4,384 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0f172a">
-<title>Levant &amp; Gulf Brief</title>
+<meta name="apple-mobile-web-app-title" content="Roundup">
+<meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<title>Daily news roundup</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0f172a;
-    --surface: #1e293b;
-    --surface-2: #334155;
-    --text: #f1f5f9;
-    --muted: #94a3b8;
-    --accent: #f59e0b;
-    --accent-glow: rgba(245, 158, 11, 0.18);
-    --border: #334155;
-    --today-bg: #1c2742;
-    --today-border: #f59e0b;
+    --bg: #0b0d12;
+    --surface: #12151c;
+    --text: #e8ebf1;
+    --muted: #8b92a3;
+    --soft: #2a2f3a;
+    --line: #1d2029;
+    --accent: #e8ebf1;
     --critical: #ef4444;
-    --critical-tint: rgba(239, 68, 68, 0.08);
+    --rule: rgba(232, 235, 241, 0.08);
+    --chrome: rgba(11, 13, 18, 0.82);
+    --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --tab-height: 58px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
     background: var(--bg);
     color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-    line-height: 1.55;
+    font-family: var(--sans);
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
-    padding-bottom: env(safe-area-inset-bottom);
+    overscroll-behavior-y: contain;
+  }
+  body {
+    padding-bottom: calc(var(--tab-height) + env(safe-area-inset-bottom, 0px));
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  .top-safe {
+    height: env(safe-area-inset-top, 0px);
+    background: var(--chrome);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  .appbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 19;
+    background: var(--chrome);
+    backdrop-filter: saturate(180%) blur(16px);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .appbar-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 12px 22px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .appbar-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .appbar-issue {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
   }
   .wrap {
-    max-width: 720px;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 24px 18px 80px;
+    padding: 28px 22px 32px;
   }
-  header {
-    padding: 14px 0 22px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 22px;
-  }
-  .eyebrow {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 600;
+  header.hero {
+    padding-bottom: 26px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
   }
   h1 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 4px;
-    letter-spacing: -0.5px;
+    font-family: var(--serif);
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: -0.7px;
+    line-height: 1.08;
   }
-  .meta {
+  .dek {
+    margin-top: 10px;
+    font-size: 14px;
     color: var(--muted);
-    font-size: 13px;
-    margin-top: 6px;
   }
-  .today-card {
-    background: var(--today-bg);
-    border: 2px solid var(--today-border);
-    border-radius: 16px;
-    padding: 18px 18px;
-    margin-bottom: 26px;
-    box-shadow: 0 0 24px var(--accent-glow);
-    position: relative;
+  .today-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
   }
-  .today-badge {
-    position: absolute;
-    top: -10px;
-    left: 16px;
-    background: var(--accent);
-    color: #0f172a;
+  .today-date {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .open-link {
+    font-size: 12.5px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+  .open-link:hover { color: var(--text); }
+  section.country { margin-bottom: 28px; }
+  section.country h3 {
+    font-family: var(--sans);
     font-size: 10.5px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding: 3px 9px;
-    border-radius: 999px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
-  }
-  .today-card h2 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 4px;
-    margin-bottom: 6px;
-  }
-  .today-card .day-meta {
-    font-size: 13px;
     color: var(--muted);
+    font-weight: 600;
     margin-bottom: 14px;
   }
-  .today-card .open-link {
-    display: inline-block;
-    margin-top: 4px;
-    font-size: 13px;
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  .today-card .open-link:hover { text-decoration: underline; }
-  .today-content {
-    margin-top: 14px;
-    padding-top: 14px;
-    border-top: 1px solid var(--border);
-  }
-  section.country {
-    margin-bottom: 22px;
-  }
-  section.country h3 {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 600;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid var(--border);
-  }
   .story {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 14px;
-    margin-bottom: 8px;
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
     position: relative;
   }
-  .story[data-priority="high"] {
-    border-left: 4px solid var(--critical);
-    background: linear-gradient(to right, var(--critical-tint), var(--surface) 60%);
-  }
-  .priority-flag {
-    display: inline-block;
+  .story:first-of-type { border-top: none; padding-top: 6px; }
+  .story[data-priority="high"]::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
     background: var(--critical);
-    color: #fff;
-    font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-    padding: 2px 7px;
-    border-radius: 4px;
-    margin-left: 6px;
-    text-transform: uppercase;
-    vertical-align: 1px;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
   }
   .story-head {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
+    gap: 14px;
   }
   .story-meta { flex: 1; min-width: 0; }
   .story .date {
     font-size: 11px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     color: var(--muted);
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     display: block;
   }
   .story .lang {
     display: inline-block;
     font-size: 9.5px;
     letter-spacing: 0.5px;
-    background: var(--surface-2);
+    background: transparent;
     color: var(--muted);
-    padding: 2px 6px;
-    border-radius: 4px;
+    padding: 1px 5px;
+    border: 1px solid var(--soft);
+    border-radius: 3px;
     margin-left: 6px;
     text-transform: uppercase;
   }
+  .priority-flag {
+    display: inline-block;
+    color: var(--critical);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-left: 8px;
+    text-transform: uppercase;
+  }
   .story h4 {
-    font-size: 15px;
+    font-family: var(--serif);
+    font-size: 19px;
     font-weight: 600;
-    margin-bottom: 5px;
-    line-height: 1.35;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+    margin-bottom: 8px;
   }
   .story p {
-    font-size: 14px;
-    color: #cbd5e1;
+    font-size: 14.5px;
+    color: #c3c8d4;
+    line-height: 1.6;
   }
   .story a.src {
-    color: var(--accent);
+    color: var(--muted);
     text-decoration: none;
-    font-size: 12.5px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500;
     display: inline-block;
-    margin-top: 6px;
-  }
-  .story a.src:hover { text-decoration: underline; }
-  .relevance {
     margin-top: 10px;
-    padding-top: 9px;
-    border-top: 1px dashed var(--border);
+    border-bottom: 1px solid var(--soft);
+    padding-bottom: 1px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .story a.src:hover { color: var(--text); border-color: var(--text); }
+  .relevance {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dotted var(--soft);
   }
   .rel-label {
     font-size: 10px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 700;
+    color: var(--muted);
+    font-weight: 600;
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
   }
   .rel-item {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
   .rel-item:last-child { margin-bottom: 0; }
   .rel-chip {
     flex-shrink: 0;
-    background: rgba(245, 158, 11, 0.16);
-    color: var(--accent);
-    padding: 1.5px 7px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 600;
+    background: transparent;
+    border: 1px solid var(--soft);
+    color: var(--text);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10.5px;
+    font-weight: 500;
     white-space: nowrap;
-    line-height: 1.5;
+    line-height: 1.55;
   }
   .rel-note {
     color: var(--muted);
-    font-size: 12.5px;
-    line-height: 1.4;
+    font-size: 13px;
+    line-height: 1.5;
   }
   .share-btn {
     flex-shrink: 0;
-    background: var(--surface-2);
-    color: var(--text);
-    border: none;
-    border-radius: 10px;
-    width: 44px;
-    height: 44px;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--soft);
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 17px;
-    transition: background 0.15s;
+    font-size: 14px;
+    transition: color 0.15s, border-color 0.15s;
   }
-  .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
-  .archive-section h2 {
-    font-size: 13px;
-    letter-spacing: 1.5px;
+  .share-btn:hover, .share-btn:active {
+    color: var(--text);
+    border-color: var(--text);
+  }
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--accent);
+    color: var(--muted);
     font-weight: 600;
-    margin-bottom: 12px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 18px;
   }
-  .archive-list {
-    list-style: none;
+  .archive-section {
+    margin-top: 44px;
+    padding-top: 30px;
+    border-top: 1px solid var(--rule);
   }
-  .archive-list li {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    margin-bottom: 8px;
-    transition: border-color 0.15s;
-  }
-  .archive-list li:hover { border-color: var(--accent); }
+  .archive-list { list-style: none; }
+  .archive-list li { border-bottom: 1px solid var(--rule); }
+  .archive-list li:last-child { border-bottom: none; }
   .archive-list a {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 12px 14px;
+    align-items: baseline;
+    padding: 14px 0;
     color: var(--text);
     text-decoration: none;
     font-size: 14.5px;
+    transition: color 0.15s;
   }
-  .archive-list .arrow { color: var(--muted); font-size: 14px; }
-  .empty {
+  .archive-list a:hover { color: var(--muted); }
+  .archive-list .arrow { color: var(--muted); font-size: 13px; }
+  .empty, .loading {
     color: var(--muted);
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
+    font-size: 13.5px;
+    padding: 20px 0;
+    font-style: italic;
   }
-  .loading {
+  footer.footnote {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
     color: var(--muted);
-    font-size: 14px;
-    text-align: center;
-    padding: 30px;
+    font-size: 11.5px;
+    letter-spacing: 0.3px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
   }
-  footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
+  .tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    background: var(--chrome);
+    backdrop-filter: saturate(180%) blur(18px);
+    -webkit-backdrop-filter: saturate(180%) blur(18px);
+    border-top: 1px solid var(--rule);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .tabbar-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    height: var(--tab-height);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tab {
+    background: transparent;
+    border: 0;
     color: var(--muted);
-    font-size: 12px;
-    text-align: center;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    transition: color 0.15s;
+    padding: 0 4px;
   }
+  .tab svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .tab.active { color: var(--text); }
+  .tab:hover { color: var(--text); }
   .toast {
     position: fixed;
-    bottom: 24px;
+    bottom: calc(var(--tab-height) + env(safe-area-inset-bottom, 0px) + 18px);
     left: 50%;
     transform: translateX(-50%) translateY(20px);
-    background: var(--accent);
-    color: #0f172a;
-    padding: 10px 16px;
+    background: var(--text);
+    color: var(--bg);
+    padding: 10px 18px;
     border-radius: 999px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 500;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s, transform 0.2s;
@@ -314,56 +390,80 @@
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
   @media (prefers-color-scheme: light) {
     :root {
-      --bg: #fafaf9;
+      --bg: #fbfaf7;
       --surface: #ffffff;
-      --surface-2: #f1f5f9;
-      --text: #1e293b;
-      --muted: #64748b;
-      --accent: #b45309;
-      --accent-glow: rgba(180, 83, 9, 0.15);
-      --border: #e2e8f0;
-      --today-bg: #fffbeb;
-      --today-border: #b45309;
+      --text: #15171c;
+      --muted: #6b7280;
+      --soft: #d8d5cd;
+      --line: #e8e5dd;
+      --accent: #15171c;
+      --rule: rgba(21, 23, 28, 0.12);
+      --chrome: rgba(251, 250, 247, 0.82);
     }
-    .story p { color: #475569; }
+    .story p { color: #3d4149; }
   }
 </style>
 </head>
 <body>
+
+<div class="top-safe"></div>
+<div class="appbar">
+  <div class="appbar-inner">
+    <div class="appbar-title">Daily news roundup</div>
+    <div class="appbar-issue" id="issue-id">Loading</div>
+  </div>
+</div>
+
 <div class="wrap">
-  <header>
-    <div class="eyebrow">Morning Brief</div>
+  <header class="hero">
     <h1>Levant &amp; Gulf</h1>
-    <div class="meta">Syria · Iraq · Kuwait · Updated weekday mornings at 8 AM</div>
+    <div class="dek">Syria, Iraq, and Kuwait. Refreshed weekday mornings.</div>
   </header>
 
-  <div class="today-card" id="today-card">
-    <span class="today-badge">Today</span>
-    <h2 id="today-title">Loading latest brief...</h2>
-    <div class="day-meta" id="today-day"></div>
-    <a class="open-link" id="today-open" href="#">Open full page &rarr;</a>
-    <div class="today-content" id="today-content">
+  <div id="home">
+    <div class="today-head">
+      <div class="today-date" id="today-title">Loading latest brief...</div>
+      <a class="open-link" id="today-open" href="#">Open full page &rarr;</a>
+    </div>
+    <div id="today-content">
       <div class="loading">Fetching today's stories...</div>
     </div>
   </div>
 
-  <div class="archive-section">
-    <h2>Archive</h2>
+  <div class="archive-section" id="archive">
+    <div class="section-label">Archive</div>
     <ul class="archive-list" id="archive-list">
       <li class="loading">Loading past briefs...</li>
     </ul>
   </div>
 
-  <footer>
-    Built for Jimmy. Data refreshes weekday mornings.
+  <footer class="footnote">
+    <span>Daily news roundup</span>
+    <span>Refreshed weekday mornings</span>
   </footer>
 </div>
+
+<nav class="tabbar" aria-label="Primary">
+  <div class="tabbar-inner">
+    <button class="tab active" data-target="home" type="button">
+      <svg viewBox="0 0 24 24"><path d="M4 10l8-6 8 6v9a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></svg>
+      <span>Today</span>
+    </button>
+    <button class="tab" data-target="archive" type="button">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 6v12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6M9 10h6"/></svg>
+      <span>Archive</span>
+    </button>
+    <button class="tab" data-action="share" type="button">
+      <svg viewBox="0 0 24 24"><path d="M12 3v12M12 3l-4 4M12 3l4 4M5 12v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7"/></svg>
+      <span>Share</span>
+    </button>
+  </div>
+</nav>
 
 <div class="toast" id="toast">Link copied</div>
 
 <script>
 const REPO = 'jgemayel/levant-gulf-brief';
-const PAGES_BASE = 'https://jgemayel.github.io/levant-gulf-brief';
 
 const toast = document.getElementById('toast');
 function showToast(msg) {
@@ -374,7 +474,14 @@ function showToast(msg) {
 
 function formatDateLong(iso) {
   const d = new Date(iso + 'T00:00:00');
-  return d.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  return d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function formatIssueId(iso, total) {
+  const d = new Date(iso + 'T00:00:00');
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `No. ${total} · ${d.getFullYear()}.${mm}.${dd}`;
 }
 
 async function loadBriefs() {
@@ -391,15 +498,15 @@ async function loadBriefs() {
     if (briefs.length === 0) {
       document.getElementById('today-content').innerHTML = '<div class="empty">No briefs yet. The first will arrive tomorrow morning.</div>';
       archiveList.innerHTML = '<li class="empty">No archive yet.</li>';
+      document.getElementById('issue-id').textContent = '';
       return;
     }
 
     const today = briefs[0];
     document.getElementById('today-title').textContent = formatDateLong(today.date);
-    document.getElementById('today-day').textContent = 'Latest brief';
     document.getElementById('today-open').href = today.path;
+    document.getElementById('issue-id').textContent = formatIssueId(today.date, briefs.length);
 
-    // Load today's content inline
     const briefRes = await fetch(today.path);
     const html = await briefRes.text();
     const parser = new DOMParser();
@@ -412,7 +519,6 @@ async function loadBriefs() {
       let node = briefStartComment.nextSibling;
       while (node && node !== briefEndComment) {
         if (node.nodeType === 1) {
-          // Convert h2 to h3, story h3 to h4 to fit dashboard hierarchy
           const clone = node.cloneNode(true);
           clone.querySelectorAll('h2').forEach(h => {
             const newH = document.createElement('h3');
@@ -425,7 +531,6 @@ async function loadBriefs() {
             newH.innerHTML = h.innerHTML;
             h.replaceWith(newH);
           });
-          // Update share buttons to use full brief URL
           clone.querySelectorAll('[data-share]').forEach(btn => {
             btn.dataset.briefPath = today.path;
           });
@@ -435,10 +540,9 @@ async function loadBriefs() {
       }
       attachShareHandlers(container);
     } else {
-      container.innerHTML = '<div class="empty"><a href="' + today.path + '" style="color:var(--accent)">Open today\'s brief</a></div>';
+      container.innerHTML = '<div class="empty"><a href="' + today.path + '" style="color:var(--text)">Open today\'s brief &rarr;</a></div>';
     }
 
-    // Archive list (everything except today)
     archiveList.innerHTML = '';
     if (briefs.length === 1) {
       archiveList.innerHTML = '<li class="empty">Past briefs will appear here.</li>';
@@ -487,6 +591,58 @@ function attachShareHandlers(scope) {
         prompt('Copy this:', text);
       }
     });
+  });
+}
+
+function setActiveTab(target) {
+  document.querySelectorAll('.tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.target === target);
+  });
+}
+
+document.querySelectorAll('.tab[data-target]').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const targetId = tab.dataset.target;
+    setActiveTab(targetId);
+    const el = document.getElementById(targetId);
+    if (!el) return;
+    if (targetId === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+document.querySelector('.tab[data-action="share"]').addEventListener('click', async () => {
+  const data = {
+    title: 'Daily news roundup',
+    text: 'Levant & Gulf morning brief. Syria, Iraq, and Kuwait.',
+    url: location.origin + location.pathname
+  };
+  if (navigator.share) {
+    try { await navigator.share(data); } catch(err) {}
+  } else if (navigator.clipboard) {
+    try { await navigator.clipboard.writeText(data.url); showToast('Link copied'); } catch(err) { showToast('Copy failed'); }
+  } else {
+    prompt('Copy this:', data.url);
+  }
+});
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      if (e.target.id === 'archive') setActiveTab('archive');
+      if (e.target.id === 'home') setActiveTab('home');
+    }
+  });
+}, { rootMargin: '-40% 0px -40% 0px' });
+io.observe(document.getElementById('home'));
+io.observe(document.getElementById('archive'));
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js').catch(() => {});
   });
 }
 
