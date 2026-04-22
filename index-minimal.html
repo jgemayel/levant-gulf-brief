@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f172a">
+<title>Levant &amp; Gulf Brief · Minimal</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --surface: #12151c;
+    --text: #e8ebf1;
+    --muted: #8b92a3;
+    --soft: #2a2f3a;
+    --line: #1d2029;
+    --accent: #e8ebf1;
+    --critical: #ef4444;
+    --rule: rgba(232, 235, 241, 0.08);
+    --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 22px 80px;
+  }
+  header {
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 1.1;
+  }
+  .issue {
+    font-family: var(--sans);
+    font-size: 11.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .dek {
+    margin-top: 10px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .section-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  .today-date {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: var(--text);
+  }
+  .today-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .open-link {
+    font-size: 12.5px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.15s;
+  }
+  .open-link:hover { color: var(--text); }
+  section.country {
+    margin-bottom: 28px;
+  }
+  section.country h3 {
+    font-family: var(--sans);
+    font-size: 10.5px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .story {
+    padding: 18px 0;
+    border-top: 1px solid var(--rule);
+    position: relative;
+  }
+  .story:first-of-type { border-top: none; padding-top: 6px; }
+  .story[data-priority="high"]::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--critical);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+  }
+  .story-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .story-meta { flex: 1; min-width: 0; }
+  .story .date {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .story .lang {
+    display: inline-block;
+    font-size: 9.5px;
+    letter-spacing: 0.5px;
+    background: transparent;
+    color: var(--muted);
+    padding: 1px 5px;
+    border: 1px solid var(--soft);
+    border-radius: 3px;
+    margin-left: 6px;
+    text-transform: uppercase;
+  }
+  .priority-flag {
+    display: inline-block;
+    color: var(--critical);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-left: 8px;
+    text-transform: uppercase;
+  }
+  .story h4 {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+    margin-bottom: 8px;
+  }
+  .story p {
+    font-family: var(--sans);
+    font-size: 14.5px;
+    color: #c3c8d4;
+    line-height: 1.6;
+  }
+  .story a.src {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--soft);
+    padding-bottom: 1px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .story a.src:hover { color: var(--text); border-color: var(--text); }
+  .relevance {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px dotted var(--soft);
+  }
+  .rel-label {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .rel-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 7px;
+  }
+  .rel-item:last-child { margin-bottom: 0; }
+  .rel-chip {
+    flex-shrink: 0;
+    background: transparent;
+    border: 1px solid var(--soft);
+    color: var(--text);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 10.5px;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 1.55;
+    letter-spacing: 0.2px;
+  }
+  .rel-note {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .share-btn {
+    flex-shrink: 0;
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--soft);
+    border-radius: 8px;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .share-btn:hover, .share-btn:active {
+    color: var(--text);
+    border-color: var(--text);
+  }
+  .archive-section {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--rule);
+  }
+  .archive-list {
+    list-style: none;
+  }
+  .archive-list li {
+    border-bottom: 1px solid var(--rule);
+  }
+  .archive-list li:last-child { border-bottom: none; }
+  .archive-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 0;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14.5px;
+    transition: color 0.15s;
+  }
+  .archive-list a:hover { color: var(--muted); }
+  .archive-list .arrow {
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .empty, .loading {
+    color: var(--muted);
+    font-size: 13.5px;
+    padding: 20px 0;
+    font-style: italic;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 11.5px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  footer a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+  footer a:hover { color: var(--text); }
+  .toast {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--text);
+    color: var(--bg);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 100;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fbfaf7;
+      --surface: #ffffff;
+      --text: #15171c;
+      --muted: #6b7280;
+      --soft: #d8d5cd;
+      --line: #e8e5dd;
+      --accent: #15171c;
+      --rule: rgba(21, 23, 28, 0.12);
+    }
+    .story p { color: #3d4149; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="masthead">
+      <h1>Levant &amp; Gulf</h1>
+      <div class="issue" id="issue-id">Loading</div>
+    </div>
+    <div class="dek">A morning brief on Syria, Iraq, and Kuwait. Weekday mornings.</div>
+  </header>
+
+  <div class="today-head">
+    <div class="today-date" id="today-title">Loading latest brief...</div>
+    <a class="open-link" id="today-open" href="#">Open full page &rarr;</a>
+  </div>
+  <div id="today-content">
+    <div class="loading">Fetching today's stories...</div>
+  </div>
+
+  <div class="archive-section">
+    <div class="section-label">Archive</div>
+    <ul class="archive-list" id="archive-list">
+      <li class="loading">Loading past briefs...</li>
+    </ul>
+  </div>
+
+  <footer>
+    <span>Built for Jimmy.</span>
+    <span>Refreshed weekday mornings.</span>
+  </footer>
+</div>
+
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+const REPO = 'jgemayel/levant-gulf-brief';
+
+const toast = document.getElementById('toast');
+function showToast(msg) {
+  toast.textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 1800);
+}
+
+function formatDateLong(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return d.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+}
+
+function formatIssueId(iso, total) {
+  const d = new Date(iso + 'T00:00:00');
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const dd = String(d.getDate()).padStart(2, '0');
+  return `No. ${total} · ${d.getFullYear()}.${mm}.${dd}`;
+}
+
+async function loadBriefs() {
+  const archiveList = document.getElementById('archive-list');
+  try {
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/briefs`);
+    if (!res.ok) throw new Error('GitHub API ' + res.status);
+    const files = await res.json();
+    const briefs = files
+      .filter(f => /^\d{4}-\d{2}-\d{2}\.html$/.test(f.name))
+      .map(f => ({ date: f.name.replace('.html', ''), path: 'briefs/' + f.name }))
+      .sort((a, b) => b.date.localeCompare(a.date));
+
+    if (briefs.length === 0) {
+      document.getElementById('today-content').innerHTML = '<div class="empty">No briefs yet. The first will arrive tomorrow morning.</div>';
+      archiveList.innerHTML = '<li class="empty">No archive yet.</li>';
+      document.getElementById('issue-id').textContent = '';
+      return;
+    }
+
+    const today = briefs[0];
+    document.getElementById('today-title').textContent = formatDateLong(today.date);
+    document.getElementById('today-open').href = today.path;
+    document.getElementById('issue-id').textContent = formatIssueId(today.date, briefs.length);
+
+    const briefRes = await fetch(today.path);
+    const html = await briefRes.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const briefStartComment = findCommentNode(doc.body, 'BRIEF_START');
+    const briefEndComment = findCommentNode(doc.body, 'BRIEF_END');
+    const container = document.getElementById('today-content');
+    container.innerHTML = '';
+    if (briefStartComment && briefEndComment) {
+      let node = briefStartComment.nextSibling;
+      while (node && node !== briefEndComment) {
+        if (node.nodeType === 1) {
+          const clone = node.cloneNode(true);
+          clone.querySelectorAll('h2').forEach(h => {
+            const newH = document.createElement('h3');
+            newH.innerHTML = h.innerHTML;
+            h.replaceWith(newH);
+          });
+          if (clone.tagName === 'SECTION') clone.classList.add('country');
+          clone.querySelectorAll('.story h3').forEach(h => {
+            const newH = document.createElement('h4');
+            newH.innerHTML = h.innerHTML;
+            h.replaceWith(newH);
+          });
+          clone.querySelectorAll('[data-share]').forEach(btn => {
+            btn.dataset.briefPath = today.path;
+          });
+          container.appendChild(clone);
+        }
+        node = node.nextSibling;
+      }
+      attachShareHandlers(container);
+    } else {
+      container.innerHTML = '<div class="empty"><a href="' + today.path + '" style="color:var(--text)">Open today\'s brief &rarr;</a></div>';
+    }
+
+    archiveList.innerHTML = '';
+    if (briefs.length === 1) {
+      archiveList.innerHTML = '<li class="empty">Past briefs will appear here.</li>';
+    } else {
+      briefs.slice(1).forEach(b => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${b.path}"><span>${formatDateLong(b.date)}</span><span class="arrow">&rarr;</span></a>`;
+        archiveList.appendChild(li);
+      });
+    }
+  } catch (err) {
+    document.getElementById('today-content').innerHTML = `<div class="empty">Could not load briefs: ${err.message}</div>`;
+    archiveList.innerHTML = '';
+  }
+}
+
+function findCommentNode(root, marker) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_COMMENT, null);
+  let n;
+  while ((n = walker.nextNode())) {
+    if (n.nodeValue && n.nodeValue.includes(marker)) return n;
+  }
+  return null;
+}
+
+function attachShareHandlers(scope) {
+  scope.querySelectorAll('[data-share]').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      const story = e.target.closest('.story');
+      const headline = story.querySelector('h4, h3').innerText;
+      const summary = story.querySelector('p').innerText;
+      const src = story.querySelector('a.src');
+      const sourceUrl = src ? src.href : '';
+      const sourceName = src ? src.innerText : '';
+      const parts = [headline, '', summary];
+      if (sourceName) parts.push('', 'Via ' + sourceName);
+      if (sourceUrl) parts.push(sourceUrl);
+      const text = parts.join('\n');
+      const data = { title: headline, text: text };
+      if (sourceUrl) data.url = sourceUrl;
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(err) {}
+      } else if (navigator.clipboard) {
+        try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
+      } else {
+        prompt('Copy this:', text);
+      }
+    });
+  });
+}
+
+loadBriefs();
+</script>
+</body>
+</html>
