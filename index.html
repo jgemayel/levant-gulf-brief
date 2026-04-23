@@ -281,7 +281,7 @@
 
   <div class="archive-section" id="posts">
     <div class="section-label">Posts · Iraq &amp; KRG handles</div>
-    <div class="posts-intro">Consolidated daily extract from the four X handles we sweep. Pulled from the most recent briefs, grouped by handle.</div>
+    <div class="posts-intro" id="posts-intro">Rolling 24-hour sweep of the four X handles.</div>
     <div id="posts-content">
       <div class="loading">Loading posts...</div>
     </div>
@@ -326,7 +326,7 @@
 <script>
 const REPO = 'jgemayel/levant-gulf-brief';
 const HANDLES = ['@KurdistanWatch', '@AMrym93884', '@Bacharelhalabi', '@Mikeknightsiraq'];
-const POSTS_LOOKBACK = 10;
+const POSTS_FEED = 'posts/latest.json';
 
 const toast = document.getElementById('toast');
 function showToast(msg) {
@@ -408,81 +408,88 @@ async function loadBriefs() {
       });
     }
 
-    loadPosts(briefs.slice(0, POSTS_LOOKBACK));
   } catch (err) {
     document.getElementById('today-content').innerHTML = `<div class="empty">Could not load briefs: ${err.message}</div>`;
     archiveList.innerHTML = '';
   }
 }
 
-async function loadPosts(briefs) {
+function formatPostedAt(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return '';
+  const mins = Math.round((Date.now() - d.getTime()) / 60000);
+  if (mins < 1) return 'Just now';
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.round(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  const days = Math.round(hrs / 24);
+  return days + 'd ago';
+}
+
+function formatGeneratedAt(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return '';
+  return d.toLocaleString(undefined, { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+}
+
+async function loadPosts() {
   const container = document.getElementById('posts-content');
+  const intro = document.getElementById('posts-intro');
   if (!container) return;
   try {
-    const parser = new DOMParser();
-    const posts = [];
-    const results = await Promise.all(briefs.map(b =>
-      fetch(b.path).then(r => r.ok ? r.text() : '').then(html => ({ b, html })).catch(() => ({ b, html: '' }))
-    ));
-    results.forEach(({ b, html }) => {
-      if (!html) return;
-      const doc = parser.parseFromString(html, 'text/html');
-      doc.querySelectorAll('.story[data-kind="post"]').forEach(story => {
-        const src = story.querySelector('a.src');
-        if (!src) return;
-        const srcText = (src.textContent || '').trim();
-        const handleMatch = srcText.match(/@[A-Za-z0-9_]+/);
-        const handle = handleMatch ? handleMatch[0] : null;
-        if (!handle) return;
-        posts.push({
-          brief: b,
-          handle,
-          headline: (story.querySelector('h4')?.textContent || '').trim(),
-          summary: (story.querySelector('p')?.textContent || '').trim(),
-          dateLabel: (story.querySelector('.date')?.childNodes[0]?.textContent || '').trim().replace(/\s+·\s+.*$/, ''),
-          category: (story.querySelector('.date')?.textContent || '').split('·')[1]?.trim().replace(/Post$/i, '').trim() || '',
-          url: src.href
-        });
-      });
-    });
+    const res = await fetch(POSTS_FEED + '?t=' + Date.now(), { cache: 'no-cache' });
+    if (!res.ok) throw new Error('feed ' + res.status);
+    const feed = await res.json();
+    const posts = Array.isArray(feed.posts) ? feed.posts.slice() : [];
+    posts.sort((a, b) => (b.posted_at || '').localeCompare(a.posted_at || ''));
+
+    const windowHours = feed.window_hours || 24;
+    if (intro) {
+      const when = formatGeneratedAt(feed.generated_at);
+      intro.textContent = `Rolling ${windowHours}-hour sweep of the four X handles. ${when ? 'Last refreshed ' + when + '.' : ''}`;
+    }
 
     container.innerHTML = '';
     if (posts.length === 0) {
-      container.innerHTML = '<div class="empty">No post extracts yet. They arrive with the daily brief.</div>';
+      container.innerHTML = `<div class="empty">No posts in the last ${windowHours} hours from these handles.</div>`;
       return;
     }
 
     HANDLES.forEach(handle => {
       const handleKey = handle.toLowerCase();
-      const items = posts.filter(p => p.handle.toLowerCase() === handleKey);
+      const items = posts.filter(p => (p.handle || '').toLowerCase() === handleKey);
       const group = document.createElement('div');
       group.className = 'handle-group';
       const head = document.createElement('div');
       head.className = 'handle-head';
-      head.innerHTML = `<a class="handle-name" href="https://x.com/${handle.slice(1)}" target="_blank" rel="noopener">${handle}</a><span class="handle-count">${items.length} ${items.length === 1 ? 'post' : 'posts'}</span>`;
+      const countLabel = items.length === 0 ? 'Quiet' : `${items.length} ${items.length === 1 ? 'post' : 'posts'}`;
+      head.innerHTML = `<a class="handle-name" href="https://x.com/${handle.slice(1)}" target="_blank" rel="noopener">${handle}</a><span class="handle-count">${countLabel}</span>`;
       group.appendChild(head);
 
       if (items.length === 0) {
         const empty = document.createElement('div');
         empty.className = 'handle-empty';
-        empty.textContent = 'No extracts in the last ' + briefs.length + ' briefs.';
+        empty.textContent = `No posts in the last ${windowHours} hours.`;
         group.appendChild(empty);
       } else {
         items.forEach(p => {
           const story = document.createElement('div');
           story.className = 'story';
           story.setAttribute('data-kind', 'post');
-          const cat = p.category ? ` · ${p.category}` : '';
+          const ago = formatPostedAt(p.posted_at);
+          const cat = p.category ? ` · ${escapeHtml(p.category)}` : '';
           story.innerHTML = `
             <div class="story-head">
               <div class="story-meta">
-                <span class="date">${escapeHtml(p.dateLabel)}${escapeHtml(cat)}<span class="src-kind">Post</span></span>
-                <h4>${escapeHtml(p.headline)}</h4>
+                <span class="date">${escapeHtml(ago)}${cat}<span class="src-kind">Post</span></span>
+                <h4>${escapeHtml(p.headline || '')}</h4>
               </div>
               <button class="share-btn" aria-label="Share post" data-share>&#x21AA;</button>
             </div>
-            <p>${escapeHtml(p.summary)}</p>
-            <a class="src" href="${p.url}" target="_blank" rel="noopener">X / ${handle}</a>
+            <p>${escapeHtml(p.summary || '')}</p>
+            <a class="src" href="${p.url || ('https://x.com/' + handle.slice(1))}" target="_blank" rel="noopener">X / ${handle}</a>
           `;
           group.appendChild(story);
         });
@@ -598,6 +605,7 @@ if ('serviceWorker' in navigator) {
 }
 
 loadBriefs();
+loadPosts();
 </script>
 </body>
 </html>

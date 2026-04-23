@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-04-23T08:15:00Z",
+  "window_hours": 24,
+  "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
+  "posts": [
+    {
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-23T06:42:00Z",
+      "category": "Gulf Readout",
+      "headline": "Halabi frames Abu Dhabi summit as a UAE bet on Sharaa-led reconstruction financing architecture",
+      "summary": "Read the Sharaa-MBZ meeting as the UAE taking a clear position that Syrian reconstruction financing will be routed through Sharaa-era institutions rather than parallel structures, with Emirati sovereign vehicles in frame for early-stage infrastructure mandates. Flags a follow-up economic delegation expected within weeks.",
+      "url": "https://x.com/Bacharelhalabi"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-23T05:10:00Z",
+      "category": "PMF & Security",
+      "headline": "Knights reads CF deadlock as a PMF-leverage play, warns caretaker drift raises militia veto power over cabinet picks",
+      "summary": "Argues the Coordination Framework's repeated PM postponements are a deliberate stretch of the constitutional clock to extract PMF-linked portfolio concessions, with each day past April 26 handing armed factions outsized veto power over interior and defence slots. Points to Basra pipeline tender and Ceyhan renewal as the concrete files where the leverage shows up first.",
+      "url": "https://x.com/Mikeknightsiraq"
+    },
+    {
+      "handle": "@KurdistanWatch",
+      "posted_at": "2026-04-23T04:55:00Z",
+      "category": "KRG Fiscal",
+      "headline": "Kurdistan Watch flags Baghdad's transfer cadence, not the audited list, as the binding variable on April salaries",
+      "summary": "Argues the procedural ball is fully on Baghdad's side of the net now that KRG has submitted the audited April list, with the Federal Ministry of Finance's transfer cadence setting the date employees actually get paid. Underlines that the 400 million dollar bridge line is sized for a one-cycle miss, not a structural slippage.",
+      "url": "https://x.com/KurdistanWatch"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-22T19:30:00Z",
+      "category": "Oil & Gas",
+      "headline": "Observer ties Turkey pipeline contract renewal to KRG producer arbitration settlement talks",
+      "summary": "Argues the July Turkey pipeline contract renewal cannot be separated from parallel ICC arbitration settlement talks with KRG producers, and that any contract extension without a producer payment framework would re-open the export risk that shut the pipeline in the first place. Flags the SOMO Q2 marketing extension as a tactical bridge rather than a structural fix.",
+      "url": "https://x.com/AMrym93884"
+    }
+  ]
+}
