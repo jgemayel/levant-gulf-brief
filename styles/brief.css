@@ -231,6 +231,33 @@ section.country h3::after {
   text-transform: uppercase;
 }
 
+/* Social / Twitter-X post marker. Used in the date line of .story[data-kind="post"]
+   to visually distinguish a sourced tweet from a traditional article. */
+.src-kind {
+  display: inline-block;
+  font-size: 9.5px;
+  letter-spacing: 1px;
+  color: var(--accent-warm);
+  border: 1px solid var(--accent-warm);
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: 6px;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.85;
+}
+.src-kind::before {
+  content: "\1D54F";  /* Mathematical double-struck capital X, reads as the X/Twitter mark */
+  margin-right: 4px;
+  font-weight: 700;
+}
+.story[data-kind="post"] a.src::before {
+  content: "\1D54F";
+  margin-right: 6px;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
 .story h4 {
   font-family: var(--serif);
   font-size: 19px;
