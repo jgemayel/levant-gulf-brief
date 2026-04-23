@@ -97,6 +97,8 @@ Arabic-only and Kurdish-only local outlets are first-class sources, not aftertho
 ## Dashboard (PWA)
 The root `index.html` is a progressive web app called `Daily news roundup`. It renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file) and lists prior briefs as an archive. Companion files: `manifest.webmanifest`, `service-worker.js`, and `styles/brief.css` (shared stylesheet used by both the dashboard and every standalone brief page). The dashboard pulls today's brief dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, service worker, or shared stylesheet change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
 
+The dashboard has a `Posts` tab that consolidates X/Twitter extracts across the last ~10 briefs, grouped by handle (`@KurdistanWatch`, `@AMrym93884`, `@Bacharelhalabi`, `@Mikeknightsiraq`). The tab is populated automatically by scanning each recent brief for `.story[data-kind="post"]` entries whose `a.src` text matches one of the four handles. This means the Posts tab only stays useful if each run actually surfaces post extracts from the four handles, so on a typical day where any of them said something material, include at least one or two post entries so the consolidated view doesn't go stale.
+
 ## Publish (mandatory final step)
 Every run ends with a git commit and push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days.
 
