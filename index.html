@@ -266,7 +266,7 @@
 <div class="wrap">
   <header class="hero">
     <h1>Levant &amp; Gulf</h1>
-    <div class="dek">Syria, Iraq, Kuwait, and Kurdistan. Morning brief plus a rolling 24-hour X feed. Refreshed weekday mornings.</div>
+    <div class="dek">Two tracks. News covers Syria, Iraq, Kuwait, and Kurdistan every morning. X updates is a rolling 24-hour read of four handles, Kurdistan-weighted.</div>
   </header>
 
   <div id="home">
@@ -280,8 +280,8 @@
   </div>
 
   <div class="archive-section" id="posts">
-    <div class="section-label">X / Twitter posts · rolling 24h</div>
-    <div class="posts-intro" id="posts-intro">Rolling 24-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq. Refreshed on every scheduled run.</div>
+    <div class="section-label">X updates · rolling 24h</div>
+    <div class="posts-intro" id="posts-intro">Rolling 24-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq. Kurdistan-weighted, refreshed on every scheduled run.</div>
     <div id="posts-content">
       <div class="loading">Loading posts...</div>
     </div>
@@ -303,12 +303,12 @@
 <nav class="tabbar" aria-label="Primary">
   <div class="tabbar-inner">
     <button class="tab active" data-target="home" type="button">
-      <svg viewBox="0 0 24 24"><path d="M4 10l8-6 8 6v9a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1z"/></svg>
-      <span>Today</span>
+      <svg viewBox="0 0 24 24"><path d="M4 6h12a2 2 0 0 1 2 2v10a2 2 0 0 0 2-2V6M4 6v12a2 2 0 0 0 2 2h12M7 9h6M7 12h6M7 15h4"/></svg>
+      <span>News</span>
     </button>
     <button class="tab" data-target="posts" type="button">
       <svg viewBox="0 0 24 24"><path d="M5 4l6 8-6 8h3l4.5-6L17 20h3l-6.5-9L19 4h-3l-4 5.5L8 4z" fill="currentColor" stroke="none"/></svg>
-      <span>Posts</span>
+      <span>X updates</span>
     </button>
     <button class="tab" data-target="archive" type="button">
       <svg viewBox="0 0 24 24"><path d="M4 6h16M4 6v12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6M9 10h6"/></svg>
@@ -448,7 +448,7 @@ async function loadPosts() {
     const windowHours = feed.window_hours || 24;
     if (intro) {
       const when = formatGeneratedAt(feed.generated_at);
-      intro.textContent = `Rolling ${windowHours}-hour sweep of the four X handles. ${when ? 'Last refreshed ' + when + '.' : ''}`;
+      intro.textContent = `Rolling ${windowHours}-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq.${when ? ' Last refreshed ' + when + '.' : ''}`;
     }
 
     container.innerHTML = '';

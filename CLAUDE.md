@@ -24,12 +24,11 @@ Local layer, by country:
 - Iraq (federal): Reuters, AP, Al Jazeera, The National, Iraqi News, Shafaq News EN and AR, Al-Sabaah (official, translate from AR), Iraq Oil Report, Al-Monitor Iraq.
 - Kuwait: Kuwait News Agency (KUNA) EN and AR, Al-Qabas AR (translate), Al-Rai AR (translate), Kuwait Times, Arab Times, Times Kuwait, AGBI Kuwait, Arab News Kuwait, Gulf News Kuwait, Zawya Kuwait.
 - Kurdistan (KRG): Rudaw EN, AR, and Kurdish (translate AR and Kurdish), Kurdistan24, Shafaq News Kurdistan desk, KRG official (gov.krd) press service, Iraq Oil Report (KRG energy), The National KRG file, Al-Monitor Kurdistan. Cover government formation, cabinet decrees, fiscal and tax, Erbil-Baghdad budget transfers, power sector, oil and gas exports, banking, and major security or political news.
-- X / Twitter feeds (Iraq and KRG): sweep these four accounts on every run for Iraq and Kurdistan material. Treat them as first-class sources, not colour — they often break or clarify a story hours ahead of the wires, and Iraq security and KRG political context in particular lives on them.
+- X / Twitter feeds (Kurdistan-weighted): the four accounts below are swept separately and feed the `X updates` tab only, not the daily news brief. Output goes to `posts/latest.json` (see Posts feed section). They are not a source for wire-style stories inside the brief; the brief is pure news from the local, regional, and global sources above. If a post surfaces an underlying document or article, pick up that underlying source for the brief instead.
   - `x.com/KurdistanWatch`
   - `x.com/AMrym93884`
   - `x.com/Bacharelhalabi`
   - `x.com/Mikeknightsiraq`
-  Surface posts that introduce a genuinely new fact, flag a binding move ahead of the wires, or correct a wire read. Skip generic commentary and retweet chains. A quoted screenshot is a signal to verify against the underlying source; cite the underlying source in `a.src` if the post is just surfacing a document. When the post itself is the primary fact (analyst call, first-person reporting, official handle), cite the tweet URL directly.
 
 Global layer, applied to every run:
 - EU institutions: European Commission, Council of the EU, EEAS, European Parliament.
@@ -78,9 +77,9 @@ Write `briefs/YYYY-MM-DD.html` using the shared template. All briefs must use th
 - The most recent brief in `briefs/` (e.g. yesterday's file) is the canonical structural template. Copy it for the shell, then rewrite the content. If the prior brief looks like it predates the shared stylesheet (has inline `:root { --bg: #0f172a; ... }`, system-sans font, orange accents, or `<h2>` country headings), do not copy it. Fall further back or use the current day's sibling files as reference.
 - Favicon `../favicon.svg` and `../apple-touch-icon.png`
 - `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` markers
-- Four sections in order: Syria, Iraq, Kuwait, Kurdistan. No cap and no target on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams plus any headline-level major news, across articles and the named X / Twitter handles, including Arabic-only and Kurdish-only local outlets. Country section lengths will vary day to day based on what the news actually warrants — do not hold material back to preserve a uniform shape, and do not pad thin days just to bulk up a section. A day with 10+ items in one country and 2 in another is fine if that is what the news looks like.
+- Four sections in order: Syria, Iraq, Kuwait, Kurdistan. No cap and no target on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams plus any headline-level major news, sourced from articles and local Arabic-only and Kurdish-only outlets. Country section lengths will vary day to day based on what the news actually warrants — do not hold material back to preserve a uniform shape, and do not pad thin days just to bulk up a section. A day with 10+ items in one country and 2 in another is fine if that is what the news looks like.
 - Story IDs follow `syria-N`, `iraq-N`, `kuwait-N`, `kurdistan-N` where N runs 1 upward per country, as long as needed
-- X / Twitter posts are rendered as standard `.story` divs with two additions so they read as social, not wire. First, add `data-kind="post"` on the `<div class="story">` (this prepends an X mark before the source link). Second, append `<span class="src-kind">Post</span>` inside the `.date` span, right after the category tag and any `.lang` tag. The `a.src` text should read as the handle, e.g. `X / @KurdistanWatch`, and the href is the direct tweet URL. Headline is a concise framing of the post's core claim, summary is 1 to 2 sentences paraphrasing the substantive content. If the post is surfacing an underlying article or document, cite the underlying source in `a.src` instead and treat the story as a regular article.
+- X / Twitter posts do NOT go inline in the brief. The brief is pure news. X content is published separately via `posts/latest.json` and rendered in the dashboard's `X updates` tab. Do not add `data-kind="post"` stories to the brief.
 - `<title>` reads `Levant & Gulf Brief · [Month] [Day], [Year]`
 - Header meta line reads `[Weekday], [Month] [Day], [Year] · Syria · Iraq · Kuwait · Kurdistan`
 - `og:description` meta tag must list all four countries (Syria, Iraq, Kuwait, and Kurdistan). Do not copy the three-country description from older briefs.
@@ -95,9 +94,15 @@ When copying structure from the most recent prior brief, do not copy it blindly.
 Arabic-only and Kurdish-only local outlets are first-class sources, not afterthoughts. Sweep them on every run (SANA, Enab Baladi AR, BBC Arabic, Al Jazeera AR for Syria; Al-Sabaah, Shafaq AR for Iraq; Al-Qabas AR, Al-Rai AR, KUNA AR for Kuwait; Rudaw AR and Kurdish, Shafaq KRG, KRG gov.krd AR for Kurdistan). When the core fact is strongest in Arabic or Kurdish, lead with that source. Provide a translated English summary in the story body, mark the date tag with `<span class="lang">AR</span>` or `<span class="lang">KU</span>`, and append `Translated from [source].` at the end of the summary.
 
 ## Dashboard (PWA)
-The root `index.html` is a progressive web app called `Daily news roundup`. It renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file) and lists prior briefs as an archive. Companion files: `manifest.webmanifest`, `service-worker.js`, and `styles/brief.css` (shared stylesheet used by both the dashboard and every standalone brief page). The dashboard pulls today's brief dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, service worker, or shared stylesheet change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
+The root `index.html` is a progressive web app called `Daily news roundup` with two primary tabs plus an Archive and a Share action:
 
-The dashboard has a `Posts` tab backed by `posts/latest.json`. Every run must overwrite that file with a fresh rolling 24-hour sweep of the four X handles (`@KurdistanWatch`, `@AMrym93884`, `@Bacharelhalabi`, `@Mikeknightsiraq`), timestamped to the moment the sweep runs. This is independent of the daily brief: the Posts tab shows everything material these four handles posted in the previous 24 hours from scheduling time, not only the items that made it into the country briefs. Include every post with a concrete fact, call, or correction. Skip pure retweets, generic commentary, and reply chains. Schema:
+- `News` tab renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file in `briefs/`). Pure news, no X posts.
+- `X updates` tab renders `posts/latest.json`, a rolling 24-hour sweep of the four X handles. This is a separate artefact from the brief and lives in a separate file.
+- `Archive` lists prior briefs.
+
+Companion files: `manifest.webmanifest`, `service-worker.js`, and `styles/brief.css` (shared stylesheet used by both the dashboard and every standalone brief page). The dashboard pulls both today's brief and `posts/latest.json` dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, service worker, or shared stylesheet change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
+
+The `X updates` tab is backed entirely by `posts/latest.json`. Every run must overwrite that file with a fresh rolling 24-hour sweep of the four X handles (`@KurdistanWatch`, `@AMrym93884`, `@Bacharelhalabi`, `@Mikeknightsiraq`), timestamped to the moment the sweep runs. The tab is the only place X content surfaces in the app, Kurdistan-weighted by the nature of the handle list. Include every post with a concrete fact, call, or correction. Skip pure retweets, generic commentary, and reply chains. Schema:
 
 ```json
 {
@@ -122,7 +127,7 @@ Rules:
 - `posted_at` is the tweet's own timestamp. Only include posts where `now - posted_at <= 24h`.
 - `url` must resolve to the specific tweet, not the handle's homepage. If you could not capture the status URL, fall back to the handle URL but prefer re-sweeping.
 - An empty `posts` array is a valid outcome on a quiet 24 hours. Do not pad.
-- If a post is also surfaced as a story in the day's brief, it can appear in both. Duplication across the tab and the brief is fine.
+- X content goes in `posts/latest.json` only. Do not mirror posts into the brief as stories.
 - Commit `posts/latest.json` in the same push as the daily brief file.
 
 ## Publish (mandatory final step)
