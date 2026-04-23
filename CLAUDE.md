@@ -36,7 +36,7 @@ Global stories slot into the relevant country section, never a separate bucket.
 Only include stories published in the last 24 to 48 hours. Assume anything older was caught the day before. Do not reach back further just to pad a section. Light days are fine and preferable to stale content.
 
 ## De-duplication
-Every run must cross-check against the last 5 daily briefs before drafting. Use the GitHub contents API at `repos/jgemayel/levant-gulf-brief/contents/briefs` to list, fetch the five most recent dated files, and extract every `<h3>` headline between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->`. Refuse to publish any story whose core event is already in that set. If an event is still developing, only include it when there is a specifically new fact beyond what the prior brief already stated. When in doubt, skip rather than restate. This check is mandatory, not optional.
+Every run must cross-check against the last 5 daily briefs before drafting. Read the files directly from the local `briefs/` directory (the repo is already checked out at runtime) and extract every `<h3>` headline between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->`. If fewer than 5 dated briefs exist, check whatever is there. Refuse to publish any story whose core event is already in that set. If an event is still developing, only include it when there is a specifically new fact beyond what the prior brief already stated. When in doubt, skip rather than restate. This check is mandatory, not optional.
 
 ## High impact flag
 Be calculated. Flag a story `data-priority="high"` with the "High impact" badge only when it genuinely belongs there:
@@ -68,10 +68,15 @@ Write `briefs/YYYY-MM-DD.html` using the template established by prior briefs. R
 - `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` markers
 - Four sections in order: Syria, Iraq, Kuwait, Kurdistan. No hard cap on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams plus any headline-level major news, including items sourced from Arabic-only or Kurdish-only local outlets. Do not hold material back to preserve a uniform shape, and do not pad thin days just to bulk up a section.
 - Story IDs follow `syria-N`, `iraq-N`, `kuwait-N`, `kurdistan-N` where N runs 1 upward per country, as long as needed
+- `<title>` reads `Levant & Gulf Brief · [Month] [Day], [Year]`
 - Header meta line reads `[Weekday], [Month] [Day], [Year] · Syria · Iraq · Kuwait · Kurdistan`
+- `og:description` meta tag must list all four countries (Syria, Iraq, Kuwait, and Kurdistan). Do not copy the three-country description from older briefs.
 - Share button on each story using source URL
 - Top back-to-dashboard pill + bottom nav + footer
 - Footer text reads exactly `Daily news roundup. Refreshed weekday mornings.`
+
+### Starting from a prior template
+When copying CSS and structure from the most recent prior brief, do not copy it blindly. Earlier briefs may still use a three-section (Syria / Iraq / Kuwait) shape, a three-country meta line, or a three-country `og:description`. Today's brief must always have four sections and the four-country strings above, regardless of what the last file looked like.
 
 ## Local Arabic and Kurdish coverage
 Arabic-only and Kurdish-only local outlets are first-class sources, not afterthoughts. Sweep them on every run (SANA, Enab Baladi AR, BBC Arabic, Al Jazeera AR for Syria; Al-Sabaah, Shafaq AR for Iraq; Al-Qabas AR, Al-Rai AR, KUNA AR for Kuwait; Rudaw AR and Kurdish, Shafaq KRG, KRG gov.krd AR for Kurdistan). When the core fact is strongest in Arabic or Kurdish, lead with that source. Provide a translated English summary in the story body, mark the date tag with `<span class="lang">AR</span>` or `<span class="lang">KU</span>`, and append `Translated from [source].` at the end of the summary.
@@ -80,6 +85,22 @@ Arabic-only and Kurdish-only local outlets are first-class sources, not aftertho
 The root `index.html` is a progressive web app called `Daily news roundup`. It renders today's brief inline (parsing between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` from the latest dated file) and lists prior briefs as an archive. Companion files: `manifest.webmanifest`, `service-worker.js`. The dashboard pulls today's brief dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, or service worker change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
 
 ## Publish (mandatory final step)
-Every run ends with a GitHub push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days.
+Every run ends with a git commit and push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days.
 
-PUT to `https://api.github.com/repos/jgemayel/levant-gulf-brief/contents/briefs/YYYY-MM-DD.html` with the GitHub token. If the file exists, include its SHA; if new, omit SHA. Commit message `Daily brief YYYY-MM-DD`. Confirm the PUT response contains a `commit.sha` before declaring the run done. On failure, retry with a fresh SHA fetch. No index.html edits needed; the dashboard pulls today's brief dynamically.
+Preferred path (the working directory is always a local clone of the repo):
+```
+git add briefs/YYYY-MM-DD.html
+git commit -m "Daily brief YYYY-MM-DD"
+git push origin main
+```
+Confirm `git push` prints a new commit range on `main` before declaring the run done. If push fails, run `git pull --rebase origin main` and retry; do not exit the run on a failed push.
+
+Fallback path (only if the working directory is not a git checkout): PUT to `https://api.github.com/repos/jgemayel/levant-gulf-brief/contents/briefs/YYYY-MM-DD.html` with the GitHub token. If the file exists, include its SHA; if new, omit SHA. Commit message `Daily brief YYYY-MM-DD`. Confirm the PUT response contains a `commit.sha`.
+
+No `index.html` edits needed; the dashboard pulls today's brief dynamically.
+
+## Runtime discipline
+The scheduled task has a single responsibility: get the brief written and pushed. A few things that will silently eat a run if ignored:
+- Web research tools (WebSearch, WebFetch) may be exposed as deferred tools that need schema loading via ToolSearch. Load them in the first turn, then move straight into the sweep. Do not pause mid-run to explore tooling.
+- If a prior run's brief is missing (e.g. the last scheduled fire stopped early), do not assume "yesterday" is today. Always drive the filename from `date +%F` in the working shell, not from the latest file in `briefs/`.
+- Do not finish the run with uncommitted files in the working tree. Always verify with `git status` that the working tree is clean after the push. If the scheduled task was interrupted and files are staged or modified, complete the push before starting fresh research.
