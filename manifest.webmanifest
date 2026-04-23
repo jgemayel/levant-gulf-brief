@@ -1,7 +1,7 @@
 {
   "name": "Daily news roundup",
   "short_name": "Roundup",
-  "description": "Daily morning briefing on Syria, Iraq, and Kuwait.",
+  "description": "Daily morning briefing on Syria, Iraq, Kuwait, and Kurdistan.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

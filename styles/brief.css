@@ -1,0 +1,357 @@
+/* Shared stylesheet for the Daily news roundup PWA.
+   Loaded by the dashboard (index.html) and every standalone brief in briefs/.
+   Standalone briefs add `class="is-archive"` on <body> once they become archive
+   pages so users can tell at a glance that they are not reading today's brief. */
+
+:root {
+  --bg: #0b0d12;
+  --surface: #12151c;
+  --text: #e8ebf1;
+  --muted: #8b92a3;
+  --soft: #2a2f3a;
+  --line: #1d2029;
+  --accent: #e8ebf1;
+  --accent-warm: #d4a574;
+  --critical: #ef4444;
+  --rule: rgba(232, 235, 241, 0.08);
+  --chrome: rgba(11, 13, 18, 0.82);
+  --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --tab-height: 58px;
+}
+
+/* Archive variant. Slightly warmer background so a standalone archive page
+   reads as "not today" without fighting the main design language. */
+body.is-archive {
+  --bg: #0d0f15;
+  --chrome: rgba(13, 15, 21, 0.82);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* ============================================================
+   Standalone brief page chrome (back link, hero, ribbon, footer)
+   ============================================================ */
+
+.brief-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 28px 22px 48px;
+}
+
+.appbar-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 0;
+  margin-bottom: 14px;
+  transition: color 0.15s;
+}
+.appbar-back:hover { color: var(--text); }
+.appbar-back .arrow { font-size: 14px; line-height: 1; }
+
+.archive-ribbon {
+  display: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding: 6px 10px;
+  border: 1px solid var(--soft);
+  border-left: 2px solid var(--accent-warm);
+  border-radius: 3px;
+  background: transparent;
+}
+body.is-archive .archive-ribbon { display: block; }
+
+.brief-hero {
+  padding-bottom: 26px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+.brief-hero .eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.brief-hero h1 {
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  line-height: 1.08;
+}
+.brief-hero .meta {
+  margin-top: 10px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.brief-footer {
+  margin-top: 44px;
+  padding-top: 22px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 11.5px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.bottom-nav {
+  margin-top: 32px;
+  display: flex;
+  gap: 10px;
+}
+.bottom-nav a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
+  padding: 12px 14px;
+  border: 1px solid var(--soft);
+  border-radius: 8px;
+  transition: border-color 0.15s, color 0.15s;
+}
+.bottom-nav a:hover { border-color: var(--text); }
+
+/* ============================================================
+   Shared content blocks (country section, story, relevance)
+   These render identically inside the dashboard and on a brief page.
+   ============================================================ */
+
+section.country { margin-bottom: 36px; }
+section.country + section.country { margin-top: 8px; }
+section.country h3 {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section.country h3::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.3;
+}
+
+.story {
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+  position: relative;
+  scroll-margin-top: 16px;
+}
+.story:first-of-type { border-top: none; padding-top: 6px; }
+.story[data-priority="high"]::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 22px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--critical);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.story-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+.story-meta { flex: 1; min-width: 0; }
+
+.story .date {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+.story .lang {
+  display: inline-block;
+  font-size: 9.5px;
+  letter-spacing: 0.5px;
+  background: transparent;
+  color: var(--muted);
+  padding: 1px 5px;
+  border: 1px solid var(--soft);
+  border-radius: 3px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+.priority-flag {
+  display: inline-block;
+  color: var(--critical);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+.story h4 {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+  margin-bottom: 8px;
+}
+.story p {
+  font-size: 14.5px;
+  color: #c3c8d4;
+  line-height: 1.6;
+}
+.story a.src {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--soft);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.story a.src:hover { color: var(--text); border-color: var(--text); }
+
+.relevance {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dotted var(--soft);
+}
+.rel-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+.rel-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 7px;
+}
+.rel-item:last-child { margin-bottom: 0; }
+.rel-chip {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--soft);
+  color: var(--text);
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 10.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 1.55;
+}
+.rel-note {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.share-btn {
+  flex-shrink: 0;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--soft);
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.share-btn:hover, .share-btn:active {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--text);
+  color: var(--bg);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 100;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #15171c;
+    --muted: #6b7280;
+    --soft: #d8d5cd;
+    --line: #e8e5dd;
+    --accent: #15171c;
+    --accent-warm: #b15c1c;
+    --rule: rgba(21, 23, 28, 0.12);
+    --chrome: rgba(251, 250, 247, 0.82);
+  }
+  body.is-archive {
+    --bg: #f4f1ea;
+    --chrome: rgba(244, 241, 234, 0.82);
+  }
+  .story p { color: #3d4149; }
+}

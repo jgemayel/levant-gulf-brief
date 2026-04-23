@@ -1,10 +1,11 @@
-const CACHE = 'lg-roundup-v3';
+const CACHE = 'lg-roundup-v4';
 const SHELL = [
   './',
   './index.html',
   './favicon.svg',
   './apple-touch-icon.png',
-  './manifest.webmanifest'
+  './manifest.webmanifest',
+  './styles/brief.css'
 ];
 
 self.addEventListener('install', (event) => {
