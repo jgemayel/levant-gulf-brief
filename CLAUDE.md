@@ -29,6 +29,7 @@ Local layer, by country:
   - `x.com/AMrym93884`
   - `x.com/Bacharelhalabi`
   - `x.com/Mikeknightsiraq`
+  Scope for the sweep: originals, quote tweets, and retweets are all in scope. A retweet counts when the account is signal-boosting something material the reader would want surfaced, a quote tweet counts when the commentary itself adds signal, and an original counts when it introduces a new fact, call, or correction. No per-handle cap and no target. A quiet handle can contribute zero, a noisy one can contribute ten. Pull every material item from the last 24 hours from the sweep time. For retweets, cite the original tweet URL in `url` and put the retweeter's handle in the `handle` field; optionally note "RT of @handle" inside `category` so the reader sees the routing. For quote tweets, cite the quote tweet URL and let the summary explain both the underlying claim and the retweeter's added angle.
 
 Global layer, applied to every run:
 - EU institutions: European Commission, Council of the EU, EEAS, European Parliament.
@@ -102,7 +103,7 @@ The root `index.html` is a progressive web app called `Daily news roundup` with 
 
 Companion files: `manifest.webmanifest`, `service-worker.js`, and `styles/brief.css` (shared stylesheet used by both the dashboard and every standalone brief page). The dashboard pulls both today's brief and `posts/latest.json` dynamically, so no `index.html` edits are needed per run. If the dashboard chrome, manifest, service worker, or shared stylesheet change, bump the `CACHE` constant in `service-worker.js` to force a clean install for existing users.
 
-The `X updates` tab is backed entirely by `posts/latest.json`. Every run must overwrite that file with a fresh rolling 24-hour sweep of the four X handles (`@KurdistanWatch`, `@AMrym93884`, `@Bacharelhalabi`, `@Mikeknightsiraq`), timestamped to the moment the sweep runs. The tab is the only place X content surfaces in the app, Kurdistan-weighted by the nature of the handle list. Include every post with a concrete fact, call, or correction. Skip pure retweets, generic commentary, and reply chains. Schema:
+The `X updates` tab is backed entirely by `posts/latest.json`. Every run must overwrite that file with a fresh rolling 24-hour sweep of the four X handles (`@KurdistanWatch`, `@AMrym93884`, `@Bacharelhalabi`, `@Mikeknightsiraq`), timestamped to the moment the sweep runs. The tab is the only place X content surfaces in the app, Kurdistan-weighted by the nature of the handle list. Include every material item from the last 24 hours with no cap and no target per handle. Originals, quote tweets, and relevant retweets are all in scope. Skip generic commentary, reply chains, and retweets that are pure boosterism. A busy handle can produce ten entries, a quiet one zero. Schema:
 
 ```json
 {
