@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0f172a">
+<title>Levant &amp; Gulf Brief · April 23, 2026</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:title" content="Levant & Gulf Brief · April 23, 2026">
+<meta property="og:description" content="Daily morning briefing on Syria, Iraq, Kuwait, and Kurdistan policy, economy, and government news.">
+<meta property="og:type" content="article">
+<style>
+  :root {
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-2: #334155;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --accent: #f59e0b;
+    --border: #334155;
+    --critical: #ef4444;
+    --critical-tint: rgba(239, 68, 68, 0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 18px 80px;
+  }
+  .nav-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  .nav-back:hover, .nav-back:active {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .nav-back .arrow {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .bottom-nav {
+    margin-top: 28px;
+    display: flex;
+    gap: 10px;
+  }
+  .bottom-nav a {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--bg);
+    background: var(--accent);
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 12px;
+    min-height: 48px;
+    box-sizing: border-box;
+  }
+  .bottom-nav a.secondary {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  header {
+    padding: 6px 0 22px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 22px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: -0.5px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  section { margin-bottom: 28px; }
+  h2 {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .story {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    position: relative;
+    scroll-margin-top: 16px;
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+  }
+  .story:target {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.25);
+  }
+  .story[data-priority="high"] {
+    border-left: 4px solid var(--critical);
+    background: linear-gradient(to right, var(--critical-tint), var(--surface) 60%);
+  }
+  .priority-flag {
+    display: inline-block;
+    background: var(--critical);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+    vertical-align: 1px;
+  }
+  .story-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .story-meta { flex: 1; min-width: 0; }
+  .story .date {
+    font-size: 11.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .story .lang {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    background: var(--surface-2);
+    color: var(--muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    text-transform: uppercase;
+  }
+  .story h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    line-height: 1.35;
+  }
+  .story p {
+    font-size: 14.5px;
+    color: #cbd5e1;
+  }
+  .story a.src {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 8px;
+  }
+  .story a.src:hover { text-decoration: underline; }
+  .relevance {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border);
+  }
+  .rel-label {
+    font-size: 10.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .rel-item {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  .rel-item:last-child { margin-bottom: 0; }
+  .rel-chip {
+    flex-shrink: 0;
+    background: rgba(245, 158, 11, 0.16);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11.5px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+  .rel-note {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  @media (prefers-color-scheme: light) {
+    .rel-chip { background: rgba(180, 83, 9, 0.12); }
+  }
+  .share-btn {
+    flex-shrink: 0;
+    background: var(--surface-2);
+    color: var(--text);
+    border: none;
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.15s;
+  }
+  .share-btn:hover, .share-btn:active { background: var(--accent); color: #0f172a; }
+  .share-btn:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+  footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--accent);
+    color: #0f172a;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 100;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fafaf9;
+      --surface: #ffffff;
+      --surface-2: #f1f5f9;
+      --text: #1e293b;
+      --muted: #64748b;
+      --accent: #b45309;
+      --border: #e2e8f0;
+    }
+    .story p { color: #475569; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="../index.html" class="nav-back"><span class="arrow">&larr;</span> Back to dashboard</a>
+  <header>
+    <div class="eyebrow">Morning Brief</div>
+    <h1>Levant &amp; Gulf</h1>
+    <div class="meta">Thursday, April 23, 2026 · Syria · Iraq · Kuwait · Kurdistan</div>
+  </header>
+
+  <!-- BRIEF_START -->
+  <section>
+    <h2>Syria</h2>
+    <div class="story" id="syria-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Gulf Diplomacy</span>
+          <h3>Sharaa lands in Abu Dhabi, summit with MBZ centres on investment pipeline and joint Iran posture</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>President Ahmad al-Sharaa arrived in Abu Dhabi on the final leg of his Gulf tour and met UAE President Sheikh Mohamed bin Zayed, with talks focused on scaling up bilateral investment and development flows. Sharaa reiterated Syria's condemnation of Iranian strikes on UAE and regional infrastructure, cementing a shared security framing that tees up concrete UAE corporate and sovereign capital pledges in the coming weeks.</p>
+      <a class="src" href="https://www.thenationalnews.com/news/uae/2026/04/22/syrian-president-al-shara-arrives-in-abu-dhabi-to-strengthen-uae-ties/" target="_blank" rel="noopener">The National</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">UAE capital channel adds a third GCC dollar-clearing corridor alongside the Saudi and Qatari tracks set this week, hardening the post-sanctions counterparty base.</span></div>
+        <div class="rel-item"><span class="rel-chip">Capital markets</span><span class="rel-note">Abu Dhabi sovereign funds become a realistic anchor for infrastructure vehicles and any near-term Syrian sovereign book, expanding the GCC demand pool.</span></div>
+      </div>
+    </div>
+    <div class="story" id="syria-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · EU Policy<span class="lang">AR</span></span>
+          <h3>Enab Baladi reviews EU document that pairs cooperation revival with a redesigned targeted-sanctions regime</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>A Reuters-reviewed EU internal document details the political and economic roadmap behind the Commission's April 20 cooperation proposal, including a redesigned targeted-sanctions regime that preserves leverage over spoilers while freeing the economic track. The document locks in May 11 as the inaugural EU-Syria High Level Political Dialogue and sequences grant disbursement against governance benchmarks. Translated from Enab Baladi Arabic.</p>
+      <a class="src" href="https://www.enabbaladi.net/archives/2026/04/document-outlines-eu-political-and-economic-steps-in-syria/" target="_blank" rel="noopener">Enab Baladi (Arabic)</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">Targeted-sanctions redesign narrows residual compliance risk for EU correspondents engaging CBS, lifting a critical blocker for euro-clearing reconnection.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Governance-linked disbursement framework sets the conditionality that Syrian banks will be measured against in any EIB or EBRD line negotiation.</span></div>
+      </div>
+    </div>
+    <div class="story" id="syria-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Multilaterals</span>
+          <h3>World Bank confirms 1bn dollar grant portfolio for Syria across ten projects over three years</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Wrapping the Washington Spring Meetings track, Syrian officials confirmed a locked-in 1 billion dollar grant portfolio across ten World Bank projects covering public financial management, electricity, water, and social protection for 2026 through 2028. The pipeline builds on the 20 million dollar PFM grant signed in March and is the first multi-year commitment since 2011.</p>
+      <a class="src" href="https://www.thenationalnews.com/news/us/2026/04/21/syria-hopes-last-milestone-for-global-financial-reconnection-is-within-reach/" target="_blank" rel="noopener">The National</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">PFM and public financial management reforms flow through the CBS-MoF operating interface and set the baseline for monetary-fiscal coordination.</span></div>
+        <div class="rel-item"><span class="rel-chip">Capital markets</span><span class="rel-note">Three-year IFI envelope de-risks the path to a sovereign curve and crowds in private lenders around the project pipeline.</span></div>
+      </div>
+    </div>
+    <div class="story" id="syria-4">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 23, 2026 · Foreign Affairs<span class="lang">AR</span></span>
+          <h3>Al-Shaibani closes Gulf tour, signals follow-up economic delegations to Riyadh, Doha, and Abu Dhabi</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Foreign Minister Asaad al-Shaibani said the four-capital tour produced an agreed mechanism for rolling economic delegations to Riyadh, Doha, and Abu Dhabi over the coming six weeks, with Finance and Economy ministries leading. He framed fraternal ties and joint Iran-risk management as the organising principle, and flagged a planned Kuwait leg in early May. Translated from SANA Arabic.</p>
+      <a class="src" href="https://sana.sy/?p=2312308" target="_blank" rel="noopener">SANA (Arabic)</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Follow-up delegations will determine whether GCC capital pledges convert into correspondent-banking line approvals rather than MoUs.</span></div>
+        <div class="rel-item"><span class="rel-chip">Insurance</span><span class="rel-note">Gulf-led commercial delegations are the most realistic near-term buy side for the reopened private insurance licensing window.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Iraq</h2>
+    <div class="story" id="iraq-1" data-priority="high">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Government<span class="priority-flag">High impact</span></span>
+          <h3>Coordination Framework postpones PM decision again, three days left on April 26 constitutional clock</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The Coordination Framework again postponed its PM nomination on Wednesday, with Secretary General Abbas Radi al-Amiri confirming further consultations are needed before a final pick, leaving Sudani, Bassem al-Badri, and Ihsan al-Awadi all still in frame. Under Article 76, President Nizar Amedi must task the largest bloc's nominee within 15 days of his April 11 election, putting the hard deadline on Sunday April 26 and raising the odds of a caretaker extension or a constitutional challenge.</p>
+      <a class="src" href="https://www.aljazeera.com/news/2026/4/22/will-iraqs-shia-bloc-overcome-obstacles-to-pick-the-next-pm" target="_blank" rel="noopener">Al Jazeera</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">Any post-deadline caretaker extension locks the reform agenda in limbo and keeps the 2026 budget and non-oil revenue package in the drawer.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">Missing the constitutional clock concentrates emergency borrowing and capex deferral decisions in caretaker hands, raising execution risk on the salary and pension bill.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Oliver Wyman private-bank restructuring and the 400bn dinar capital floor remain without legislative cover until a confirmed cabinet clears the path.</span></div>
+        <div class="rel-item"><span class="rel-chip">Central Bank</span><span class="rel-note">Prolonged political vacuum delays the monetary-fiscal coordination law and stalls CBI-led confirmations on senior appointments.</span></div>
+        <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">Contract authority on Development Road and southern ports stays frozen in the absence of a confirmed PM able to sign off on large tenders.</span></div>
+      </div>
+    </div>
+    <div class="story" id="iraq-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 21, 2026 · Mega Projects</span>
+          <h3>Iraqi cabinet approves Basra-Haditha crude pipeline tender with Baniyas and Aqaba branches under study</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>At its weekly Tuesday session the cabinet approved a multi-billion dollar tender for an 800-kilometre crude pipeline from Basra to Haditha, with technical work for extensions to Syria's Baniyas and Jordan's Aqaba moving forward. The oil ministry will issue international bid documents in the coming weeks and has framed the route as the most feasible non-Hormuz export lane, tested against the 1980s and 2022 Aqaba plans that stalled on financing.</p>
+      <a class="src" href="https://www.agbi.com/oil-and-gas/2026/04/iraq-to-seek-oil-pipeline-bids-as-it-reels-from-hormuz-closure/" target="_blank" rel="noopener">AGBI</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">First binding tender on a non-Hormuz crude export lane in decades, reshaping the project pipeline and the contractor shortlist for 2026-27.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">Export-lane diversification is the upstream lever for a durable non-oil revenue stabilisation, because fiscal receipts track export throughput one-for-one.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">Financing structure on a project this size sets the template for the next wave of sovereign-guaranteed infrastructure paper.</span></div>
+      </div>
+    </div>
+    <div class="story" id="iraq-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Oil Exports</span>
+          <h3>Kirkuk-Ceyhan flow stabilises near 250,000 bpd, North Oil Co rehabs parallel line for additional capacity</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Iraq's state-run North Oil Company said crude pumped to Ceyhan is stable around 250,000 bpd and that rehabilitation work has started on the parallel pipeline, targeting combined throughput of 400,000 to 500,000 bpd by late Q3. The Ceyhan route remains Iraq's only operational seaborne channel while the Hormuz blockade persists and the Turkey pipeline contract expires in July.</p>
+      <a class="src" href="https://www.thenationalnews.com/business/energy/2026/03/18/iraq-to-resume-oil-exports-via-turkeys-ceyhan-port-amid-regional-tensions/" target="_blank" rel="noopener">The National</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal reforms</span><span class="rel-note">Every incremental 100k bpd through Ceyhan is roughly 3bn dollars of annualised revenue at current prices, directly easing the 9.5bn dollar funding gap.</span></div>
+        <div class="rel-item"><span class="rel-chip">Mega projects</span><span class="rel-note">Pipeline contract renewal with Turkey in July becomes the binding negotiation, with the KRI oil framework layered on top.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kuwait</h2>
+    <div class="story" id="kuwait-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Diplomacy</span>
+          <h3>MBS and Emir Mishal call labels Iran strikes a "dangerous escalation," aligns on accelerated air defence coordination</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Saudi Crown Prince Mohammed bin Salman and Emir Mishal al-Ahmad al-Jaber al-Sabah spoke directly on Wednesday and characterised continuing Iranian attacks on GCC states as a "dangerous escalation," agreeing to accelerate integrated air and missile defence coordination. The call follows the Arab League emergency session and sets up a Gulf-level procurement and interoperability track that will land as a live fiscal line in the supplementary appropriation under review at MoF.</p>
+      <a class="src" href="https://www.arabnews.pk/node/2636950/saudi-arabia" target="_blank" rel="noopener">Arab News</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Government</span><span class="rel-note">Bilateral commitment crystallises a cross-GCC procurement agenda that recasts Kuwait's defence and interior lines for the 2026-27 execution.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal agenda (MoF)</span><span class="rel-note">Accelerated air and missile defence feeds directly into the supplementary appropriation scope and tightens the financing math already under review.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kuwait-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Oil Logistics</span>
+          <h3>Hormuz records partial restart, eight ships including three tankers transit Wednesday as IRGC keeps conditional closure</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Tracking data showed eight vessels, three of them crude tankers, transiting the Strait of Hormuz on Wednesday, the first material flow since the April 18 closure, though still orders of magnitude below the pre-war 100-plus daily average. The IRGC reiterated that passage remains contingent on the US lifting its naval blockade of Iranian ports, leaving Kuwait Petroleum's force majeure intact and pausing any meaningful recovery in KPC volumes.</p>
+      <a class="src" href="https://www.cnbc.com/2026/04/22/iran-war-strait-hormuz-tanker-ship-trump-blockade.html" target="_blank" rel="noopener">CNBC</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal agenda (MoF)</span><span class="rel-note">Symbolic reopening without volume recovery keeps the oil revenue line impaired and does not retire the 2.1bn dinar shortfall behind the supplementary law.</span></div>
+        <div class="rel-item"><span class="rel-chip">Sovereign fund</span><span class="rel-note">Partial thaw does not reverse the KIA drawdown conversation and leaves the GRF liquidity question squarely on the cabinet table.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic Agenda</span><span class="rel-note">Conditional passage regime signals a structural premium on Gulf trade logistics and hardens the case for the non-oil resilience pillar.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kuwait-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Housing Policy</span>
+          <h3>Ministerial Decree 6 of 2026 tightens housing welfare eligibility as PAHW recalibrates under fiscal squeeze</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The Minister of State for Municipal and Housing Affairs issued Ministerial Decree 6 of 2026 tightening eligibility for government-provided rented housing, barring applicants whose spouse owns suitable property or who have previously benefitted from state housing assistance. The decree runs in parallel to the Public Authority for Housing Welfare accelerating the South Saad Al-Abdullah contractor track and is the first formal eligibility rewrite since the 2025 law amendments.</p>
+      <a class="src" href="https://kuwaittimes.com/article/42230/kuwait/other-news/kuwait-amends-housing-rules-to-tighten-eligibility/" target="_blank" rel="noopener">Kuwait Times</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Public housing &amp; welfare</span><span class="rel-note">Tighter eligibility recalibrates the demand curve for housing welfare and reshapes the pipeline that feeds the PAHW tender book.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal agenda (MoF)</span><span class="rel-note">Directly compresses future housing welfare outlays and signals the kind of subsidy-scope review the supplementary law cycle will normalise.</span></div>
+        <div class="rel-item"><span class="rel-chip">Municipality</span><span class="rel-note">Implementation and verification load lands with Municipality and housing authority field teams, with knock-on effects on processing capacity.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kuwait-4">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Energy Bodies</span>
+          <h3>OPEC+ pencils May 3 monthly review as Kuwait and Iraq shut-ins make quotas largely academic</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The eight OPEC+ voluntary-cut countries confirmed May 3 for the next monthly review, following the April 5 decision to unwind 206,000 bpd of voluntary cuts from May. With Kuwait under force majeure and Iraq shut in at Basra, actual supply is tracking well below quota, making the May meeting more about a reopening sequence than new allocations. Brent is sitting near 120 dollars a barrel, a four-year high.</p>
+      <a class="src" href="https://www.agbi.com/oil-and-gas/2026/04/opec-likely-to-weigh-further-oil-output-hike/" target="_blank" rel="noopener">AGBI</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal agenda (MoF)</span><span class="rel-note">Any quota reset determines Kuwait's ceiling on the other side of the blockade and feeds straight into the 2026-27 budget revision assumptions.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic Agenda</span><span class="rel-note">Shut-in realities push the non-oil resilience agenda forward and reshape the energy-corridor investment case.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kurdistan</h2>
+    <div class="story" id="kurdistan-1">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · KRG Fiscal</span>
+          <h3>KRG submits audited April salary list to Baghdad, says technical obstacles cleared ahead of federal transfer</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The KRG spokesperson confirmed the audited list of public sector salaries for April, covering roughly 1.2 million employees, has been formally lodged with the Federal Ministry of Finance, and that the remaining technical obstacles flagged earlier this month have been resolved. The submission activates the Federal Supreme Court mechanism requiring disbursement through federal banks, with the 400 million dollar local bridge line sized to cover the timing gap if Baghdad misses its window.</p>
+      <a class="src" href="https://www.kurdistan24.net/en/story/909465" target="_blank" rel="noopener">Kurdistan24</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Fiscal &amp; tax</span><span class="rel-note">First clean audited submission since the Federal Court ruling resets the salary mechanics and tees up a cleaner April-May transfer cadence.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">Bridge facility mandate and federal-bank routing reshape the dinar liquidity map and the fee opportunity set for Kurdistan-based banks.</span></div>
+        <div class="rel-item"><span class="rel-chip">Government</span><span class="rel-note">Erbil ticks the procedural boxes for April and puts the delivery ball squarely in Baghdad's court, a useful signal ahead of the PM transition.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kurdistan-2">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Oil &amp; Gas</span>
+          <h3>KRI oil feeding Ceyhan stream holds near 200,000 bpd, SOMO marketing window extends through Q2</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Kurdistan Region crude exports via the Iraq-Turkey pipeline are tracking near 200,000 bpd, feeding the combined Ceyhan flow alongside Kirkuk volumes, with SOMO marketing the barrels under the joint framework agreed in March. The KRG Ministry of Natural Resources said the Q2 window has been extended in line with the federal export drive, preserving the operating architecture ahead of the mid-year Turkey pipeline contract renewal.</p>
+      <a class="src" href="https://www.kurdistan24.net/en/story/882615/kurdistan-region-oil-exports-top-200000-barrels-a-day-as-baghdad-confirms-agreement-renewal" target="_blank" rel="noopener">Kurdistan24</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Oil &amp; gas</span><span class="rel-note">Extension through Q2 locks in a predictable revenue runway for the KRI producers and the federal oil envelope ahead of the Turkey pipeline talks.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal &amp; tax</span><span class="rel-note">Steady SOMO-routed receipts feed the KRG revenue base and compress the headline gap that the federal salary transfer is designed to bridge.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kurdistan-3">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Power Sector</span>
+          <h3>Runaki coverage hits 4 million residents, ministry reports 80 percent average bill reduction across Phase 1 districts</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>The KRG Ministry of Electricity said the Runaki 24-hour power programme now covers around 4 million residents across the Erbil, Sulaimani, Duhok, and Halabja centres, with February billing data showing the median household paid under 36,000 dinars, an 80 percent drop on pre-Runaki levels. The ministry confirmed the rollout stays on track for full regional coverage by year-end, with the next phase focused on district towns and IDP-heavy camps.</p>
+      <a class="src" href="https://www.kurdistan24.net/en/story/867292/a-promise-delivered-pm-barzanis-vision-of-24-hour-electricity-turns-into-reality" target="_blank" rel="noopener">Kurdistan24</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Power sector</span><span class="rel-note">Tangible coverage and bill-reduction proof points strengthen the case for the next IPP award wave and for private-sector grid financing.</span></div>
+        <div class="rel-item"><span class="rel-chip">Economic reforms</span><span class="rel-note">Reliable grid is the binding constraint for manufacturing, logistics, and data-centre FDI, and a successful rollout unlocks the non-oil diversification agenda.</span></div>
+      </div>
+    </div>
+    <div class="story" id="kurdistan-4">
+      <div class="story-head">
+        <div class="story-meta">
+          <span class="date">Apr 22, 2026 · Government</span>
+          <h3>Talabani signals KDP-PUK alignment on a first formal Kurdistan budget law in over a decade</h3>
+        </div>
+        <button class="share-btn" aria-label="Share story" data-share>&#x21AA;</button>
+      </div>
+      <p>Deputy Prime Minister Qubad Talabani told local outlets the KDP and PUK are close to aligning on a draft Kurdistan budget law for 2026, which would be the region's first formal budget instrument since 2013. The draft codifies audit and revenue-sharing rules that map onto the Federal Court salary framework and is being written in parallel with the federal 2026 budget track in Baghdad.</p>
+      <a class="src" href="https://peregraf.com/en/news/8500" target="_blank" rel="noopener">Peregraf</a>
+      <div class="relevance">
+        <span class="rel-label">Relevant projects / opportunities</span>
+        <div class="rel-item"><span class="rel-chip">Government</span><span class="rel-note">First full KRG budget law in more than a decade rewires cabinet accountability and sets the institutional baseline for the next Erbil-Baghdad cycle.</span></div>
+        <div class="rel-item"><span class="rel-chip">Fiscal &amp; tax</span><span class="rel-note">Codified revenue-sharing and audit rules are the precondition for any durable federal transfer regime and for a post-oil non-oil tax effort in KRI.</span></div>
+        <div class="rel-item"><span class="rel-chip">Banking sector</span><span class="rel-note">A formal budget anchor reshapes the banking counterparty map for KRG and provincial accounts, supporting the banking sector reform agenda.</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- BRIEF_END -->
+
+  <div class="bottom-nav">
+    <a href="../index.html"><span class="arrow">&larr;</span> Dashboard</a>
+    <a href="#" class="secondary" id="top-link">Top of page</a>
+  </div>
+
+  <footer>
+    Daily news roundup. Refreshed weekday mornings.
+  </footer>
+</div>
+
+<div class="toast" id="toast">Link copied</div>
+
+<script>
+  const toast = document.getElementById('toast');
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  }
+  document.querySelectorAll('[data-share]').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      const story = e.target.closest('.story');
+      const headline = story.querySelector('h3').innerText;
+      const summary = story.querySelector('p').innerText;
+      const src = story.querySelector('a.src');
+      const sourceUrl = src ? src.href : '';
+      const sourceName = src ? src.innerText : '';
+      const parts = [headline, '', summary];
+      if (sourceName) parts.push('', 'Via ' + sourceName);
+      if (sourceUrl) parts.push(sourceUrl);
+      const text = parts.join('\n');
+      const data = { title: headline, text: text };
+      if (sourceUrl) data.url = sourceUrl;
+      if (navigator.share) {
+        try { await navigator.share(data); } catch(err) {}
+      } else if (navigator.clipboard) {
+        try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
+      } else {
+        prompt('Copy this:', text);
+      }
+    });
+  });
+
+  const topLink = document.getElementById('top-link');
+  if (topLink) {
+    topLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+</script>
+</body>
+</html>
