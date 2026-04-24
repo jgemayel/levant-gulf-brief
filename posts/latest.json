@@ -1,211 +1,208 @@
 {
-  "generated_at": "2026-04-23T17:34:33Z",
+  "generated_at": "2026-04-24T05:02:37Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-04-23T14:21:03Z",
-      "category": "KRG Politics",
-      "headline": "Sherwani hunger strike timed to coincide with Lahur Sheikh Jangi protest, framed as demand for equal legal treatment",
-      "summary": "Reads imprisoned journalist Sherwan Sherwani's new hunger strike as a deliberate signal, timing it with Kurdish journalism day and the parallel Lahur Sheikh Jangi action to pressure PUK and KRG institutions toward a consistent rule-of-law standard.",
-      "url": "https://x.com/KurdistanWatch/status/2047319848791736323"
+      "posted_at": "2026-04-23T22:17:35Z",
+      "category": "Rule of Law",
+      "headline": "DOJ files civil forfeiture to seize Mansour Barzani's 30 million dollar Beverly Hills mansion",
+      "summary": "The US Justice Department filed a civil forfeiture complaint this week to seize Mansour Barzani's Beverly Hills mansion, saying it was bought and renovated with 30 million dollars tied to a bribery scheme around US military fuel contracts during the anti-ISIS campaign.",
+      "url": "https://x.com/KurdistanWatch/status/2047439771350278311"
     },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-04-23T09:39:02Z",
-      "category": "Oil & Gas",
-      "headline": "Tanker convoys seen leaving Khor Mor gas field heading toward the Iranian border",
-      "summary": "Flags a convoy of tankers recorded travelling from Chamchamal, where the Khor Mor gas field sits, toward the Iranian border, alleging product is being diverted into private sales with PUK-linked and possibly KDP-linked beneficiaries.",
-      "url": "https://x.com/KurdistanWatch/status/2047248873526091873"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-04-22T20:22:59Z",
-      "category": "KRG Security",
-      "headline": "Kurdistan Region men surfacing as fighters in the Russian army after southern Iraq recruitment pipeline",
-      "summary": "Documents another KRG resident whose family has had no contact for more than six months now appearing to fight with Russian forces, pointing to a southern Iraqi intermediary network recruiting on employment and high-salary promises.",
-      "url": "https://x.com/KurdistanWatch/status/2047048541411905737"
-    },
-
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T14:32:00Z",
-      "category": "US–Iran",
-      "headline": "Trump statement says Iran is struggling to identify a single leader to negotiate with",
-      "summary": "Quotes a Trump line framing Tehran as lacking a clear interlocutor on the Iranian side of any talks, reinforcing the US line that Iranian decision-making is fragmented in the aftermath of the war. Translated from Arabic.",
+      "posted_at": "2026-04-23T21:41:33Z",
+      "category": "US Sanctions",
+      "headline": "US DOJ posts 10 million dollar reward for information on Kata'ib Sayyid al-Shuhada leader Abu Ala al-Walai",
+      "summary": "The US Department of Justice announced a 10 million dollar reward for any information on Abu Ala al-Walai, the head of Kata'ib Sayyid al-Shuhada, as Washington tightens pressure on Iran-aligned Iraqi factions through the PM formation window. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2047430702161961186"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-23T20:40:32Z",
+      "category": "Security",
+      "headline": "Iranian drones strike areas inside Erbil city",
+      "summary": "The account reports Iranian drone attacks on areas inside Erbil city on Thursday evening, consistent with the wave of strikes on the Darashakran corridor and Coalition jet intercepts reported by Rudaw the same night. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2047415348899577880"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-23T20:36:36Z",
+      "category": "Security",
+      "headline": "Israeli alert and US messaging flagged in early-evening cable",
+      "summary": "Breaking note on Israeli alert posture and parallel US messaging into the region, framed as a shift in both sides' signalling during the extended Iran ceasefire. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2047414358095896924"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-23T14:32:18Z",
+      "category": "US-Iran",
+      "headline": "Trump remarks on Iran political dynamics and US posture on the Strait of Hormuz",
+      "summary": "The account summarises Trump's statements on Iran's internal political situation and on US control over the Strait of Hormuz during the ceasefire, landing as Hormuz tanker traffic remains near zero. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047322676146937919"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T12:44:00Z",
-      "category": "Iraq Politics",
-      "headline": "Iraqi parliament decides to send a delegation to Erbil as PM formation clock runs down",
-      "summary": "Flags a parliament resolution to dispatch a formal delegation to Erbil, read as an attempt to lock in KDP and KRG sign-off on the Coordination Framework PM pick before the April 26 constitutional deadline. Translated from Arabic.",
+      "posted_at": "2026-04-23T12:44:20Z",
+      "category": "Iraq Government",
+      "headline": "Parliamentary delegation to travel to Erbil as Coordination Framework deadlock drags on",
+      "summary": "A source to Al-Sabi'a says a parliamentary delegation is heading to Erbil as part of the consultative track around the PM file, with the Coordination Framework still unable to agree on Badry's quorum path before the April 27 deadline. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047295508008317343"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T12:42:00Z",
-      "category": "Iraq Security",
-      "headline": "US embassy in Baghdad reported to be upgrading defensive posture amid militia threats",
-      "summary": "Reports physical and security upgrades at the US embassy compound in Baghdad, consistent with the April 20 State Department alert on Iran-aligned militia attack plotting. Translated from Arabic.",
+      "posted_at": "2026-04-23T12:42:42Z",
+      "category": "US Posture",
+      "headline": "US embassy in Baghdad reinforces its defensive systems",
+      "summary": "The US embassy compound in Baghdad has upgraded its defensive systems over recent days, tracking with US warnings that Iran-backed militias could escalate during the PM formation window. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047295096626778501"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T12:38:00Z",
-      "category": "Iraq Politics",
-      "headline": "Parliamentary presidency agrees to extend the current legislative session",
-      "summary": "Flags a deal between the parliamentary presidency and bloc leaders to extend the current session, buying procedural room for a PM nomination vote inside the constitutional window. Translated from Arabic.",
+      "posted_at": "2026-04-23T12:38:20Z",
+      "category": "Parliament",
+      "headline": "Speaker and political bloc heads agree to extend the current legislative session",
+      "summary": "Parliament leadership and bloc chiefs agreed to extend the current legislative session, keeping the chamber available for a confirmation vote or for any supplementary fiscal legislation if the cabinet process slips into May. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047293996679000170"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T11:40:00Z",
-      "category": "PMF Finance",
-      "headline": "Citing Oil Price report, lays out Iraqi militia financial networks and oil-smuggling revenue lines",
-      "summary": "Paraphrases an Oil Price investigation on how PMF-aligned factions monetise oil diversion, real estate, and border crossings, framing it as the hard economic spine that makes political leverage possible. Translated from Arabic.",
+      "posted_at": "2026-04-23T11:40:39Z",
+      "category": "Security",
+      "headline": "Oil Price investigation flags structural shift inside Iraq's armed-faction landscape",
+      "summary": "An OilPrice.com investigation, shared by the account, argues a structural reshaping is underway inside Iraq's Shia armed factions that changes both the escalation menu and the economic interfaces around oil and fuel logistics. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047279480679366848"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T11:37:00Z",
-      "category": "US–Iran",
-      "headline": "US Department of War announces seizure of an Iranian oil tanker",
-      "summary": "Reports a US military seizure of an Iranian-flagged tanker, consistent with the ongoing Hormuz enforcement posture and the broader pressure campaign on Iranian crude revenue. Translated from Arabic.",
+      "posted_at": "2026-04-23T11:37:32Z",
+      "category": "Maritime",
+      "headline": "US Department of War says forces boarded a vessel the previous day",
+      "summary": "The US Department of War confirmed its forces boarded a vessel in the preceding 24 hours, the latest datapoint in the tit-for-tat ship seizures between US and Iranian units inside the ostensible ceasefire. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047278698026451073"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T10:30:00Z",
-      "category": "US–Iran",
-      "headline": "Warns a US–Iran scenario would be worse for Iraq than the 1990s sanctions siege",
-      "summary": "Argues that given cross-border trade, currency exposure, and militia integration, any sustained US–Iran economic war would hit Iraq harder than the 1990s UN sanctions regime. Translated from Arabic.",
+      "posted_at": "2026-04-23T10:30:12Z",
+      "category": "Economic Commentary",
+      "headline": "Luay al-Khatib warns the squeeze could prove worse than the 1990s sanctions siege",
+      "summary": "Former electricity minister Luay al-Khatib says the combined hit from Hormuz disruption and stalled oil flows could bite Iraqi public finances harder than the 1990s siege if the Coordination Framework cannot close the PM file. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047261753596109278"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T10:05:00Z",
-      "category": "Iraq FX",
-      "headline": "New rise in parallel-market dollar rate in Iraq",
-      "summary": "Flags a fresh uptick in the parallel-market dollar rate against the dinar, putting pressure back on CBI's dollar auction controls and the Oliver Wyman-era private-bank reform sequencing. Translated from Arabic.",
+      "posted_at": "2026-04-23T10:05:47Z",
+      "category": "FX",
+      "headline": "Baghdad parallel dollar rate widens to 156,500 dinars per 100 dollar note",
+      "summary": "The account flags a fresh uptick in the parallel dinar rate, with the 100 dollar note trading at 156,500 Iraqi dinars (about 1,565 IQD per USD), well above the CBI's official 1,300 and bank-window 1,310 tiers. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2047255606537396333"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T09:53:00Z",
-      "category": "US–Iraq",
-      "headline": "US mission in Iraq escalating pressure on Iraqi political leaders",
-      "summary": "Reports direct US engagement with Coordination Framework leaders on the PM choice and on militia-linked cabinet portfolios, framed as explicit conditionality rather than diplomatic suggestion. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2047252435257709030"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-23T17:06:59Z",
+      "category": "RT of @jhaboush",
+      "headline": "Lebanon-Israel meeting relocated from State Department to the White House",
+      "summary": "Retweet flags that today's Lebanon-Israel meeting was moved from the State Department to the White House, with the possibility Trump himself stops by, a meaningful upgrade of the diplomatic ceiling on the track.",
+      "url": "https://x.com/jhaboush/status/2047361605818548559"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T07:24:00Z",
-      "category": "Banking",
-      "headline": "JP Morgan reportedly halts certain transfer flows tied to Iraq",
-      "summary": "Flags a JP Morgan move to pause specific transfer categories connected to Iraqi counterparties, a signal that correspondent-banking risk appetite is tightening again as US secondary-sanctions posture hardens. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2047214977723801673"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-23T15:28:54Z",
+      "category": "RT of @jhaboush",
+      "headline": "Saudi-Lebanon engagement stacks up, MBS-Aoun call, Berri-Prince Faisal call, envoy to Beirut, Berri aide to Riyadh",
+      "summary": "Retweet notes an intensified Saudi-Lebanon engagement cycle in the past week, with MBS-Aoun and Berri-Prince Faisal phone calls, the Saudi envoy for Lebanon visiting Beirut, and a top Berri aide travelling to Riyadh.",
+      "url": "https://x.com/jhaboush/status/2047336921311916231"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T07:18:00Z",
-      "category": "RT of @onenewsiq",
-      "headline": "Quotes reaction to a reported Iraqi financial loss figure as a \"terrible number\"",
-      "summary": "Quote-tweets @onenewsiq with a reaction to a headline loss figure, flagging it as large enough to reshape the 2026 fiscal conversation. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2047213521922888080"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-23T14:30:00Z",
+      "category": "RT of @ArgusMedia",
+      "headline": "Argus Media 'Strait Talk' episode frames the Hormuz truce as truce-or-dare",
+      "summary": "Retweet of the Argus Media podcast interrogating whether the Hormuz ceasefire is holding or simply being ridden out, useful for readers tracking tanker traffic and insurance premia inside the ceasefire window.",
+      "url": "https://x.com/ArgusMedia/status/2047322099279409636"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-23T06:46:00Z",
-      "category": "US–Iraq",
-      "headline": "Politico report said to detail Trump administration plans to punish Iraq over Iran ties",
-      "summary": "Paraphrases a Politico piece outlining specific US levers being drawn up to punish Iraqi actors for continuing Iran cooperation, including sanctions designations and trade-finance restrictions. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2047205543802966177"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-23T12:05:33Z",
+      "category": "RT of @memgovom",
+      "headline": "Oman Energy Ministry denies reports of oil and gas discoveries by PetroTel Energy",
+      "summary": "Retweet of the Oman Ministry of Energy and Minerals denying circulating reports that PetroTel Energy had made material oil and gas discoveries inside the sultanate, a clarification that matters for Gulf upstream comparables. Translated from Arabic.",
+      "url": "https://x.com/memgovom/status/2047285745749217600"
     },
-
+    {
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-23T11:31:09Z",
+      "category": "RT of @bundeskanzler",
+      "headline": "German Chancellor welcomes US-Iran ceasefire extension as opening for diplomacy",
+      "summary": "Retweet of the German federal chancellor welcoming the extension of the US-Iran ceasefire and urging its use to resume formal negotiations, the clearest European readout on the extension yet.",
+      "url": "https://x.com/bundeskanzler/status/2047277089104023733"
+    },
     {
       "handle": "@Bacharelhalabi",
       "posted_at": "2026-04-23T08:30:50Z",
       "category": "Energy",
-      "headline": "Japan's PM asked Saudi Arabia for expanded crude supplies",
-      "summary": "Breaks a Japanese request to Riyadh for incremental Saudi crude volumes, a signal that Asian importers are pre-positioning for a prolonged Hormuz disruption rather than betting on a quick normalisation.",
+      "headline": "Japan PM Takaichi asks MBS to expand Saudi crude supplies on bilateral call",
+      "summary": "Bacharel Halabi reports Japanese Prime Minister Takaichi Sanae asked Crown Prince Mohammed bin Salman to expand Saudi crude volumes to Japan during a call, a direct ask as Gulf supply sits under Hormuz-driven stress.",
       "url": "https://x.com/Bacharelhalabi/status/2047231711927259450"
     },
     {
       "handle": "@Bacharelhalabi",
       "posted_at": "2026-04-23T07:06:11Z",
       "category": "Energy",
-      "headline": "QatarEnergy celebrates first LNG export cargo from the Golden Pass project",
-      "summary": "Flags the inaugural Golden Pass LNG cargo as a milestone that shifts Qatari LNG flows toward the US Gulf and reshapes the 2026 Atlantic Basin supply map against a tight Hormuz backdrop.",
+      "headline": "QatarEnergy celebrates first LNG export cargo from the 18 mtpa Golden Pass project in Texas",
+      "summary": "QatarEnergy published imagery marking the first LNG export cargo from its 18 million tonne per year Golden Pass facility in Texas, a meaningful US supply addition at a moment of peak concern over Gulf shipping.",
       "url": "https://x.com/Bacharelhalabi/status/2047210408436457725"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-23T05:22:27Z",
-      "category": "Energy",
-      "headline": "Detail thread on Qatar's first US-Gulf LNG cargo from Golden Pass",
-      "summary": "Breaks down the commercial and diplomatic significance of QatarEnergy exporting its first Golden Pass cargo, arguing it cements Doha as a bi-Atlantic LNG exporter and reframes US LNG geopolitics.",
-      "url": "https://x.com/Bacharelhalabi/status/2047184304392876284"
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-23T21:48:32Z",
+      "category": "US Posture",
+      "headline": "Knight argues the contrast with Earnest Will and Desert Shield could not be sharper",
+      "summary": "Knight contrasts the current hesitant US naval tempo in the Gulf with Operation Earnest Will and Desert Shield, framing the limited response as a departure from the reassurance posture Gulf partners have historically expected from Washington.",
+      "url": "https://x.com/Mikeknightsiraq/status/2047432460565139533"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-23T14:30:00Z",
-      "category": "RT of @ArgusMedia",
-      "headline": "Retweets Argus Straits Talk on week 9 of the Hormuz conflict and partial transit restart",
-      "summary": "Signal-boosts an Argus Media segment unpacking the ceasefire-vs-dare dynamic on Hormuz, with tanker transit still partial and conditional passage becoming a structural premium.",
-      "url": "https://x.com/ArgusMedia/status/2047322099279409636"
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-23T20:47:41Z",
+      "category": "RT of @AlexAlmeida2020",
+      "headline": "First US fast-air movement back into the Gulf states since February",
+      "summary": "Retweet flagging the first US tactical-air rotation back into Gulf partner bases since the late-February drawdown, a visible signal that Washington is restoring regional posture even as the ceasefire drags on.",
+      "url": "https://x.com/AlexAlmeida2020/status/2047417147874214154"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-23T11:31:09Z",
-      "category": "RT of @bundeskanzler",
-      "headline": "Retweets German Chancellor welcoming an extension of the US–Iran ceasefire",
-      "summary": "Boosts the German chancellery statement welcoming the ceasefire extension, framing it as the first European-level political endorsement of the current pause.",
-      "url": "https://x.com/bundeskanzler/status/2047277089104023733"
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-23T19:52:05Z",
+      "category": "RT of @ShayanTalabany",
+      "headline": "US ramps up pressure on Iraq to select a PM and form a government",
+      "summary": "Retweet amplifying reporting that US pressure on Iraq to name a PM and seat a cabinet is intensifying as the April 27 constitutional deadline approaches and the Coordination Framework remains split on quorum.",
+      "url": "https://x.com/ShayanTalabany/status/2047403153587589236"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-23T12:05:33Z",
-      "category": "RT of @memgovom",
-      "headline": "Retweets Oman Energy Ministry statement denying PetroTel Energy discovery claims",
-      "summary": "Signal-boosts the Omani Energy Ministry's official statement pushing back on PetroTel Energy's public discovery claims, a rare public denial that recalibrates the Oman upstream narrative.",
-      "url": "https://x.com/memgovom/status/2047285745749217600"
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-23T18:57:26Z",
+      "category": "RT of @964arabic",
+      "headline": "Araji says Sudani is modelling his office on the Putin playbook by nominating his chief of staff",
+      "summary": "Retweet of 964arabic summarising senior politician Araji's claim that Prime Minister Sudani is modelled on the Russian template and has floated his own chief of staff for the premiership, a pointed commentary on the current PM file. Translated from Arabic.",
+      "url": "https://x.com/964arabic/status/2047389402557513836"
     },
-
     {
       "handle": "@Mikeknightsiraq",
       "posted_at": "2026-04-23T13:39:33Z",
       "category": "Hormuz",
-      "headline": "Reads current US naval posture as the start of a Hormuz super-FON effort",
-      "summary": "Argues the latest US vessel movements and the seized-ship disposition debate mark the beginning of a Hormuz super Freedom of Navigation posture, not a one-off convoy, with multi-year implications for Gulf shipping and insurance.",
+      "headline": "Knight reads the current moves as the early shape of a Hormuz 'super Freedom of Navigation' effort",
+      "summary": "Knight argues that the combination of ship seizures, US air movement, and allied signalling looks like the early form of a much larger Freedom of Navigation effort in and around Hormuz rather than a narrow tit-for-tat.",
       "url": "https://x.com/Mikeknightsiraq/status/2047309402424692827"
     },
     {
       "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-04-23T13:03:17Z",
-      "category": "RT of @johnkonrad",
-      "headline": "Retweets Konrad arguing the US should transfer seized Iranian ships to the Merchant Marine",
-      "summary": "Endorses a thread pushing for seized Iranian vessels to be transferred to the US Merchant Marine rather than auctioned, a move that would harden US sealift and compound the precedent value of the seizures.",
-      "url": "https://x.com/johnkonrad/status/2047300275900125463"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
       "posted_at": "2026-04-23T12:47:48Z",
-      "category": "GCC–China",
-      "headline": "Flags sodium perchlorate as the key word Gulf states need to raise with China",
-      "summary": "Argues that any GCC capital raising Chinese supply-chain concerns should anchor the conversation on sodium perchlorate, a precursor tied to Iran's missile program, rather than generic technology-transfer talking points.",
+      "category": "China-Gulf",
+      "headline": "Knight says the word Gulf states should want from China is sodium perchlorate",
+      "summary": "Knight argues Gulf state asks of China should be concrete and named, pointing to sodium perchlorate, a key solid-fuel precursor, as the bargaining chip that actually moves Iranian missile capability rather than vague diplomatic platitudes.",
       "url": "https://x.com/Mikeknightsiraq/status/2047296377730789465"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-04-23T02:00:42Z",
-      "category": "Iran War Analysis",
-      "headline": "Thread on what stands out in the war just concluded",
-      "summary": "Opens a longer analytical thread on the just-ended Iran war, flagging Iranian command-and-control degradation, GCC air defence interoperability, and the durability of the US–Gulf partnership as the three things worth rereading the war through.",
-      "url": "https://x.com/Mikeknightsiraq/status/2047133530086412666"
     }
   ]
 }
