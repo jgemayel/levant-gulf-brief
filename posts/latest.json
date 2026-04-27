@@ -1,88 +1,48 @@
 {
-  "generated_at": "2026-04-26T05:13:32Z",
+  "generated_at": "2026-04-27T06:31:19Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-26T05:01:20Z",
-      "category": "Iraq Politics",
-      "headline": "US monitoring closely as Iraqi political situation runs into PM-deadline morning",
-      "summary": "AMrym reports overnight Washington-side signaling that the US is closely watching the final hours of the PM nomination as Iraqi blocs head into the constitutional cutoff. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048266153844208000"
+      "posted_at": "2026-04-27T05:44:33Z",
+      "category": "Iraq Coalition Politics",
+      "headline": "AMrym warns Sudani against splintering from Coordination Framework, calls move a Shiite-on-Shiite conflict project",
+      "summary": "Direct message to PM Mohammed Shia al-Sudani warning that breaking from the Coordination Framework to form a new alliance would become a project of Shiite-on-Shiite conflict, with militia non-compliance and regional interference inevitable. Closes that power is temporary but history is unforgiving. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2048639417712058431"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-04-26T04:55:19Z",
-      "category": "Iraq Politics",
-      "headline": "Late-night Coordination Framework principals' meeting still running ahead of the deadline",
-      "summary": "AMrym describes Iraqi senior figures pulling overnight sessions on the PM file, with Awadi and Badry the names being actively bargained as the Sunday deadline approaches. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048264641013272657"
+      "posted_at": "2026-04-27T04:55:43Z",
+      "category": "Oil & Gas",
+      "headline": "AMrym reads Brent at 107.63 dollars and rising as oil traders pricing in continued escalation",
+      "summary": "Brief market read framing the 107.63 dollar print and continued upward pressure as a sign that crude traders are not naive on the regional risk premium. Implies the price action is telling a different story than the official ceasefire-recovery narrative. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2048627125800898836"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-26T01:12:17Z",
-      "category": "US Security",
-      "headline": "Trump evacuated from White House Correspondents' Dinner after armed suspect breach attempt",
-      "summary": "AMrym reports the WHCD security incident as it broke, citing Trump being rushed off stage by Secret Service after an armed suspect attempted to enter the ballroom. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048208510819721341"
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-26T18:18:36Z",
+      "category": "Quote of @yaqobhyndes",
+      "headline": "Knights flags re-enactor research on hoplite warfare crowd dynamics",
+      "summary": "Quote-tweet on a French research project that trained 200 re-enactors to test hoplite battle and routing dynamics, with Knights reading the footage as a way to make the often vague descriptions in ancient sources newly legible. Off-portfolio for the brief but a tell on Knights' wider frame on conflict mechanics.",
+      "url": "https://x.com/Mikeknightsiraq/status/2048466791072932348"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-26T01:18:52Z",
-      "category": "US Security",
-      "headline": "Fox News says Trump returning to dinner after WHCD breach incident",
-      "summary": "AMrym relays Fox News reporting that Trump intended to return to the dinner once the suspect was contained, marking the incident as not an active threat. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048210166345035829"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-26T02:30:54Z",
-      "category": "US Security",
-      "headline": "WHCD suspect identified as Cole Thomas Allen, 31, of California",
-      "summary": "AMrym carries US media identification of the WHCD suspect as Cole Thomas Allen, 31, taken into custody after attempting to enter the dinner with multiple weapons. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048228293841731954"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-25T19:29:58Z",
-      "category": "Iraq Politics",
-      "headline": "Source inside Coordination Framework says Abadi will not enter the PM contest",
-      "summary": "AMrym cites a Coordination Framework source confirming Haider al-Abadi has formally pulled himself from any final-day PM contention, narrowing the active slate to two names. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048122363422674991"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-25T18:55:31Z",
-      "category": "Iraq Politics",
-      "headline": "Sheikh Hammam Hammoudi voices frustration over government-formation delays",
-      "summary": "AMrym reports Sheikh Hammam Hammoudi expressing impatience with how long the PM bargaining has run, framing the failure to converge on a candidate as undermining the bloc's credibility. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048113694207525048"
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-26T13:48:16Z",
+      "category": "Tanker War / Oil Logistics",
+      "headline": "Knights on returning resonance of Tanker War imagery as Asia goes short of crude",
+      "summary": "Quote-tweet on Javier Blas's observation that Japanese television is now treating the arrival of a single American oil tanker as breaking news, framing the moment as a return of high-intensity-war energy logistics imagery and noting that BBC World Service is now leading on a different war every night.",
+      "url": "https://x.com/Mikeknightsiraq/status/2048398758153462022"
     },
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-04-25T12:56:51Z",
-      "category": "KRG Security",
-      "headline": "KurdistanWatch frames the KRG attack toll inside the full February 28 onward war window",
-      "summary": "KurdistanWatch puts the cumulative drone-and-missile activity inside the Kurdistan Region against the full duration of the US-Israel-Iran war from its February 28 outbreak, underlining the scale of the security cost the region has absorbed.",
-      "url": "https://x.com/KurdistanWatch/status/2048023433020076153"
-    },
-    {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-25T15:56:42Z",
-      "category": "RT of @SecScottBessent",
-      "headline": "Bessent comments on the IRGC's adapted force-projection workarounds inside the Hormuz blockade",
-      "summary": "Bachar el Halabi retweets Treasury Secretary Bessent's note that the IRGC has been forced to invent new tactical workarounds under sustained US economic pressure, signal-boosting the Treasury narrative on the campaign's effects.",
-      "url": "https://x.com/SecScottBessent/status/2048068694325035207"
-    },
-    {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-25T15:41:04Z",
-      "category": "RT of @aishahhasnie",
-      "headline": "Trump phones Fox News reporter directly on Iran posture, retweeted by Halabi",
-      "summary": "Bachar el Halabi signal-boosts Aishah Hasnie's report that Trump rang her directly to walk through the current US-Iran posture, underscoring Halabi's read that Washington is publicly framing the campaign in real time.",
-      "url": "https://x.com/aishahhasnie/status/2048064757890945030"
+      "posted_at": "2026-04-26T14:05:34Z",
+      "category": "KDP-PUK Politics",
+      "headline": "KurdistanWatch on KDP-PUK media war reaching a new low over Trump-supplied weapons claims",
+      "summary": "Long thread arguing that KDP and PUK media outlets are using state and oil-derived public wealth to fund factional disinformation, with both sides circulating unverified claims about weapons allegedly supplied by Trump and trading fabricated theft accusations. Frames the dispute as a degraded politics where leaders prioritise factional damage over actual regional crises.",
+      "url": "https://x.com/KurdistanWatch/status/2048403112008864010"
     }
   ]
 }
