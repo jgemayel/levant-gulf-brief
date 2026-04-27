@@ -87,7 +87,7 @@ Write `briefs/YYYY-MM-DD.html` using the shared template. All briefs must use th
 - `og:description` meta tag must list all four countries (Syria, Iraq, Kuwait, and Kurdistan). Do not copy the three-country description from older briefs.
 - Share button on each story using source URL
 - Top back-to-dashboard pill + bottom nav + footer
-- Footer text reads exactly `Daily news roundup. Updated daily at 9:30 AM Dubai time.`
+- Footer text reads exactly `Daily news roundup. Updated at 8:30 AM Dubai time.`
 
 ### Starting from a prior template
 When copying structure from the most recent prior brief, do not copy it blindly. Earlier briefs may still use a three-section (Syria / Iraq / Kuwait) shape, a three-country meta line, or a three-country `og:description`. Today's brief must always have four sections and the four-country strings above, regardless of what the last file looked like. Also do not copy the `og:description` wording from the prior brief verbatim, since it is keyed to that date's content mix — write fresh four-country prose.
