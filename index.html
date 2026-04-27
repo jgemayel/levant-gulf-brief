@@ -115,11 +115,10 @@
     font-weight: 600;
     margin-bottom: 18px;
   }
-  .archive-section {
-    margin-top: 44px;
-    padding-top: 30px;
-    border-top: 1px solid var(--rule);
-  }
+  .view { display: none; }
+  .view.active { display: block; }
+  body.tab-news #country-filter { display: flex; }
+  body:not(.tab-news) #country-filter { display: none; }
   .posts-intro {
     color: var(--muted);
     font-size: 13px;
@@ -303,7 +302,7 @@
 <div class="wrap">
   <header class="hero">
     <h1>Levant &amp; Gulf</h1>
-    <div class="dek">Two tracks. News covers Syria, Iraq, Kuwait, and Kurdistan every morning. X updates is a rolling 24-hour read of four handles, Kurdistan-weighted.</div>
+    <div class="dek">Syria &middot; Iraq &middot; Kuwait &middot; Kurdistan. Updated daily at 9:30 AM Dubai time.</div>
     <div class="country-filter" id="country-filter" role="group" aria-label="Filter countries">
       <span class="filter-label">Showing</span>
       <button class="country-chip" type="button" data-country="syria" aria-pressed="true">Syria</button>
@@ -313,7 +312,7 @@
     </div>
   </header>
 
-  <div id="home">
+  <div class="view" id="home">
     <div class="today-head">
       <div class="today-date" id="today-title">Loading latest brief...</div>
       <a class="open-link" id="today-open" href="#">Open full page &rarr;</a>
@@ -323,7 +322,7 @@
     </div>
   </div>
 
-  <div class="archive-section" id="posts">
+  <div class="view" id="posts">
     <div class="section-label">X updates · rolling 24h</div>
     <div class="posts-intro" id="posts-intro">Rolling 24-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq. Kurdistan-weighted, refreshed on every scheduled run.</div>
     <div id="posts-content">
@@ -331,7 +330,7 @@
     </div>
   </div>
 
-  <div class="archive-section" id="archive">
+  <div class="view" id="archive">
     <div class="section-label">Archive</div>
     <ul class="archive-list" id="archive-list">
       <li class="loading">Loading past briefs...</li>
@@ -340,7 +339,7 @@
 
   <footer class="footnote">
     <span>Daily news roundup</span>
-    <span>Refreshed weekday mornings</span>
+    <span>Daily at 9:30 AM Dubai time</span>
   </footer>
 </div>
 
@@ -462,7 +461,7 @@ function formatIssueId(iso, total) {
 async function loadBriefs() {
   const archiveList = document.getElementById('archive-list');
   try {
-    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/briefs`);
+    const res = await fetch(`https://api.github.com/repos/${REPO}/contents/briefs?t=${Date.now()}`, { cache: 'no-cache' });
     if (!res.ok) throw new Error('GitHub API ' + res.status);
     const files = await res.json();
     const briefs = files
@@ -482,7 +481,7 @@ async function loadBriefs() {
     document.getElementById('today-open').href = today.path;
     document.getElementById('issue-id').textContent = formatIssueId(today.date, briefs.length);
 
-    const briefRes = await fetch(today.path);
+    const briefRes = await fetch(today.path + '?t=' + Date.now(), { cache: 'no-cache' });
     const html = await briefRes.text();
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
@@ -657,25 +656,41 @@ function attachShareHandlers(scope) {
   });
 }
 
+const TAB_TO_HASH = { home: '#/news', posts: '#/x', archive: '#/archive' };
+const HASH_TO_TAB = { '#/news': 'home', '#/x': 'posts', '#/archive': 'archive' };
+
 function setActiveTab(target) {
   document.querySelectorAll('.tab').forEach(t => {
     t.classList.toggle('active', t.dataset.target === target);
   });
+  document.querySelectorAll('.view').forEach(v => {
+    v.classList.toggle('active', v.id === target);
+  });
+  document.body.classList.remove('tab-news', 'tab-posts', 'tab-archive');
+  if (target === 'home') document.body.classList.add('tab-news');
+  if (target === 'posts') document.body.classList.add('tab-posts');
+  if (target === 'archive') document.body.classList.add('tab-archive');
+  window.scrollTo({ top: 0 });
+}
+
+function routeFromHash() {
+  const target = HASH_TO_TAB[location.hash] || 'home';
+  setActiveTab(target);
 }
 
 document.querySelectorAll('.tab[data-target]').forEach(tab => {
   tab.addEventListener('click', () => {
     const targetId = tab.dataset.target;
-    setActiveTab(targetId);
-    const el = document.getElementById(targetId);
-    if (!el) return;
-    if (targetId === 'home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    const newHash = TAB_TO_HASH[targetId] || '#/news';
+    if (location.hash !== newHash) {
+      location.hash = newHash;
     } else {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setActiveTab(targetId);
     }
   });
 });
+
+window.addEventListener('hashchange', routeFromHash);
 
 document.querySelector('.tab[data-action="share"]').addEventListener('click', async () => {
   const data = {
@@ -692,22 +707,11 @@ document.querySelector('.tab[data-action="share"]').addEventListener('click', as
   }
 });
 
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      if (e.target.id === 'archive') setActiveTab('archive');
-      if (e.target.id === 'posts') setActiveTab('posts');
-      if (e.target.id === 'home') setActiveTab('home');
-    }
-  });
-}, { rootMargin: '-40% 0px -40% 0px' });
-io.observe(document.getElementById('home'));
-io.observe(document.getElementById('posts'));
-io.observe(document.getElementById('archive'));
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js').catch(() => {});
+    navigator.serviceWorker.register('service-worker.js').then(reg => {
+      reg.update().catch(() => {});
+    }).catch(() => {});
   });
   let reloading = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
@@ -717,6 +721,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+routeFromHash();
 applyCountryFilter();
 loadBriefs();
 loadPosts();

@@ -1,4 +1,4 @@
-const CACHE = 'lg-roundup-v10';
+const CACHE = 'lg-roundup-v11';
 const SHELL = [
   './',
   './index.html',
@@ -32,7 +32,7 @@ self.addEventListener('fetch', (event) => {
 
   if (sameOrigin || isGithubApi) {
     event.respondWith(
-      fetch(req)
+      fetch(req, { cache: 'no-cache' })
         .then((res) => {
           if (res && res.ok) {
             const copy = res.clone();
