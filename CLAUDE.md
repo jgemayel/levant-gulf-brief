@@ -85,7 +85,7 @@ Write `briefs/YYYY-MM-DD.html` using the shared template. All briefs must use th
 - `<title>` reads `Levant & Gulf Brief · [Month] [Day], [Year]`
 - Header meta line reads `[Weekday], [Month] [Day], [Year] · Syria · Iraq · Kuwait · Kurdistan`
 - `og:description` meta tag must list all four countries (Syria, Iraq, Kuwait, and Kurdistan). Do not copy the three-country description from older briefs.
-- Share button on each story using source URL
+- Each story carries a `<div class="story-actions">` wrapper holding a Copy button (`class="copy-btn" data-copy`, glyph `&#x29C9;`) followed by the Share button (`class="share-btn" data-share`, glyph `&#x21AA;`). The inline brief script wires both via a shared `buildStoryPayload(story)` helper and a `copyStoryText(text)` function. Do not regress to a single share button.
 - Top back-to-dashboard pill + bottom nav + footer
 - Footer text reads exactly `Daily news roundup. Updated at 8:30 AM Dubai time.`
 

@@ -583,7 +583,10 @@ async function loadPosts() {
                 <span class="date">${escapeHtml(ago)}${cat}<span class="src-kind">Post</span></span>
                 <h4>${escapeHtml(p.headline || '')}</h4>
               </div>
-              <button class="share-btn" aria-label="Share post" data-share>&#x21AA;</button>
+              <div class="story-actions">
+                <button class="copy-btn" aria-label="Copy post" data-copy>&#x29C9;</button>
+                <button class="share-btn" aria-label="Share post" data-share>&#x21AA;</button>
+              </div>
             </div>
             <p>${escapeHtml(p.summary || '')}</p>
             <a class="src" href="${p.url || ('https://x.com/' + handle.slice(1))}" target="_blank" rel="noopener">X / ${handle}</a>
@@ -615,28 +618,45 @@ function findCommentNode(root, marker) {
   return null;
 }
 
+function buildStoryPayload(story) {
+  const headline = story.querySelector('h4, h3').innerText;
+  const summary = story.querySelector('p').innerText;
+  const src = story.querySelector('a.src');
+  const sourceUrl = src ? src.href : '';
+  const sourceName = src ? src.innerText : '';
+  const parts = [headline, '', summary];
+  if (sourceName) parts.push('', 'Via ' + sourceName);
+  if (sourceUrl) parts.push(sourceUrl);
+  return { headline, text: parts.join('\n'), sourceUrl };
+}
+
+async function copyStoryText(text) {
+  if (navigator.clipboard) {
+    try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
+  } else {
+    prompt('Copy this:', text);
+  }
+}
+
 function attachShareHandlers(scope) {
   scope.querySelectorAll('[data-share]').forEach(btn => {
     btn.addEventListener('click', async (e) => {
       const story = e.target.closest('.story');
-      const headline = story.querySelector('h4, h3').innerText;
-      const summary = story.querySelector('p').innerText;
-      const src = story.querySelector('a.src');
-      const sourceUrl = src ? src.href : '';
-      const sourceName = src ? src.innerText : '';
-      const parts = [headline, '', summary];
-      if (sourceName) parts.push('', 'Via ' + sourceName);
-      if (sourceUrl) parts.push(sourceUrl);
-      const text = parts.join('\n');
-      const data = { title: headline, text: text };
+      const { headline, text, sourceUrl } = buildStoryPayload(story);
+      const data = { title: headline, text };
       if (sourceUrl) data.url = sourceUrl;
       if (navigator.share) {
         try { await navigator.share(data); } catch(err) {}
-      } else if (navigator.clipboard) {
-        try { await navigator.clipboard.writeText(text); showToast('Copied to clipboard'); } catch(err) { showToast('Copy failed'); }
       } else {
-        prompt('Copy this:', text);
+        await copyStoryText(text);
       }
+    });
+  });
+  scope.querySelectorAll('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      const story = e.target.closest('.story');
+      const { text } = buildStoryPayload(story);
+      await copyStoryText(text);
     });
   });
 }

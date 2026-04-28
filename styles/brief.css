@@ -325,7 +325,12 @@ section.country h3::after {
   line-height: 1.5;
 }
 
-.share-btn {
+.story-actions {
+  flex-shrink: 0;
+  display: flex;
+  gap: 6px;
+}
+.share-btn, .copy-btn {
   flex-shrink: 0;
   background: transparent;
   color: var(--muted);
@@ -340,7 +345,8 @@ section.country h3::after {
   font-size: 14px;
   transition: color 0.15s, border-color 0.15s;
 }
-.share-btn:hover, .share-btn:active {
+.share-btn:hover, .share-btn:active,
+.copy-btn:hover, .copy-btn:active {
   color: var(--text);
   border-color: var(--text);
 }

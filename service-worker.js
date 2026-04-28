@@ -1,4 +1,4 @@
-const CACHE = 'lg-roundup-v12';
+const CACHE = 'lg-roundup-v13';
 const SHELL = [
   './',
   './index.html',
