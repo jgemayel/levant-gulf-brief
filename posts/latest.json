@@ -1,88 +1,136 @@
 {
-  "generated_at": "2026-04-28T04:04:32Z",
+  "generated_at": "2026-04-29T04:02:19Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-04-27T23:40:55Z",
-      "category": "Iraq Government",
-      "headline": "Knights flags the questions every Iraq watcher should ask before assessing an Ali Zaidi premiership",
-      "summary": "Mike Knights opens his assessment of the Zaidi PM-designation by listing the structural variables that will shape the cabinet, signalling the bar he sets for the new premier sits at policy delivery rather than political debut.",
-      "url": "https://x.com/Mikeknightsiraq/status/2048910293586129364"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T19:01:19Z",
-      "category": "Iraq Government",
-      "headline": "Video circulates of the moment Ali Falih al-Zaidi is tasked with the Iraqi premiership",
-      "summary": "AMrym shares the live footage of President Amidi formally tasking Ali Falih al-Zaidi with forming the next Iraqi government, the procedural milestone that ends the four-month Coordination Framework deadlock. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048839928423878806"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T18:22:51Z",
-      "category": "Iraq Government",
-      "headline": "Statement from Iraqi PM-designate Ali Falih al-Zaidi after the formal tasking",
-      "summary": "AMrym carries the first statement from al-Zaidi as PM-designate, in which he frames the cabinet-formation horizon and signals the priority files he will move on under the 30-day Article 76 clock. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048830249983529207"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T18:17:19Z",
-      "category": "Iraq Government",
-      "headline": "Sudani's message to the Reconstruction and Development bloc on backing the al-Zaidi nomination",
-      "summary": "AMrym shares a circulated message from caretaker PM Sudani directing his Reconstruction and Development bloc to fall in behind the al-Zaidi designation, the political instruction that makes the bloc's votes available for the upcoming confidence count. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048828857793269821"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T17:42:16Z",
-      "category": "Iraq Government",
-      "headline": "Coordination Framework reconvenes and consolidates around al-Zaidi as the consensus PM candidate",
-      "summary": "AMrym reports the Coordination Framework reconvened on Monday and aligned on Ali Falih al-Zaidi, chairman of Al-Janoob Islamic Bank, as its premiership pick. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048820038015062260"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T16:39:32Z",
-      "category": "Iraq Government",
-      "headline": "Iraq's three presidencies convene at Peace Palace ahead of the formal PM tasking",
-      "summary": "AMrym carries the source flag that the heads of the three presidencies were gathering at the Peace Palace in Baghdad immediately ahead of the prime-ministerial tasking, the procedural step that preceded President Amidi's call to al-Zaidi. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048804248222093586"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T16:33:05Z",
-      "category": "Iraq Government",
-      "headline": "Profile of PM-designate Ali Falih Kazem al-Zaidi circulating through Iraqi networks",
-      "summary": "AMrym publishes a biographical profile of the PM-designate setting out his banking, media and food-supply business interests and confirming he has not held prior cabinet, ministerial or parliamentary office. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048802624330211424"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-04-27T15:35:19Z",
-      "category": "Iraq Government",
-      "headline": "All Iraqi outlets converge on the al-Zaidi PM nomination ahead of the official announcement",
-      "summary": "AMrym flags that every major Iraqi news source was converging on the al-Zaidi nomination several hours before the official Coordination Framework statement, the leak pattern that confirmed the bloc had landed on the consensus pick. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2048788088889995325"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-04-27T16:08:13Z",
-      "category": "KRG Politics",
-      "headline": "KDP increasingly floating snap KRG elections as the cabinet deadlock with PUK deepens",
-      "summary": "Kurdistan Watch reports the KDP is now openly floating a snap regional election as the way out of the cabinet stalemate with PUK, a calculated signal the party would rather re-test its 39-seat plurality than concede the Interior Ministry or top federal post on the PUK bundling demand.",
-      "url": "https://x.com/KurdistanWatch/status/2048796367758238101"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-28T12:21:12Z",
+      "category": "Oil & Gas",
+      "headline": "SCOOP: UAE pulls out from OPEC+",
+      "summary": "Energy correspondent Bachar El-Halabi broke the story that the UAE has just pulled out from OPEC+, the first headline of the May 1 exit announcement that landed across major wires hours later.",
+      "url": "https://x.com/Bacharelhalabi/status/2049101623839059991"
     },
     {
       "handle": "@Bacharelhalabi",
-      "posted_at": "2026-04-27T15:55:24Z",
-      "category": "RT of @UN_Spokesperson",
-      "headline": "UN Spokesperson appeals to the parties to open the Strait of Hormuz to commercial traffic",
-      "summary": "Bachar El Halabi retweets the UN Spokesperson's public appeal calling on the parties to lift their respective blockades and reopen the Strait of Hormuz to commercial shipping, the first explicit UN-level intervention since dual-blockade transits collapsed to single digits.",
-      "url": "https://x.com/UN_Spokesperson/status/2048793143580000477"
+      "posted_at": "2026-04-28T13:27:37Z",
+      "category": "Oil & Gas",
+      "headline": "UAE OPEC+ exit framed as a sovereign policy decision, not a market break",
+      "summary": "Follow-up framing that the UAE move is a sovereign policy decision aligned with long-term energy strategy and national interest, not a break with the market or a reaction to the Hormuz disruption, signalling Abu Dhabi's intent to keep the messaging anchored to capacity and strategy rather than to a Saudi rift.",
+      "url": "https://x.com/Bacharelhalabi/status/2049118341281746956"
+    },
+    {
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-28T13:58:45Z",
+      "category": "Oil & Gas",
+      "headline": "ADNOC CEO Sultan Al Jaber issues first comment on UAE OPEC+ exit",
+      "summary": "Posts the first ADNOC CEO comment on the UAE OPEC+ exit, anchoring the message to long-term energy strategy, true production capability and national interest, the line all UAE-side messaging has converged on through the day.",
+      "url": "https://x.com/Bacharelhalabi/status/2049126175486677317"
+    },
+    {
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-04-28T19:35:54Z",
+      "category": "RT of @USTreasury",
+      "headline": "OFAC alerts banks to sanctions risks of dealing with Chinese teapot refineries importing Iranian crude",
+      "summary": "Boosts the Treasury OFAC alert to financial institutions on the secondary-sanctions risks of dealing with Shandong-province independent teapot refineries that continue to import Iranian crude, framing it as the new banking-sector compliance gate over Iran-oil flows. The retweet flags the alert as the headline financial-system development of the day for Iraqi and Gulf correspondent banking exposure.",
+      "url": "https://x.com/USTreasury/status/2049211020372017592"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-04-28T13:55:37Z",
+      "category": "RT of @SultanAlJaber",
+      "headline": "ADNOC CEO frames UAE OPEC exit as a sovereign decision tied to national interest",
+      "summary": "Iraq analyst Michael Knights signal-boosts the ADNOC CEO's first public comment that the UAE has taken a sovereign decision aligned with long-term energy strategy, true production capability and national interest, marking the analyst's read on the day's headline regional energy event.",
+      "url": "https://x.com/SultanAlJaber/status/2049125387503054942"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T13:40:10Z",
+      "category": "Iraq Politics",
+      "headline": "Trump posts Iran is in 'state of collapse,' wants Hormuz reopened quickly",
+      "summary": "Iraqi political reporter relays the Trump social-media post that Iran has informed Washington it is in a 'state of collapse' and wants the US to lift the Hormuz blockade as soon as possible, with the framing read inside Baghdad as the political backdrop for the al-Zaidi handover. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049121499143893445"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T15:26:05Z",
+      "category": "Iraq Politics",
+      "headline": "Iran reportedly orders Resistance Axis outlets to stop covering al-Zaidi appointment",
+      "summary": "Reports that Tehran is unhappy with the al-Zaidi appointment and has instructed Resistance Axis-aligned media to halt coverage of the new Iraqi PM-designate, an inside-baseball signal on how Iran is positioning around the Coordination Framework's compromise pick. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049148152356233400"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T16:30:20Z",
+      "category": "Iran War",
+      "headline": "Iran's military says war has not ended, ready for prolonged conflict",
+      "summary": "Cites an Iranian military readout that the current ceasefire is 'battle silence' and the country remains in a war footing, ready for prolonged conflict, the rebuttal to Trump's earlier 'state of collapse' framing. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049164319967834439"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T16:50:17Z",
+      "category": "Baghdad Security",
+      "headline": "Gunfire reported aimed at flying target over Karrada, central Baghdad",
+      "summary": "Field reporting of small-arms fire directed at an aerial target over central Baghdad's Karrada district, the first such incident inside the capital since the April 8 ceasefire. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049169341283741907"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T16:59:51Z",
+      "category": "Baghdad Security",
+      "headline": "Air defenses activated over Green Zone after suspected reconnaissance flight near US base",
+      "summary": "Reports that Iraqi air defenses inside the Green Zone engaged a suspected reconnaissance flight in the area of the US embassy compound, the first inside-Baghdad activation tied to a discrete overflight track since the April 8 ceasefire. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049171749112070569"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T17:55:32Z",
+      "category": "Iraq Politics",
+      "headline": "PM-designate al-Zaidi takes call from Qatari PM",
+      "summary": "Reports a phone call from the Qatari Prime Minister to PM-designate Ali al-Zaidi, an early Gulf-side outreach that lands on day one of the formal handover and signals Doha's positioning around the new Baghdad cabinet. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049185762353287673"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T18:27:31Z",
+      "category": "Iraq Banking",
+      "headline": "Deputy questions Central Bank of Iraq over reported JP Morgan transfer halt",
+      "summary": "Iraqi MP Hussein Moonis publicly questioned the Central Bank of Iraq over reports that JP Morgan-side dollar transfers had been halted, a thread that connects to the Treasury New York Fed dollar-shipment block flagged earlier this month and to the broader US correspondent-banking discipline tightening over Baghdad. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049193812463911049"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T19:48:22Z",
+      "category": "Iraq Politics",
+      "headline": "Coordination Framework Statement 274 sets the post-Zaidi sequencing",
+      "summary": "Posts the Coordination Framework's Tuesday-evening Statement 274 framing the al-Zaidi handover as the start of a sequenced cabinet-formation exercise rather than a renegotiation of the mandate, the political document that anchors the next 30 days. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049214156184625321"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T21:29:01Z",
+      "category": "Iraq Politics",
+      "headline": "Reports al-Zaidi got a green light from the US Embassy in Baghdad with no direct Washington veto",
+      "summary": "Cites Iraqi political sources that the al-Zaidi nomination cleared the US Embassy in Baghdad with no direct Washington veto, consistent with reporting that the Coordination Framework checked the candidate with US representatives before endorsing. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049239485737558151"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-28T21:31:46Z",
+      "category": "Iraq Politics",
+      "headline": "State of Law asks al-Zaidi to drop journalist-defamation cases Sudani filed during his term",
+      "summary": "Reports State of Law has publicly asked PM-designate al-Zaidi to drop the journalist-defamation cases former PM Mohammed Shia al-Sudani lodged during his tenure, an early intra-Framework press-freedom test inside the new PM's first 24 hours. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049240180049993786"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-04-29T00:14:26Z",
+      "category": "Iraq Politics",
+      "headline": "Framework analyst says Sistani and Sadr are not objecting to the al-Zaidi nomination",
+      "summary": "Cites a Coordination Framework analyst's read that neither Grand Ayatollah Sistani nor Muqtada al-Sadr have raised objection to the al-Zaidi nomination, an early Najaf-and-Sadrist-side temperature read that has not been a formal endorsement but removes the most consequential potential veto inside the first 48 hours. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2049281117711208821"
     }
   ]
 }
