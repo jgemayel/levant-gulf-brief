@@ -1,160 +1,56 @@
 {
-  "generated_at": "2026-05-03T04:35:00Z",
+  "generated_at": "2026-05-04T04:02:29Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-02T16:44:23Z",
-      "category": "KRG Politics",
-      "headline": "Sherwan Sherwani hits 10 days on hunger strike, demands Sulaimani transfer and weekly home leave",
-      "summary": "Imprisoned journalist Sherwan Sherwani, detained since 2020 with successive new cases filed to extend his term, has now been on hunger strike for ten days and is asking supporters to amplify his case publicly. KurdistanWatch flags the inconsistency between the KDP's argument that Sherwani must remain in Erbil where his family lives and its push to transfer Lahur Sheikh Jangi back to Erbil despite Lahur's family being in Sulaimani.",
-      "url": "https://x.com/KurdistanWatch/status/2050617408298033624"
+      "posted_at": "2026-05-03T19:53:15Z",
+      "category": "Peshmerga & US policy",
+      "headline": "KurdistanWatch reframes the Pentagon Peshmerga funding cut as a structural pivot to Baghdad-centred channels, not an MoU technicality",
+      "summary": "Argues the FY27 elimination of direct Peshmerga stipend funding cannot be explained away as a lapsed memorandum and reflects a broader US policy shift toward funnelling Iraq aid through Baghdad rather than Erbil.",
+      "url": "https://x.com/KurdistanWatch/status/2051027327895666760"
     },
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-02T15:54:35Z",
-      "category": "Iraq Politics",
-      "headline": "Analyst flags PM-designate al-Zaidi as in-law of Faiq Zaidan, ties Shatra Dhi Qar network into the cabinet",
-      "summary": "Citing political analyst Jamil al-Hasnawi, KurdistanWatch reports that Iraqi PM-designate Ali al-Zaidi is the in-law of a heavyweight judiciary figure, an apparent reference to Federal Supreme Judicial Council head Faiq Zaidan, with both men originating from the Shatra area of Dhi Qar. The thread frames Zaidi's rise as emerging from the militia-linked economic-committee networks that bridge banking, contracts, judiciary and intelligence.",
-      "url": "https://x.com/KurdistanWatch/status/2050604874153246998"
+      "posted_at": "2026-05-03T14:58:32Z",
+      "category": "Peshmerga ministry response",
+      "headline": "KurdistanWatch flags the KRG Peshmerga Ministry's denial as inconsistent with the Pentagon's own FY27 budget submission to Congress",
+      "summary": "Critiques the Ministry's public rejection of the funding cut by pointing to the explicit reductions in the official Pentagon budget documents already transmitted to Congress for 2027.",
+      "url": "https://x.com/KurdistanWatch/status/2050953156608074078"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T22:54:04Z",
-      "category": "US-Iran",
-      "headline": "Trump says he will review the Iranian response, signals he expects to reject it",
-      "summary": "Trump said he would review Iran's latest reply but already considers it likely to be negative, and warned Iranians will pay the price for what they have done over the past 47 years. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050710444256436550"
+      "posted_at": "2026-05-04T00:25:29Z",
+      "category": "Iran & Hormuz",
+      "headline": "AMrym corroborates an undeclared Iranian green light for ships to exit the Strait of Hormuz",
+      "summary": "Quote-tweeting Mohammed Saleh Sedghian, AMrym says Sedghian's reporting confirms his own line that Tehran has informally cleared stranded vessels to leave Hormuz, separate from Trump's announced Project Freedom escort. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051095836147233090"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T22:52:10Z",
-      "category": "Regional Security",
-      "headline": "US RC-135 spy plane enters Iranian airspace with transponder on, called a rare posture",
-      "summary": "An American RC-135 reconnaissance aircraft was tracked entering Iranian airspace without disabling its transponder, a rare and visible posture in the current standoff. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050709962985271525"
+      "posted_at": "2026-05-04T00:22:47Z",
+      "category": "Iraq politics",
+      "headline": "AMrym calls Iraq's political elite disconnected from reality as cabinet horse-trading drags",
+      "summary": "Quote-tweeting OneNewsIQ, AMrym says senior Iraqi political figures are operating in a parallel universe relative to ground conditions, framed against the live cabinet-formation period under Zaidi. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051095155151700364"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T22:37:58Z",
-      "category": "US-Iran",
-      "headline": "Trump leaves the door open to resuming strikes on Iran",
-      "summary": "Asked about resuming attacks on Iran, Trump said there is a possibility of that happening. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050706391573156226"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-03T20:56:07Z",
+      "category": "Energy & Arab oil bloc",
+      "headline": "UAE leaves OAPEC after exiting OPEC+, completes the pull-out from the Arab petroleum cooperation architecture",
+      "summary": "Reports the UAE has formally withdrawn from the Organization of Arab Petroleum Exporting Countries, the 1968 Arab oil cooperation body, completing its exit from the regional petroleum-bloc stack on the same week it left OPEC+.",
+      "url": "https://x.com/Bacharelhalabi/status/2051043147216777644"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T22:22:00Z",
-      "category": "Iraq Corruption",
-      "headline": "Najaf council member alleges governor handed land plot to losing Hikma Movement candidate",
-      "summary": "Najaf provincial council member Akram Sharbeh accused Governor Youssef Kanawi of granting a land plot to a losing candidate from Hikma Movement, surfacing a fresh corruption allegation inside Najaf governance. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050702370774888490"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T22:20:35Z",
-      "category": "US-Iraq",
-      "headline": "Trump says US is coordinating with new Middle East leaders, names Iraq's al-Zaidi",
-      "summary": "Trump said the US is coordinating with new Middle East leaders, naming Iraqi PM-designate Ali al-Zaidi among them, an unusual public personalization of the working relationship at the cabinet-formation stage. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050702014162624667"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T21:32:09Z",
-      "category": "Iraq Cabinet",
-      "headline": "Al-Zaidi caught between portfolio bargaining and Washington pressure as bloc fight intensifies",
-      "summary": "Iraqi political blocs are running an intense competition over ministerial portfolios while PM-designate al-Zaidi simultaneously absorbs sustained pressure from Washington on the cabinet shape. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050689825779449879"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T20:26:46Z",
-      "category": "Iraq Economy",
-      "headline": "Sarcastic take on Iraq fourth oil reserve status pairs with reported 100 trillion dinar internal debt",
-      "summary": "AMrym93884 amplifies the disconnect between Iraq's fourth-place global oil-reserve standing and a 100 trillion dinar reported internal debt load, framing the gap as evidence of structural fiscal mismanagement. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050673374796369964"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T20:12:44Z",
-      "category": "KRG Security",
-      "headline": "KRG Interior Ministry denies Channel 8 claims about American weapons storage",
-      "summary": "The Kurdistan Region Interior Ministry issued a formal clarification rejecting claims aired on a Channel 8 program by a security cadre member regarding American weapons storage in the Region. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050669840864555246"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T20:10:35Z",
-      "category": "Iraq Fiscal",
-      "headline": "Adi Awad explains how Iraqi salaries will be distributed under current fiscal squeeze",
-      "summary": "Iraqi commentator Adi Awad provided a detailed breakdown of how public-sector salaries will be paid through the current fiscal cycle, dismissing alarmist takes circulating on social media. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050669298994008539"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T18:48:02Z",
-      "category": "Iraq Politics",
-      "headline": "Boomeh urges Baghdad to disclose contents of US message demanding broader Iraqi response",
-      "summary": "Iraqi commentator Boomeh called on the government to be transparent with the public about everything related to current developments, especially the US message demanding a broader Iraqi response on regional security and political conditions. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050648527114830050"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T18:12:17Z",
-      "category": "Iraq Welfare",
-      "headline": "Sudani approves exempting families of security personnel from ration-card cuts",
-      "summary": "PM Sudani signed off on excluding families of security forces members from the broader withholding of ration-card entitlements, narrowing the welfare cut to non-security-affiliated households. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050639529296429292"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T18:06:00Z",
-      "category": "Syria Culture",
-      "headline": "Damascus marks World Dance Day with Sharaa-attended ceremony",
-      "summary": "Damascus celebrated World Dance Day with President Ahmad al-Sharaa attending a public ceremony and explicitly endorsing the event, an unusual cultural-policy signal from the Sharaa administration. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050637948828131707"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T18:05:45Z",
-      "category": "US-Iran",
-      "headline": "Trump tells Iran: surrender or face a third decisive strike",
-      "summary": "Trump issued an ultimatum to Iran framing the next move as either a Tehran surrender or a third decisive American strike, sharpening the escalatory ladder around the Hormuz standoff. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050637885041209706"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T18:04:25Z",
-      "category": "Iraq Oil",
-      "headline": "Bloomberg tracks Iraqi-laden VLCCs through Strait of Hormuz in recent days",
-      "summary": "Bloomberg vessel-tracking data shows several VLCCs carrying Iraqi crude have moved through the Strait of Hormuz in the past few days, contradicting the official narrative of a fully closed waterway. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050637551401050479"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-02T17:58:44Z",
-      "category": "Iraq Fiscal",
-      "headline": "Central Bank of Iraq says public salaries have not stopped and will not stop, commits to working with the government",
-      "summary": "The Central Bank of Iraq formally stated that public-sector salaries have not stopped and will not stop, and committed to ongoing cooperation with the government to keep payroll cycles intact. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2050636117657944521"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-02T23:30:16Z",
-      "category": "RT of @Osinttechnical",
-      "headline": "Trump unlikely to accept Iran's newest peace proposal",
-      "summary": "Mikeknightsiraq retweets reporting that Trump is unlikely to accept Iran's newest peace proposal, signaling continued escalation risk on the US-Iran track and indirect read-through to Iraqi exports.",
-      "url": "https://x.com/Osinttechnical/status/2050719554268246353"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-02T16:22:38Z",
-      "category": "RT of @AlexAlmeida2020",
-      "headline": "Commentary urges US to stop putzing around outside Hormuz until the President resolves the standoff",
-      "summary": "Mikeknightsiraq amplifies a critique that US naval posture outside the Strait of Hormuz is too passive given the disruption to global crude flows, arguing for a more decisive US move on the chokepoint.",
-      "url": "https://x.com/AlexAlmeida2020/status/2050611936010617024"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-03T20:37:13Z",
+      "category": "RT of @Afshin_Ismaeli",
+      "headline": "Iran public-sector workers unpaid for 34 days, told to wait another 22 days for salaries",
+      "summary": "Retweets Afshin Ismaeli's report that Iranian public-sector employees have not received pay for 34 days and have now been told they will wait another 22 days, a wartime fiscal-stress signal Bacharelhalabi is choosing to surface.",
+      "url": "https://x.com/Afshin_Ismaeli/status/2051038392906027241"
     }
   ]
 }
