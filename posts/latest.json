@@ -1,56 +1,264 @@
 {
-  "generated_at": "2026-05-04T04:02:29Z",
+  "generated_at": "2026-05-05T05:47:22Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-03T19:53:15Z",
-      "category": "Peshmerga & US policy",
-      "headline": "KurdistanWatch reframes the Pentagon Peshmerga funding cut as a structural pivot to Baghdad-centred channels, not an MoU technicality",
-      "summary": "Argues the FY27 elimination of direct Peshmerga stipend funding cannot be explained away as a lapsed memorandum and reflects a broader US policy shift toward funnelling Iraq aid through Baghdad rather than Erbil.",
-      "url": "https://x.com/KurdistanWatch/status/2051027327895666760"
+      "posted_at": "2026-05-04T20:25:02Z",
+      "category": "KRG Politics",
+      "headline": "PUK reportedly weighing legal case against Masrour Barzani over caretaker overreach",
+      "summary": "With KDP-PUK relations effectively collapsed, the PUK is said to be considering filing a case against PM Masrour Barzani on grounds his caretaker government has wielded full executive authority for over three and a half years past constitutional limits.",
+      "url": "https://x.com/KurdistanWatch/status/2051397711036129355"
     },
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-03T14:58:32Z",
-      "category": "Peshmerga ministry response",
-      "headline": "KurdistanWatch flags the KRG Peshmerga Ministry's denial as inconsistent with the Pentagon's own FY27 budget submission to Congress",
-      "summary": "Critiques the Ministry's public rejection of the funding cut by pointing to the explicit reductions in the official Pentagon budget documents already transmitted to Congress for 2027.",
-      "url": "https://x.com/KurdistanWatch/status/2050953156608074078"
+      "posted_at": "2026-05-04T19:38:11Z",
+      "category": "KRG Politics",
+      "headline": "Nechirvan Barzani positions himself as KDP moderate by meeting Halbousi in Baghdad",
+      "summary": "After the KDP's earlier announced withdrawal from Iraqi cabinet talks, Nechirvan Barzani's Baghdad sit-down with Speaker Mohammed al-Halbousi reads as the KDP's moderate face keeping the party engaged in the formation negotiation.",
+      "url": "https://x.com/KurdistanWatch/status/2051385923380687233"
+    },
+    {
+      "handle": "@KurdistanWatch",
+      "posted_at": "2026-05-04T17:54:04Z",
+      "category": "KRG Civil Liberties",
+      "headline": "Four Duhok activists in detention for over five weeks for criticizing KRG policy",
+      "summary": "Rashid Kochar, Rebar Emenki, Sabah Atroshi and Divan Ahmed remain held in Duhok five-plus weeks after being detained for public criticism of KRG governance and rising electricity costs, with the regional human rights commission confirming continued detention.",
+      "url": "https://x.com/KurdistanWatch/status/2051359721425133971"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-04T00:25:29Z",
-      "category": "Iran & Hormuz",
-      "headline": "AMrym corroborates an undeclared Iranian green light for ships to exit the Strait of Hormuz",
-      "summary": "Quote-tweeting Mohammed Saleh Sedghian, AMrym says Sedghian's reporting confirms his own line that Tehran has informally cleared stranded vessels to leave Hormuz, separate from Trump's announced Project Freedom escort. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2051095836147233090"
+      "posted_at": "2026-05-05T05:14:29Z",
+      "category": "Hormuz / Security",
+      "headline": "Unprecedented US reconnaissance flight activity over the Strait of Hormuz",
+      "summary": "Reports flag unusually heavy American spy-plane activity over the Strait of Hormuz in the wake of the recent Iranian strikes on shipping in the strait. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051530952002679108"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-04T00:22:47Z",
-      "category": "Iraq politics",
-      "headline": "AMrym calls Iraq's political elite disconnected from reality as cabinet horse-trading drags",
-      "summary": "Quote-tweeting OneNewsIQ, AMrym says senior Iraqi political figures are operating in a parallel universe relative to ground conditions, framed against the live cabinet-formation period under Zaidi. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2051095155151700364"
+      "posted_at": "2026-05-05T05:09:11Z",
+      "category": "Iraq Politics",
+      "headline": "Claim of a tightly designed Iranian play inside the new Iraqi cabinet formation",
+      "summary": "Quote-tweet endorsement of a report claiming a meticulously engineered Iranian-aligned plan around the new Iraqi government, framed as something so audacious followers would not believe it if explained. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051529621024145720"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-03T20:56:07Z",
-      "category": "Energy & Arab oil bloc",
-      "headline": "UAE leaves OAPEC after exiting OPEC+, completes the pull-out from the Arab petroleum cooperation architecture",
-      "summary": "Reports the UAE has formally withdrawn from the Organization of Arab Petroleum Exporting Countries, the 1968 Arab oil cooperation body, completing its exit from the regional petroleum-bloc stack on the same week it left OPEC+.",
-      "url": "https://x.com/Bacharelhalabi/status/2051043147216777644"
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T22:37:06Z",
+      "category": "Iraq Politics",
+      "headline": "Critique of Iraqi political factions fixated on ministerial portfolio shares",
+      "summary": "Video commentary skewering the political blocs for treating cabinet formation purely as a ministry-share contest at the expense of any program-of-government substance. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051430948705546554"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-03T20:37:13Z",
-      "category": "RT of @Afshin_Ismaeli",
-      "headline": "Iran public-sector workers unpaid for 34 days, told to wait another 22 days for salaries",
-      "summary": "Retweets Afshin Ismaeli's report that Iranian public-sector employees have not received pay for 34 days and have now been told they will wait another 22 days, a wartime fiscal-stress signal Bacharelhalabi is choosing to surface.",
-      "url": "https://x.com/Afshin_Ismaeli/status/2051038392906027241"
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T22:29:18Z",
+      "category": "Iraq Heritage",
+      "headline": "Culture minister referring Al-Qashlah heritage site to investment raises concerns",
+      "summary": "The Culture Minister approving a referral of the historic Al-Qashlah complex to investment is drawing pushback over fears of commercialization or a 50-year lease arrangement of a national heritage asset. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051428983963553815"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T20:18:12Z",
+      "category": "Hormuz / Security",
+      "headline": "Civil aviation effectively cleared from Iraqi, Iranian, Syrian and Lebanese airspace",
+      "summary": "Reports unusual near-empty civilian skies across Iraq, Iran, Syria and Lebanon in synchrony with the live US-Iran tension cycle, suggesting carriers are pre-positioning for an escalation. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051395994785354060"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T20:10:13Z",
+      "category": "Iraq Foreign Policy",
+      "headline": "Arab states condemn Iran for the UAE strikes, Iraqi government stays silent",
+      "summary": "Notes that Saudi Arabia, Kuwait, Qatar, Bahrain and Syria have all issued formal condemnations of the Iranian strikes on the UAE while the al-Sudani caretaker government has not put out an equivalent statement. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051393981913674059"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T20:04:12Z",
+      "category": "Aviation",
+      "headline": "FlyDubai cancels Baghdad-route flights citing renewed US-Iran hostilities",
+      "summary": "FlyDubai is reported to be suspending its Baghdad service in response to the renewed US-Iran tension, an early commercial-aviation signal that carriers are pulling back from Iraqi airspace risk. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051392469489582327"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T20:02:41Z",
+      "category": "Iraq Security",
+      "headline": "Iraqi National Intelligence Service intercepts a major captagon and hashish ring",
+      "summary": "INIS reports the seizure of more than one million captagon pills and 100 kilograms of hashish and the arrest of an international trafficking network operating across multiple governorates. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051392090261557270"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:46:23Z",
+      "category": "US-Iraq Relations",
+      "headline": "Tom Barrack reportedly under federal investigation in connection with Iraq files",
+      "summary": "Claim that the US Syria envoy and ambassador to Türkiye is the subject of a federal probe tied to Iraq-related dealings, surfaced inside the broader Iraq-Hormuz news cycle. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051387984843252008"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:23:39Z",
+      "category": "Hormuz / Security",
+      "headline": "Germany said to be lining up a substantive contribution to the Hormuz protection coalition",
+      "summary": "Reports that Berlin is preparing a sizeable contribution to the international maritime safety coalition forming around the strait, expanding the coalition's European footprint beyond the US and UK posture. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051382265800753404"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:22:58Z",
+      "category": "Hormuz / Security",
+      "headline": "Second wave of Iranian missiles reported targeting the UAE",
+      "summary": "Flags additional Iranian missile activity against UAE targets following the earlier Monday volley, consistent with the UAE Defence Ministry tally of 12 ballistic missiles, 3 cruise missiles and 4 drones. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051382093473550407"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:22:32Z",
+      "category": "Aviation",
+      "headline": "UAE shutters airspace to civilian traffic during the Iranian missile and drone wave",
+      "summary": "Reports the UAE temporarily suspending civilian aviation operations as the air-defence engagement against the Iranian volley and drone strikes was ongoing. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051381984484643307"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:07:52Z",
+      "category": "Iraq Fiscal",
+      "headline": "Parliament Finance Committee assures public-sector salaries will be paid on time",
+      "summary": "The Finance Committee guarantees timely public-sector compensation despite the fiscal pressure from the export halt and the war cycle, a politically pre-emptive line on the most sensitive household-level variable. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051378294226837664"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:06:01Z",
+      "category": "Hormuz / Security",
+      "headline": "Roughly 20 aerial-refuelling tankers identified across the regional theater",
+      "summary": "Open-source tracking flags a notably large refuelling-aircraft footprint over the region, characterized as a concerning indicator of imminent sustained air operations. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051377827136537054"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:04:22Z",
+      "category": "Iraq Politics",
+      "headline": "Al-Zaidi confirms cabinet submission next week and KRG salary settlement commitment",
+      "summary": "Picks up the al-Zaidi line that the new ministerial formation will be presented to parliament early-to-mid next week and that the Kurdistan Region salary issue will be resolved inside the new government. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051377413221732556"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-04T19:03:30Z",
+      "category": "Hormuz / Security",
+      "headline": "UAE confirms 15 missiles and 4 drones engaged in the day's attack",
+      "summary": "Records the UAE official tally of the Monday volley at 15 missiles and 4 drones, with the Defence Ministry framing it as an unprovoked Iranian attack on civilian sites and facilities. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2051377195440869862"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T20:17:42Z",
+      "category": "Yemen / Regional",
+      "headline": "Yemeni Leclerc tank company spotted near Al Anad or on the Taizz-Hodeida front",
+      "summary": "Geolocation read on a Yemeni Leclerc-equipped company either at Al Anad airbase or pushing onto the Taizz-Hodeida axis, against the backdrop of the regional escalation cycle.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051395869321068584"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T20:05:24Z",
+      "category": "US Military",
+      "headline": "Retrospective on a US 'finish' phase that was disastrously handled",
+      "summary": "Knights criticizes how a particular US military finish phase was executed in retrospect, framed as an instructive operational lesson rather than a current-event take.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051392773924827414"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T18:01:11Z",
+      "category": "UAE Air Force",
+      "headline": "UAE Mirage pilots get a Knights endorsement during the air defence engagement",
+      "summary": "An off-the-cuff Knights compliment to UAE Mirage pilots, posted in the middle of the UAE air-defence engagement against the Iranian missile and drone wave.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051361511780544763"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T17:52:52Z",
+      "category": "UAE Air Defence",
+      "headline": "Quip on Iranian missile interception, May the 4th treatment",
+      "summary": "Knights deadpans that an interception over UAE airspace was 'obviously an ion cannon,' wishing followers a happy May the 4th in the middle of the air-defence cycle.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051359418944528727"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T17:51:42Z",
+      "category": "Yemen / Regional",
+      "headline": "Knights notes a Yemeni jaish commander operating in full PPE",
+      "summary": "Brief commentary marking a Yemeni-army commander captured operating in full personal protective equipment, an aside on regional kit standards.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051359123673932136"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T17:17:48Z",
+      "category": "RT of @Osint613",
+      "headline": "RT: CENTCOM's Cooper says Iranian cruise missiles were the principal threat",
+      "summary": "Knights amplifies an OSINT-account quote of CENTCOM commander Adm. Brad Cooper attributing the principal threat in the latest UAE engagement to Iranian cruise missiles rather than ballistic systems.",
+      "url": "https://x.com/Osint613/status/2051350593470394456"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T17:13:02Z",
+      "category": "RT of @jhaboush",
+      "headline": "RT: CENTCOM's Cooper credits UAE with exceptional air-defence capabilities",
+      "summary": "Knights amplifies a journalist's quote of Adm. Brad Cooper highlighting the UAE's exceptional capabilities during the Monday air-defence engagement against the Iranian volley.",
+      "url": "https://x.com/jhaboush/status/2051349394646069397"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T16:44:07Z",
+      "category": "Iraq Politics",
+      "headline": "Knights notes a possibly material development in the Iraqi cabinet talks",
+      "summary": "A short Knights quote-tweet flagging a development in the Zaidi cabinet formation cycle as potentially significant if it pans out, signalling fluidity inside the negotiation.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051342118203908102"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T16:41:57Z",
+      "category": "Iraq Politics",
+      "headline": "Knights flags Ihsan al-Awadi and Hamid al-Ghazzi inside the Iraqi cabinet conversation",
+      "summary": "Identifies Ihsan al-Awadi and Hamid al-Ghazzi as figures showing up inside the live Zaidi cabinet bargain, expanding the visible roster of Coordination Framework operators around the negotiation.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051341573711892956"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T16:39:41Z",
+      "category": "Hormuz / Security",
+      "headline": "Knights jabs at anyone trying to disrupt 'Project Freedom'",
+      "summary": "Light-touch quote-tweet riffing on the branding of Trump's US Navy escort operation through the Strait of Hormuz, posted on the operation's first day.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051340999901814859"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T15:56:03Z",
+      "category": "RT of @BabakTaghvaee1",
+      "headline": "RT: BREAKING flagged on fighter jets reported over multiple southern Iranian cities",
+      "summary": "Knights amplifies an open-source report of fighter-jet activity over several southern Iranian cities, the kind of indicator-of-activity the regional Hormuz cycle has been generating.",
+      "url": "https://x.com/BabakTaghvaee1/status/2051330020698734872"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T12:11:46Z",
+      "category": "RT of @JAParker29",
+      "headline": "RT: Surprise that the US had not engaged earlier in the cycle",
+      "summary": "Knights amplifies a Parker take expressing surprise that US forces had not engaged earlier in the Hormuz cycle, providing an outside framing of the Project Freedom timing call.",
+      "url": "https://x.com/JAParker29/status/2051273580135293205"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-05-04T11:56:54Z",
+      "category": "Iraq Politics",
+      "headline": "Knights reads sudden Iraqi MP and Oil Ministry warmth toward the KRG",
+      "summary": "Quote-tweet noting MPs and Iraqi Oil Ministry figures suddenly being notably nice to the KRG, framed as evidence the federal-Region bargain is moving inside the al-Zaidi negotiation.",
+      "url": "https://x.com/Mikeknightsiraq/status/2051269835363864697"
     }
   ]
 }
