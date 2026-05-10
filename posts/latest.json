@@ -1,144 +1,160 @@
 {
-  "generated_at": "2026-05-07T08:46:00Z",
+  "generated_at": "2026-05-10T07:33:50Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-06T18:22:49Z",
-      "category": "Iraq Government Formation",
-      "headline": "KDP confirms return to Iraqi parliament next week ahead of cabinet vote",
-      "summary": "KDP says it will return to the Iraqi parliament next week, ending the boycott it launched after a PUK candidate's presidential election during a KDP-absent session, with the move following the PM-designate's Erbil visit and Nechirvan Barzani's Baghdad track.",
-      "url": "https://x.com/KurdistanWatch/status/2052091730271289682"
+      "posted_at": "2026-05-09T21:37:59Z",
+      "category": "Sinjar",
+      "headline": "Yazidi factions push back on reports of a possible KDP return to Sinjar",
+      "summary": "KurdistanWatch flags that as reports emerge of a possible KDP return to Sinjar, several Yazidi factions have voiced strong opposition, citing the unresolved 2017 Peshmerga withdrawal and the 2022 Iraqi army operation against local Yazidi armed groups.",
+      "url": "https://x.com/KurdistanWatch/status/2053228008668811600"
     },
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-06T14:10:01Z",
-      "category": "Oil & Gas",
-      "headline": "Lanaz refinery convoy from Erbil seen heading to the Turkish border",
-      "summary": "Reports a convoy of tankers carrying refined oil and gas products from the Lanaz refinery in Erbil heading toward Turkey, adding a refined-products lane to the post-Hormuz KRG export and re-export routing build-out.",
-      "url": "https://x.com/KurdistanWatch/status/2052028112427196816"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-06T18:00:50Z",
-      "category": "KRG Politics",
-      "headline": "Halwest, KIU and Komal submit a separate 10-seat proposal to the Coordination Framework",
-      "summary": "Halwest, the Islamic Union and Komal, together holding 10 seats in Iraq's parliament, say they have submitted a separate proposal to the Shia-led Coordination Framework, framing a non-KDP Kurdish negotiation track that potentially strengthens PUK positioning across federal and regional politics.",
-      "url": "https://x.com/KurdistanWatch/status/2052086200765174260"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-06T15:24:24Z",
-      "category": "KRG Politics",
-      "headline": "All non-KDP Kurdish factions opt for collective negotiation with Shia parties",
-      "summary": "All Kurdish factions outside the KDP have decided to negotiate collectively with Shia parties, with the smaller-party coalition strengthening negotiating leverage and isolating the KDP, with potential implications for Kurdistan Parliament majority formation.",
-      "url": "https://x.com/KurdistanWatch/status/2052046831740129492"
+      "posted_at": "2026-05-09T12:53:38Z",
+      "category": "KRG Diplomacy",
+      "headline": "KRG PM Masrour Barzani meets Erdogan in Istanbul on energy, Development Road and the Terror-Free Türkiye process",
+      "summary": "Barzani's Istanbul stop covered trade, transportation and energy with Erdogan at Dolmabahce, alongside a parallel session with Energy Minister Bayraktar, in the highest-level Erbil-Ankara energy meeting since the Hormuz disruption.",
+      "url": "https://x.com/KurdistanWatch/status/2053096053532971458"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:55:20Z",
-      "category": "Iraq Government Formation",
-      "headline": "Washington warns Sudani that militia participation will trigger political, economic and security measures",
-      "summary": "References reporting that Washington informed al-Sudani that militia participation in his government will result in political, economic and security measures, sketching the cost-side of the State Department's pressure on the cabinet line. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052296209985868020"
+      "posted_at": "2026-05-10T00:23:16Z",
+      "category": "Iraq Airspace",
+      "headline": "US aerial-refuelling and reconnaissance aircraft over Iraqi airspace force civil-aviation reroutes around Baghdad",
+      "summary": "AMrym93884 reports US aircraft, one for aerial refuelling and another for reconnaissance, are flying over Iraqi airspace and have forced several civilian flights to alter their approach paths into Baghdad International. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053269604634423591"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:53:52Z",
+      "posted_at": "2026-05-10T00:22:36Z",
+      "category": "Iraq Airspace",
+      "headline": "Unidentified helicopter activity over Mosul as warplane flights continue across most Iraqi provinces",
+      "summary": "AMrym93884 reports unidentified rotary-wing flights over Mosul in tandem with intensive and continuous warplane activity over most Iraqi provinces. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053269438690943234"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T22:36:15Z",
+      "category": "Iraq Politics",
+      "headline": "Iraqi MP al-Haidari pushes for Iraqi citizenship for Bahrainis stripped on Iran-sympathy grounds",
+      "summary": "AMrym93884 cites MP Alaa al-Haidari calling on the Iraqi government to grant Iraqi citizenship to every Bahraini whose nationality has been revoked over alleged sympathy with Iran. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053242672941244432"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T21:42:31Z",
+      "category": "Iraq Airspace",
+      "headline": "Warplane noise reported over east Baghdad's al-Qanat district",
+      "summary": "AMrym93884 cites eyewitnesses to fighter-jet sound east of the canal in Baghdad on Saturday evening. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053229152719826993"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T21:07:12Z",
+      "category": "US-Iran Mediation",
+      "headline": "Sources say Rubio, Witkoff and Qatar PM Miami session focused on ending the Iran war and a separate sensitive Iraq file",
+      "summary": "AMrym93884 cites US sources that the Rubio, Witkoff and Qatari PM Mohammed bin Abdulrahman al-Thani meeting in Miami concentrated on closing the Iran war and on another serious matter related to Iraq. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053220264440176676"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T20:40:06Z",
+      "category": "Iraq Airspace",
+      "headline": "US warplane activity reported in Baghdad sky on Saturday evening",
+      "summary": "AMrym93884 reports US warplane overflight in Baghdad airspace at around the same time the civil-aviation reroute request was being processed. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053213442354356729"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T20:34:07Z",
+      "category": "Iraq Airspace",
+      "headline": "Unusual US air activity tracked from Tel Aviv toward Iraq's southern border via the Samawah desert",
+      "summary": "AMrym93884 logs strange US air activity over the Samawah desert with US aircraft tracked outbound from Tel Aviv toward the southern Iraqi border. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053211937505186262"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T20:31:39Z",
+      "category": "Iran Military Posture",
+      "headline": "IRGC Aerospace commander says missiles and drones are locked on targets, awaiting launch order",
+      "summary": "AMrym93884 cites the IRGC Aerospace Force commander stating missiles and drones tied to the unit have been locked onto enemy targets and are awaiting the order to fire. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053211316286808494"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T20:22:05Z",
+      "category": "Hormuz Posture",
+      "headline": "Wide US warship movements in the Sea of Oman flagged as potential prelude to a major operation",
+      "summary": "AMrym93884 flags broad US warship activity in the Sea of Oman, suggesting recent days were tests of Iranian naval capability whose findings will shape the US response. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053208909838504127"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T19:50:12Z",
+      "category": "Iran Military Posture",
+      "headline": "Iranian naval command warns any attack on Iranian tankers or commercial vessels will be met with a violent assault on US regional bases and ships",
+      "summary": "AMrym93884 quotes the Iranian naval command tweeting that any attack on Iranian oil tankers or commercial vessels will trigger a violent assault on a US regional base and on enemy ships. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053200884654395455"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T19:24:49Z",
+      "category": "US-Iran Posture",
+      "headline": "Israeli media report the United States is preparing for a major operation in Iran",
+      "summary": "AMrym93884 cites Israeli media that Washington is readying a large-scale operation against Iran. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053194499325587903"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T19:10:10Z",
+      "category": "Iraq Cabinet",
+      "headline": "Oil portfolio still unsettled in Zaidi cabinet talks, Sudani coalition seen as the closest contender on the 25-point pricing",
+      "summary": "AMrym93884 reports that the Oil Ministry has not been resolved in the cabinet bargaining, with most Shia blocs eyeing the portfolio but the Sudani coalition closest to securing it because it can pay the 25-point price tag the slot now carries, similar to the presidency-level point allocation. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053190809730592809"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-09T19:05:18Z",
       "category": "Iraq Security",
-      "headline": "US will not approve integrating PMF into the formal security institutions, per reporting",
-      "summary": "References reporting that the United States will not approve integrating the Hashd al-Shaabi into the official security institutions, narrowing the Coordination Framework's room to formalize PMF status inside any Zaidi cabinet structure. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052295839331098739"
+      "headline": "WSJ-cited claim of an Israeli covert military site in Iraq's western desert allegedly used as the launchpad for strikes on Iran",
+      "summary": "AMrym93884 cites a Wall Street Journal report attributing to US officials that Israel set up a clandestine military site in the Iraqi desert from which operational support for the Iran air strikes was launched, with the IDF reportedly engaging Iraqi forces from the site at one point. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053189588315746741"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:53:04Z",
-      "category": "Iraq Government Formation",
-      "headline": "State Department line on factions reads we seek actions, not words",
-      "summary": "Cites the US State Department position that on the militia file Washington seeks actions, not words, raising the bar Zaidi has to meet to keep the Strategic Framework cooperation track live. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052295637710823758"
+      "posted_at": "2026-05-09T19:01:02Z",
+      "category": "Iraq Diplomacy",
+      "headline": "MBS congratulatory cable to Zaidi follows a Kazimi-Saudi back-channel opened from Kazimi's Baghdad residence",
+      "summary": "AMrym93884 reports the Saudi Crown Prince's Saturday congratulatory cable to PM-designate al-Zaidi followed contacts run by former PM Mustafa al-Kazimi with the Saudi side after a morning meeting between Kazimi and Zaidi at Kazimi's home. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053188513047196021"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:52:11Z",
-      "category": "Iraq Security",
-      "headline": "Foreign Policy line that the Iraqi government finances factions undermining its own authority",
-      "summary": "References Foreign Policy reporting framing the Iraqi government as financing armed factions that undermine its own authority, the same line being passed inside the State Department demand to strip militia salaries and budget support. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052295414091497799"
+      "posted_at": "2026-05-09T18:34:03Z",
+      "category": "Iraq Diplomacy",
+      "headline": "Full text of MBS cable congratulating Zaidi on his nomination as Iraqi Prime Minister",
+      "summary": "AMrym93884 publishes the full text of the cable from Saudi Crown Prince Mohammed bin Salman to PM-designate Ali Faleh Kadhim al-Zaidi, expressing readiness to deepen brotherly relations across all fields and wishing Iraq and its people continued progress. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053181720753783243"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:51:27Z",
-      "category": "Iraq Government Formation",
-      "headline": "Trump push for an Iraqi government free of terrorism and the militia institutionalization push are unlikely to align",
-      "summary": "Commentary on the gap between the Trump directive for an Iraqi government free of terrorism and the parallel militia-institutionalization push from inside the system, with the writer arguing the existing political stack will not deliver on either. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052295230984950206"
+      "posted_at": "2026-05-09T18:33:20Z",
+      "category": "Iraq Health",
+      "headline": "Iraqi Health Ministry says no Hantavirus cases recorded inside Iraq, WHO global risk assessment is low",
+      "summary": "AMrym93884 cites the Iraqi Health Ministry spokesperson confirming no Hantavirus cases have been recorded in Iraq, with monitoring continuing across the global and regional epidemiological situation, scientific bulletins circulated to health departments, infection-control measures in place and the WHO assessing global risk as low. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2053181540704587840"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:50:35Z",
-      "category": "Iraq Fiscal",
-      "headline": "Shiite leader frames the Washington condition as cutting militia salaries and allowances",
-      "summary": "Quotes a Shiite leader framing Washington's condition as targeting the cutting of militia salaries and allowances, lining up with the State Department demand passed to Zaidi to end government salary and budget support to Iran-aligned factions. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052295010767212928"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T07:22:13Z",
-      "category": "Iran-US",
-      "headline": "Iranian source frames Tehran-Washington gap as still vast despite the MOU work",
-      "summary": "References an Iranian source framing the differences between Tehran and Washington as still being like sky and earth despite the live one-page MOU framework, casting doubt on near-term final-deal closure even as the 30-day window ticks. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052287875505357047"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T06:54:11Z",
-      "category": "US-Iraq",
-      "headline": "Petraeus reportedly arrives in Iraq within 96 hours, Barrack staying away",
-      "summary": "Reports former CIA Director and CENTCOM commander David Petraeus arriving in Iraq within a 96-hour window, with Tom Barrack not making the trip, putting a high-profile US security-track presence in Baghdad in parallel to the Hegseth-Zaidi call. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052280821134897552"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T06:51:59Z",
-      "category": "Iraq Security",
-      "headline": "Core US conditions package reads weapons monopoly, faction expulsion, militia funding halt and an explicit state-versus-militia line",
-      "summary": "Lists the core US conditions on the Iraqi cabinet as monopolizing weapons to the state, expelling factions from government, halting militia funding, and declaring militias separate from the state, framing this as the package no current actor inside the system can fully deliver. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052280266165563671"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-07T06:51:51Z",
-      "category": "Iraq Government Formation",
-      "headline": "Parliament speaker schedules cabinet vote for early-to-mid next week",
-      "summary": "Notes the parliament speaker has scheduled the al-Zaidi cabinet vote for early-to-mid next week, lining up with the Shafaq readout on the 14-minister first-tranche submission. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2052280230782337449"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-06T17:07:33Z",
-      "category": "Iran-UAE",
-      "headline": "Iranian strikes on the UAE read as a short-sighted strategic call",
-      "summary": "Commentary endorsing the framing that the Iranian strikes on the UAE were a short-sighted strategic move, picking up an article on the resulting shift in Gulf alignment.",
-      "url": "https://x.com/Mikeknightsiraq/status/2052072790266720655"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-06T17:06:14Z",
-      "category": "US Military",
-      "headline": "F/A-18 gun run on a vessel rudder, citing CENTCOM",
-      "summary": "Brief observation on a US F/A-18 gun run on a vessel rudder, picking up a CENTCOM post on the kinetic action against Iranian small boats during the convoy operation.",
-      "url": "https://x.com/Mikeknightsiraq/status/2052072459860365701"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-06T10:29:52Z",
-      "category": "Iraq Security",
-      "headline": "Akram al-Kaabi photo-op with Qaani read as the safest position available given Quds Force survival odds",
-      "summary": "Quip on a photo-op of Harakat al-Nujaba leader Akram al-Kaabi standing next to IRGC Quds Force commander Esmail Qaani, framing it as the safest position available given Qaani's repeated survival of war-cycle strikes.",
-      "url": "https://x.com/Mikeknightsiraq/status/2051972709098099006"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-09T13:24:42Z",
+      "category": "RT of @staunovo",
+      "headline": "Qatar-linked LNG carrier loaded at Ras Laffan begins outbound Hormuz crossing",
+      "summary": "Bacharelhalabi retweets staunovo flagging that a Qatar-linked liquefied natural gas carrier loaded at Ras Laffan earlier this month began its outbound journey on Saturday morning, a notable Hormuz transit datapoint inside the active force-majeure window.",
+      "url": "https://x.com/staunovo/status/2053103871702995088"
     }
   ]
 }
