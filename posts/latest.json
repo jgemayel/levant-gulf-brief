@@ -1,160 +1,104 @@
 {
-  "generated_at": "2026-05-10T07:33:50Z",
+  "generated_at": "2026-05-17T14:27:10Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-09T21:37:59Z",
-      "category": "Sinjar",
-      "headline": "Yazidi factions push back on reports of a possible KDP return to Sinjar",
-      "summary": "KurdistanWatch flags that as reports emerge of a possible KDP return to Sinjar, several Yazidi factions have voiced strong opposition, citing the unresolved 2017 Peshmerga withdrawal and the 2022 Iraqi army operation against local Yazidi armed groups.",
-      "url": "https://x.com/KurdistanWatch/status/2053228008668811600"
+      "posted_at": "2026-05-17T18:35:13Z",
+      "category": "PUK / Lahur file",
+      "headline": "Lahur Sheikh Jangi-aligned outlets push torture allegation by detained guard Hamarash against PUK security",
+      "summary": "Media outlets close to jailed Lahur Sheikh Jangi circulated allegations that detained guard Hamarash told the court at a recent hearing he had been severely tortured in PUK custody, including claims of physical violence and sexual abuse, with the Independent Human Rights Commission flagged as drawing attention to the case and KDP-aligned media also amplifying the claim as part of a possible coerced-confessions probe.",
+      "url": "https://x.com/KurdistanWatch/status/2056081117527093379"
     },
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-09T12:53:38Z",
-      "category": "KRG Diplomacy",
-      "headline": "KRG PM Masrour Barzani meets Erdogan in Istanbul on energy, Development Road and the Terror-Free Türkiye process",
-      "summary": "Barzani's Istanbul stop covered trade, transportation and energy with Erdogan at Dolmabahce, alongside a parallel session with Energy Minister Bayraktar, in the highest-level Erbil-Ankara energy meeting since the Hormuz disruption.",
-      "url": "https://x.com/KurdistanWatch/status/2053096053532971458"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-10T00:23:16Z",
-      "category": "Iraq Airspace",
-      "headline": "US aerial-refuelling and reconnaissance aircraft over Iraqi airspace force civil-aviation reroutes around Baghdad",
-      "summary": "AMrym93884 reports US aircraft, one for aerial refuelling and another for reconnaissance, are flying over Iraqi airspace and have forced several civilian flights to alter their approach paths into Baghdad International. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053269604634423591"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-10T00:22:36Z",
-      "category": "Iraq Airspace",
-      "headline": "Unidentified helicopter activity over Mosul as warplane flights continue across most Iraqi provinces",
-      "summary": "AMrym93884 reports unidentified rotary-wing flights over Mosul in tandem with intensive and continuous warplane activity over most Iraqi provinces. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053269438690943234"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T22:36:15Z",
-      "category": "Iraq Politics",
-      "headline": "Iraqi MP al-Haidari pushes for Iraqi citizenship for Bahrainis stripped on Iran-sympathy grounds",
-      "summary": "AMrym93884 cites MP Alaa al-Haidari calling on the Iraqi government to grant Iraqi citizenship to every Bahraini whose nationality has been revoked over alleged sympathy with Iran. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053242672941244432"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T21:42:31Z",
-      "category": "Iraq Airspace",
-      "headline": "Warplane noise reported over east Baghdad's al-Qanat district",
-      "summary": "AMrym93884 cites eyewitnesses to fighter-jet sound east of the canal in Baghdad on Saturday evening. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053229152719826993"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T21:07:12Z",
-      "category": "US-Iran Mediation",
-      "headline": "Sources say Rubio, Witkoff and Qatar PM Miami session focused on ending the Iran war and a separate sensitive Iraq file",
-      "summary": "AMrym93884 cites US sources that the Rubio, Witkoff and Qatari PM Mohammed bin Abdulrahman al-Thani meeting in Miami concentrated on closing the Iran war and on another serious matter related to Iraq. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053220264440176676"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T20:40:06Z",
-      "category": "Iraq Airspace",
-      "headline": "US warplane activity reported in Baghdad sky on Saturday evening",
-      "summary": "AMrym93884 reports US warplane overflight in Baghdad airspace at around the same time the civil-aviation reroute request was being processed. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053213442354356729"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T20:34:07Z",
-      "category": "Iraq Airspace",
-      "headline": "Unusual US air activity tracked from Tel Aviv toward Iraq's southern border via the Samawah desert",
-      "summary": "AMrym93884 logs strange US air activity over the Samawah desert with US aircraft tracked outbound from Tel Aviv toward the southern Iraqi border. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053211937505186262"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T20:31:39Z",
-      "category": "Iran Military Posture",
-      "headline": "IRGC Aerospace commander says missiles and drones are locked on targets, awaiting launch order",
-      "summary": "AMrym93884 cites the IRGC Aerospace Force commander stating missiles and drones tied to the unit have been locked onto enemy targets and are awaiting the order to fire. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053211316286808494"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T20:22:05Z",
-      "category": "Hormuz Posture",
-      "headline": "Wide US warship movements in the Sea of Oman flagged as potential prelude to a major operation",
-      "summary": "AMrym93884 flags broad US warship activity in the Sea of Oman, suggesting recent days were tests of Iranian naval capability whose findings will shape the US response. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053208909838504127"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T19:50:12Z",
-      "category": "Iran Military Posture",
-      "headline": "Iranian naval command warns any attack on Iranian tankers or commercial vessels will be met with a violent assault on US regional bases and ships",
-      "summary": "AMrym93884 quotes the Iranian naval command tweeting that any attack on Iranian oil tankers or commercial vessels will trigger a violent assault on a US regional base and on enemy ships. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053200884654395455"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T19:24:49Z",
-      "category": "US-Iran Posture",
-      "headline": "Israeli media report the United States is preparing for a major operation in Iran",
-      "summary": "AMrym93884 cites Israeli media that Washington is readying a large-scale operation against Iran. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053194499325587903"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T19:10:10Z",
-      "category": "Iraq Cabinet",
-      "headline": "Oil portfolio still unsettled in Zaidi cabinet talks, Sudani coalition seen as the closest contender on the 25-point pricing",
-      "summary": "AMrym93884 reports that the Oil Ministry has not been resolved in the cabinet bargaining, with most Shia blocs eyeing the portfolio but the Sudani coalition closest to securing it because it can pay the 25-point price tag the slot now carries, similar to the presidency-level point allocation. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053190809730592809"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T19:05:18Z",
-      "category": "Iraq Security",
-      "headline": "WSJ-cited claim of an Israeli covert military site in Iraq's western desert allegedly used as the launchpad for strikes on Iran",
-      "summary": "AMrym93884 cites a Wall Street Journal report attributing to US officials that Israel set up a clandestine military site in the Iraqi desert from which operational support for the Iran air strikes was launched, with the IDF reportedly engaging Iraqi forces from the site at one point. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053189588315746741"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T19:01:02Z",
-      "category": "Iraq Diplomacy",
-      "headline": "MBS congratulatory cable to Zaidi follows a Kazimi-Saudi back-channel opened from Kazimi's Baghdad residence",
-      "summary": "AMrym93884 reports the Saudi Crown Prince's Saturday congratulatory cable to PM-designate al-Zaidi followed contacts run by former PM Mustafa al-Kazimi with the Saudi side after a morning meeting between Kazimi and Zaidi at Kazimi's home. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053188513047196021"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T18:34:03Z",
-      "category": "Iraq Diplomacy",
-      "headline": "Full text of MBS cable congratulating Zaidi on his nomination as Iraqi Prime Minister",
-      "summary": "AMrym93884 publishes the full text of the cable from Saudi Crown Prince Mohammed bin Salman to PM-designate Ali Faleh Kadhim al-Zaidi, expressing readiness to deepen brotherly relations across all fields and wishing Iraq and its people continued progress. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053181720753783243"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-09T18:33:20Z",
-      "category": "Iraq Health",
-      "headline": "Iraqi Health Ministry says no Hantavirus cases recorded inside Iraq, WHO global risk assessment is low",
-      "summary": "AMrym93884 cites the Iraqi Health Ministry spokesperson confirming no Hantavirus cases have been recorded in Iraq, with monitoring continuing across the global and regional epidemiological situation, scientific bulletins circulated to health departments, infection-control measures in place and the WHO assessing global risk as low. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2053181540704587840"
+      "posted_at": "2026-05-17T15:43:47Z",
+      "category": "KRG Government formation",
+      "headline": "KIU's Bahaddin meets PUK's Bafel Talabani as Islamic Union turns down ministerial offers from both KDP and PUK to keep mediator role",
+      "summary": "Kurdistan Islamic Union leader Salahaddin Bahaddin met PUK's Bafel Talabani in Sulaimani, with both KDP and PUK having offered the KIU several high-level posts that the party is rejecting to preserve an independent mediator position, with the stated goal of throttling the media warfare between the two main parties while the cabinet-formation deadlock runs on.",
+      "url": "https://x.com/KurdistanWatch/status/2056037974425452689"
     },
     {
       "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-09T13:24:42Z",
-      "category": "RT of @staunovo",
-      "headline": "Qatar-linked LNG carrier loaded at Ras Laffan begins outbound Hormuz crossing",
-      "summary": "Bacharelhalabi retweets staunovo flagging that a Qatar-linked liquefied natural gas carrier loaded at Ras Laffan earlier this month began its outbound journey on Saturday morning, a notable Hormuz transit datapoint inside the active force-majeure window.",
-      "url": "https://x.com/staunovo/status/2053103871702995088"
+      "posted_at": "2026-05-17T11:30:31Z",
+      "category": "RT of @iaeaorg",
+      "headline": "IAEA confirms normal radiation levels and no injuries at Barakah NPP after drone strike, DG Grossi calls for maximum military restraint near nuclear sites",
+      "summary": "Bacharelhalabi reshared the IAEA statement that the UAE informed the agency radiation levels at Barakah remained normal and no injuries were reported after a morning drone strike hit an electrical generator outside the inner perimeter, with emergency diesel generators providing power to unit 3 and DG Rafael Grossi expressing grave concern and reiterating the call for maximum military restraint near any nuclear power plant.",
+      "url": "https://x.com/iaeaorg/status/2055974241313361927"
+    },
+    {
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-17T10:20:29Z",
+      "category": "UAE / Nuclear",
+      "headline": "Abu Dhabi authorities confirm drone-caused fire at Barakah NPP electrical generator outside inner perimeter, no radiological impact",
+      "summary": "Bacharelhalabi shared the Abu Dhabi authorities' first official statement that they had responded to a fire at an electrical generator outside the inner perimeter of the Barakah Nuclear Power Plant in the Al Dhafra Region caused by a drone strike, with no injuries reported and no impact on radiological safety levels per the Federal Authority for Nuclear Regulation.",
+      "url": "https://x.com/Bacharelhalabi/status/2055956613727432911"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T18:17:39Z",
+      "category": "US / Iran",
+      "headline": "US media report a possible imminent US strike on Iran as the war cycle re-escalates",
+      "summary": "American media outlets are reporting that the United States may strike Iran as the latest escalation cycle deepens, posted alongside the Barakah drone-strike news and Trump's clock-is-ticking warning. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056076697875714172"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T18:02:21Z",
+      "category": "US / Israel readiness",
+      "headline": "Israeli Broadcasting Corporation quotes an official saying the US and Israel are raising readiness",
+      "summary": "Israeli public broadcasting cited an official saying that the United States and Israel are raising their military readiness level, in the immediate wake of the Barakah strike and the Trump warning to Tehran. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056072848620355913"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T16:52:57Z",
+      "category": "US / Iran",
+      "headline": "Trump warns Iran that time is running out and they must move quickly or nothing will remain of them",
+      "summary": "President Trump publicly warned that for Iran, time is running out and they must move quickly on a deal or nothing will remain of them, framing the next strike as a wide one. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056055381197983983"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T16:12:08Z",
+      "category": "Iraq / Religious calendar",
+      "headline": "Sistani office in Najaf confirms Monday May 18 as the first of Dhul Hijjah 1447, anchoring the Eid al-Adha calendar",
+      "summary": "The office of Grand Ayatollah Ali al-Sistani in Najaf confirmed that Monday May 18, 2026 marks the first of Dhul Hijjah 1447 AH, anchoring the Eid al-Adha calendar and the post-Eid window the Zaidi cabinet is sequencing the remaining nine portfolios against. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056045110790414362"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T15:58:58Z",
+      "category": "US / Iran",
+      "headline": "Axios reports Trump discussed the Iran file with European leaders ahead of the next escalation move",
+      "summary": "Axios reported that President Trump discussed the Iran file directly with European leaders as Washington signals the next strike could be very wide, part of the diplomatic preparation around the Qatar and Pakistan mediation track. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056041797558706421"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T13:33:08Z",
+      "category": "Iraq / Coordination Framework",
+      "headline": "Araji meets Sudani and praises the latter's accomplishments while affirming Coordination Framework support for the Zaidi government",
+      "summary": "Qassim al-Araji, a regular mediator inside the Shia political stack, met former PM Sudani at his Baghdad residence and praised his accomplishments while reaffirming full Coordination Framework backing for the new Zaidi-led cabinet, in a move framed by the account as calming intra-Shia tensions after the Reconstruction bloc's portfolio-share grievance. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056005094932353172"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T12:48:51Z",
+      "category": "Iraq / Cabinet integrity",
+      "headline": "Account flags an Electricity Ministry conflict-of-interest issue as a former-MP complaint against PM and Electricity Minister surfaces",
+      "summary": "The post argues the Electricity Ministry has outstanding obligations to one of the figures in the new cabinet and frames the arrangement as a conflict of interest, in parallel to a Shafaq News report of a former MP filing a formal conflict-of-interest complaint against PM Zaidi and the new Electricity Minister. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2055993953028030943"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T12:25:06Z",
+      "category": "UAE / Nuclear",
+      "headline": "IAEA tells the world that UAE confirms normal Barakah radiation levels and no injuries after the drone attack",
+      "summary": "The account translated the IAEA statement into Arabic, conveying that the UAE informed the agency that radiation levels at the Barakah Nuclear Power Plant remained within normal limits and no injuries were reported following the drone strike outside the plant's perimeter. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2055987974198730850"
     }
   ]
 }
