@@ -1,104 +1,184 @@
 {
-  "generated_at": "2026-05-17T14:27:10Z",
+  "generated_at": "2026-05-18T06:18:00Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
       "handle": "@KurdistanWatch",
+      "posted_at": "2026-05-17T19:39:20Z",
+      "category": "Iran / Kurdish opposition",
+      "headline": "KurdistanWatch sets out a structured read on Iranian Kurdish opposition groups, weapons and funding flows",
+      "summary": "KurdistanWatch posts a numbered thread on the Iranian Kurdish opposition groups and their weapons posture, tracing the funding sources the groups have drawn on and how that has shaped their operational footprint inside the Kurdistan Region through the war cycle.",
+      "url": "https://x.com/KurdistanWatch/status/2056097256277680203"
+    },
+    {
+      "handle": "@KurdistanWatch",
+      "posted_at": "2026-05-17T19:04:35Z",
+      "category": "KRG politics",
+      "headline": "Halwest Movement's Islam Zebari, a former Peshmerga officer, detained for five days in Sulaimani",
+      "summary": "KurdistanWatch reports that Islam Zebari, a former Peshmerga officer and senior figure in the opposition Halwest Movement, has been detained for five days in Sulaimani, extending the run of opposition-figure detentions through the KRG cabinet deadlock and the parallel Lahur Sheikh Jangi security investigation.",
+      "url": "https://x.com/KurdistanWatch/status/2056088507550973979"
+    },
+    {
+      "handle": "@KurdistanWatch",
       "posted_at": "2026-05-17T18:35:13Z",
-      "category": "PUK / Lahur file",
-      "headline": "Lahur Sheikh Jangi-aligned outlets push torture allegation by detained guard Hamarash against PUK security",
-      "summary": "Media outlets close to jailed Lahur Sheikh Jangi circulated allegations that detained guard Hamarash told the court at a recent hearing he had been severely tortured in PUK custody, including claims of physical violence and sexual abuse, with the Independent Human Rights Commission flagged as drawing attention to the case and KDP-aligned media also amplifying the claim as part of a possible coerced-confessions probe.",
+      "category": "KRG politics",
+      "headline": "Pro-Lahur media outlets circulate detainee-guard allegations as Sheikh Jangi defence pushes Erbil transfer",
+      "summary": "KurdistanWatch flags that media outlets close to jailed politician Lahur Sheikh Jangi are circulating allegations involving one of his detained guards, Hamarash, layered on top of the defence team's formal effort to move the case from Sulaimani to the Kurdistan Region Court of Cassation in Erbil.",
       "url": "https://x.com/KurdistanWatch/status/2056081117527093379"
     },
     {
       "handle": "@KurdistanWatch",
       "posted_at": "2026-05-17T15:43:47Z",
-      "category": "KRG Government formation",
-      "headline": "KIU's Bahaddin meets PUK's Bafel Talabani as Islamic Union turns down ministerial offers from both KDP and PUK to keep mediator role",
-      "summary": "Kurdistan Islamic Union leader Salahaddin Bahaddin met PUK's Bafel Talabani in Sulaimani, with both KDP and PUK having offered the KIU several high-level posts that the party is rejecting to preserve an independent mediator position, with the stated goal of throttling the media warfare between the two main parties while the cabinet-formation deadlock runs on.",
+      "category": "KRG politics",
+      "headline": "KIU leader Bahaddin meets PUK's Bafel Talabani in Sulaimani on cabinet-deadlock mediation",
+      "summary": "KurdistanWatch reports that Kurdistan Islamic Union leader Salahaddin Bahaddin met PUK president Bafel Talabani in Sulaimani on Sunday inside the KIU's broader mediation push to break the eighteen-month KRG cabinet-formation deadlock, layered on top of sources saying both KDP and PUK have offered KIU multiple high-level cabinet posts.",
       "url": "https://x.com/KurdistanWatch/status/2056037974425452689"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-17T11:30:31Z",
-      "category": "RT of @iaeaorg",
-      "headline": "IAEA confirms normal radiation levels and no injuries at Barakah NPP after drone strike, DG Grossi calls for maximum military restraint near nuclear sites",
-      "summary": "Bacharelhalabi reshared the IAEA statement that the UAE informed the agency radiation levels at Barakah remained normal and no injuries were reported after a morning drone strike hit an electrical generator outside the inner perimeter, with emergency diesel generators providing power to unit 3 and DG Rafael Grossi expressing grave concern and reiterating the call for maximum military restraint near any nuclear power plant.",
-      "url": "https://x.com/iaeaorg/status/2055974241313361927"
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-18T03:23:09Z",
+      "category": "Regional security",
+      "headline": "AMrym mocks the operational profile of an unnamed adversary navigating modern surveillance and satellite coverage",
+      "summary": "AMrym posts a quote-tweet asking how they sleep and how they move under modern satellite surveillance and sensor coverage, framed as commentary on the operational difficulty of evading detection inside the current Hormuz-area surveillance picture. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056213978561331686"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-17T10:20:29Z",
-      "category": "UAE / Nuclear",
-      "headline": "Abu Dhabi authorities confirm drone-caused fire at Barakah NPP electrical generator outside inner perimeter, no radiological impact",
-      "summary": "Bacharelhalabi shared the Abu Dhabi authorities' first official statement that they had responded to a fire at an electrical generator outside the inner perimeter of the Barakah Nuclear Power Plant in the Al Dhafra Region caused by a drone strike, with no injuries reported and no impact on radiological safety levels per the Federal Authority for Nuclear Regulation.",
-      "url": "https://x.com/Bacharelhalabi/status/2055956613727432911"
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T22:59:50Z",
+      "category": "Oil & gas",
+      "headline": "AMrym flags global oil prices continuing to rise to roughly $110 per barrel",
+      "summary": "AMrym reports that global oil prices are continuing to climb, reaching about $110 per barrel as the Hormuz war cycle deepens, the Barakah drone strike rattles the GCC tape and the Trump deadline pressure on Iran keeps the upside bid in place. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056147711900950782"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T22:45:21Z",
+      "category": "Aviation / war cycle",
+      "headline": "FlightRadar shows Iranian and Iraqi airspace empty of civil aviation as escalation cycle tightens",
+      "summary": "AMrym cites FlightRadar showing that Iranian and Iraqi airspace are now empty of any civilian aviation traffic, an immediate operational indicator of carriers re-routing around both countries as the US-Iran escalation cycle reopens ahead of the Tuesday Situation Room session in Washington. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056144066765636001"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T21:47:27Z",
+      "category": "US-Iran",
+      "headline": "AMrym says Trump is publicly mapping a US encirclement posture around Iran",
+      "summary": "AMrym argues Trump is publicly laying out a US encirclement framing around Iran with the regional basing footprint and the open Project Freedom file, treating it as a deliberate signalling exercise inside the broader pressure cycle ahead of the Tuesday national-security meeting. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056129494377734354"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T20:36:33Z",
+      "category": "Regional security",
+      "headline": "AMrym reports aerial-refueling flights originating from Tel Aviv tracked over Samawah desert",
+      "summary": "AMrym posts that aerial-refueling aircraft originating from Tel Aviv have been tracked operating in the skies above Iraq's Samawah desert, framing it as another indicator of the cross-Iraq military activity baked into the current escalation cycle. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056111655289807188"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T20:35:07Z",
+      "category": "Regional security",
+      "headline": "AMrym relays Saudi claim of three drones from Iraq intercepted over the Kingdom",
+      "summary": "AMrym relays the Saudi defence ministry claim that three drones whose source was Iraqi territory were intercepted after entering the Kingdom's airspace, the same incident that drove the GCC condemnation chorus through Sunday night and the Kuwaiti foreign ministry's overnight statement. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056111292604105051"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T19:34:45Z",
+      "category": "Iran diplomacy",
+      "headline": "AMrym surfaces a fresh public message from Iranian foreign ministry spokesman Esmail Baghaei",
+      "summary": "AMrym amplifies a public statement by Iranian foreign ministry spokesman Esmail Baghaei, framed as Tehran's diplomatic response to the latest US escalation rhetoric and the Trump deadline messaging on the one-page MOU. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056096102256947422"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T19:14:57Z",
+      "category": "US military",
+      "headline": "AMrym claims two US Navy fighter aircraft crashed after a mid-air collision",
+      "summary": "AMrym posts that two US Navy fighter aircraft crashed after colliding with each other, a claim that lands inside the broader pattern of US Navy carrier-air losses through the Hormuz deployment cycle and that has not yet been formally confirmed by US Central Command. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056091117481787487"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T18:58:39Z",
+      "category": "Iraqi politics",
+      "headline": "Iraqi MP Hiyam al-Yasiri opens public fire on the former health minister",
+      "summary": "AMrym reports MP Hiyam al-Yasiri publicly attacking the former Iraqi health minister, inside the broader pattern of post-cabinet-vote score-settling that has been running across Baghdad's political class since the partial al-Zaidi cabinet was sworn in. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056087016203313210"
     },
     {
       "handle": "@AMrym93884",
       "posted_at": "2026-05-17T18:17:39Z",
-      "category": "US / Iran",
-      "headline": "US media report a possible imminent US strike on Iran as the war cycle re-escalates",
-      "summary": "American media outlets are reporting that the United States may strike Iran as the latest escalation cycle deepens, posted alongside the Barakah drone-strike news and Trump's clock-is-ticking warning. Translated from Arabic.",
+      "category": "US-Iran",
+      "headline": "AMrym cites US media saying Washington could strike Iran as early as tomorrow",
+      "summary": "AMrym amplifies a US-media report saying the United States could attack Iran early tomorrow, an indication of the compressed pre-strike timing rhetoric ahead of the Tuesday Situation Room session that Axios has separately reported. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2056076697875714172"
     },
     {
       "handle": "@AMrym93884",
       "posted_at": "2026-05-17T18:02:21Z",
-      "category": "US / Israel readiness",
-      "headline": "Israeli Broadcasting Corporation quotes an official saying the US and Israel are raising readiness",
-      "summary": "Israeli public broadcasting cited an official saying that the United States and Israel are raising their military readiness level, in the immediate wake of the Barakah strike and the Trump warning to Tehran. Translated from Arabic.",
+      "category": "US-Iran",
+      "headline": "Israeli public broadcasting cites official saying United States and Israel are coordinating on the Iran file",
+      "summary": "AMrym relays an Israeli public broadcasting report quoting an official describing the United States and Israel as actively coordinating on Iran, sustaining the dual-track signalling that has been a feature of the pre-Tuesday escalation cycle. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2056072848620355913"
     },
     {
       "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T17:24:46Z",
+      "category": "US-Iran",
+      "headline": "AMrym quote-tweets Trump saying the next strike on Iran would be very large and stronger",
+      "summary": "AMrym amplifies Trump's call that the next strike on Iran would be very large and stronger than what has come before, a public-pressure escalation that lands alongside the Trump warning that there will not be anything left of Iran if the one-page MOU is not accepted. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056063389189669159"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-17T17:15:52Z",
+      "category": "US-Iran",
+      "headline": "AMrym surfaces Washington sources on an imminent US move against Iran",
+      "summary": "AMrym posts what he frames as very important Washington sourcing on an imminent US move against Iran, sustaining the AMrym feed's view that the Tuesday session at the White House is being treated as more than a routine review. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2056061148294730186"
+    },
+    {
+      "handle": "@AMrym93884",
       "posted_at": "2026-05-17T16:52:57Z",
-      "category": "US / Iran",
-      "headline": "Trump warns Iran that time is running out and they must move quickly or nothing will remain of them",
-      "summary": "President Trump publicly warned that for Iran, time is running out and they must move quickly on a deal or nothing will remain of them, framing the next strike as a wide one. Translated from Arabic.",
+      "category": "US-Iran",
+      "headline": "AMrym quotes Trump telling Iran the clock is ticking and to move quickly",
+      "summary": "AMrym relays Trump's public message that for Iran the time is running out and that they must move quickly, in line with the rhetoric Trump rolled out across the weekend ahead of Tuesday's Situation Room session on the Iran options menu. Translated from Arabic.",
       "url": "https://x.com/AMrym93884/status/2056055381197983983"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-17T16:12:08Z",
-      "category": "Iraq / Religious calendar",
-      "headline": "Sistani office in Najaf confirms Monday May 18 as the first of Dhul Hijjah 1447, anchoring the Eid al-Adha calendar",
-      "summary": "The office of Grand Ayatollah Ali al-Sistani in Najaf confirmed that Monday May 18, 2026 marks the first of Dhul Hijjah 1447 AH, anchoring the Eid al-Adha calendar and the post-Eid window the Zaidi cabinet is sequencing the remaining nine portfolios against. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056045110790414362"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-17T12:45:04Z",
+      "category": "RT of @IEA",
+      "headline": "IEA says oil exports bypassing the Strait of Hormuz have risen by 1.5 million bpd to almost 8 million bpd",
+      "summary": "Bachar El-Halabi retweets the International Energy Agency reporting that oil exports bypassing the Strait of Hormuz have risen by roughly 1.5 million barrels per day to almost 8 million barrels per day, the clearest single read on how Gulf producers have rerouted around the chokepoint through the war-cycle force-majeure period.",
+      "url": "https://x.com/IEA/status/2055993000321290343"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-17T15:58:58Z",
-      "category": "US / Iran",
-      "headline": "Axios reports Trump discussed the Iran file with European leaders ahead of the next escalation move",
-      "summary": "Axios reported that President Trump discussed the Iran file directly with European leaders as Washington signals the next strike could be very wide, part of the diplomatic preparation around the Qatar and Pakistan mediation track. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056041797558706421"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-17T11:30:31Z",
+      "category": "RT of @iaeaorg",
+      "headline": "IAEA confirms radiation levels at UAE's Barakah nuclear plant remain normal after the drone strike",
+      "summary": "Bachar El-Halabi retweets the IAEA confirming it has been informed by the UAE that radiation levels at the Barakah Nuclear Power Plant remain normal following Sunday's drone strike on an external electrical generator, the formal technical clearance that anchored the international response to the incident.",
+      "url": "https://x.com/iaeaorg/status/2055974241313361927"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-17T13:33:08Z",
-      "category": "Iraq / Coordination Framework",
-      "headline": "Araji meets Sudani and praises the latter's accomplishments while affirming Coordination Framework support for the Zaidi government",
-      "summary": "Qassim al-Araji, a regular mediator inside the Shia political stack, met former PM Sudani at his Baghdad residence and praised his accomplishments while reaffirming full Coordination Framework backing for the new Zaidi-led cabinet, in a move framed by the account as calming intra-Shia tensions after the Reconstruction bloc's portfolio-share grievance. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056005094932353172"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-17T10:20:29Z",
+      "category": "UAE security",
+      "headline": "Authorities in Abu Dhabi respond to a generator fire at the UAE's Barakah nuclear plant",
+      "summary": "Bachar El-Halabi posts the official UAE line that authorities in Abu Dhabi responded to a fire incident that broke out in an electrical generator outside the inner perimeter of the Barakah Nuclear Power Plant, in line with the Emirates Nuclear Energy Corporation's framing that plant safety and operations were not affected.",
+      "url": "https://x.com/Bacharelhalabi/status/2055956613727432911"
     },
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-17T12:48:51Z",
-      "category": "Iraq / Cabinet integrity",
-      "headline": "Account flags an Electricity Ministry conflict-of-interest issue as a former-MP complaint against PM and Electricity Minister surfaces",
-      "summary": "The post argues the Electricity Ministry has outstanding obligations to one of the figures in the new cabinet and frames the arrangement as a conflict of interest, in parallel to a Shafaq News report of a former MP filing a formal conflict-of-interest complaint against PM Zaidi and the new Electricity Minister. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2055993953028030943"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-17T12:25:06Z",
-      "category": "UAE / Nuclear",
-      "headline": "IAEA tells the world that UAE confirms normal Barakah radiation levels and no injuries after the drone attack",
-      "summary": "The account translated the IAEA statement into Arabic, conveying that the UAE informed the agency that radiation levels at the Barakah Nuclear Power Plant remained within normal limits and no injuries were reported following the drone strike outside the plant's perimeter. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2055987974198730850"
+      "handle": "@Bacharelhalabi",
+      "posted_at": "2026-05-17T09:09:06Z",
+      "category": "RT of @AzizSapphire",
+      "headline": "55-year nominal and real oil price chart resurfaces as the Hormuz crisis reframes the long-cycle base",
+      "summary": "Bachar El-Halabi retweets a 55-year chart of nominal and real oil prices, surfacing it as a long-cycle reference point against which the current $108 to $111 Brent print, the Iraqi force-majeure period and the GCC infrastructure-attack cycle have to be read.",
+      "url": "https://x.com/AzizSapphire/status/2055938649301135835"
     }
   ]
 }
