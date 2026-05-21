@@ -1,176 +1,144 @@
 {
-  "generated_at": "2026-05-20T06:40:23Z",
+  "generated_at": "2026-05-21T05:50:00Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-19T21:49:27Z",
-      "category": "US-Iraq",
-      "headline": "Petraeus Baghdad visit floated as possible US envoy appointment",
-      "summary": "KurdistanWatch flags retired General David Petraeus's notable Baghdad visit and the rumours around a possible US envoy appointment, slotting alongside the live US pressure on the al-Zaidi cabinet's militia and security-cabinet files.",
-      "url": "https://x.com/KurdistanWatch/status/2056854776474751360"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-19T10:56:47Z",
-      "category": "Iran-KRG",
-      "headline": "Iranian regime media framing of the Surdash strikes flagged as a tell on official posture",
-      "summary": "KurdistanWatch notes that Iran's Fars News framing of the overnight Surdash drone strikes on Iranian Kurdish opposition groups reveals how Tehran-aligned media is publicly positioning on cross-border targeting inside the Sulaimani area.",
-      "url": "https://x.com/KurdistanWatch/status/2056690526083018963"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-19T10:33:10Z",
-      "category": "KRG cabinet",
-      "headline": "KIU's Bahaddin meets KRG PM Masrour Barzani after PUK Talabani session, broadening the deadlock-breaking initiative",
-      "summary": "After Monday's Sulaimani meeting with PUK's Bafel Talabani, Kurdistan Islamic Union leader Salahaddin Bahaddin met KRG PM Masrour Barzani to push his national initiative on the 18-month KRG cabinet deadlock, taking the proposal across the two main party leaderships in 48 hours.",
-      "url": "https://x.com/KurdistanWatch/status/2056684580996886915"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-19T08:39:49Z",
-      "category": "Iran-KRG",
-      "headline": "Four overnight drone strikes hit Komala Toilers Surdash camp near Sulaimani",
-      "summary": "Four drone strikes targeted the Iranian Kurdish opposition group Komala Toilers at its Surdash camp near Sulaimani overnight, the second multi-strike incident on the same camp in five weeks after the April 14 attack that killed Ghazal Molan and the early-May follow-on.",
-      "url": "https://x.com/KurdistanWatch/status/2056656057045250261"
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-21T05:38:16Z",
+      "category": "Iran Diplomacy",
+      "headline": "Special Qatari delegation arrives in Tehran on behalf of the Emir of Qatar as Doha re-enters the Iran-US mediation lane",
+      "summary": "AMrym flags the arrival of a special Qatari delegation in Tehran dispatched by the Emir of Qatar, with the framing that Doha is back in the Iran-US negotiating cycle alongside Pakistan and Oman after Trump's pull-back from the May 19 strike. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057335142742368646"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T00:05:23Z",
-      "category": "Iraq militias",
-      "headline": "Sadiqoun political bureau member ties any ministry handover to AAH weapons handover first",
-      "summary": "An AAH-aligned Sadiqoun political bureau member said the agreement on Asaib taking a ministry rests on the weapons handover coming first, anchoring the bloc's cabinet entry to the arms-monopoly file. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056888982596682004"
+      "posted_at": "2026-05-20T21:54:00Z",
+      "category": "Iraq Security",
+      "headline": "Claim that a decision has been taken to detach the Hashd al-Shaabi from the Prime Minister's office, with parts to be folded individually into the Border Guards and the Federal Police",
+      "summary": "AMrym posts that a decision has been made to delink the Popular Mobilisation Forces from the PM's office structure and merge a portion of the Hashd individually into the Border Guards and the Federal Police, which would be the most concrete restructuring signal of the al-Zaidi era and dovetail with the Petraeus-linked US push on the militias file. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057218308739363222"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T00:05:01Z",
-      "category": "Iraq militias",
-      "headline": "Saad al-Saadi: AAH weapons handover after Eid, arms-monopoly process underway",
-      "summary": "Sadiqoun political bureau member Saad al-Saadi declared the brothers of Zainab's weapons will be handed over after Eid Al-Adha and that the broader confinement of arms to the state is in motion, framing the post-Eid window as the test of the al-Zaidi cabinet's militia file. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056888892897345782"
+      "posted_at": "2026-05-20T21:56:31Z",
+      "category": "Iraq Security",
+      "headline": "Kanani and Bayati debate the PM's authority to move Hashd units, with Jurf al-Sakhr flagged as the standing exception",
+      "summary": "AMrym reports an open debate between Kanani and Bayati over the extent of the Prime Minister's authority to move Hashd units, with Jurf al-Sakhr explicitly carved out as a special-status zone, sharpening the post-confidence-vote question of who actually commands the PMF assets on the ground. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057218940724523432"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T00:03:02Z",
+      "posted_at": "2026-05-20T21:35:46Z",
+      "category": "Syria Politics",
+      "headline": "Hussein al-Sharaa, father of President Ahmed al-Sharaa, says the Hafez al-Assad period was 'very good' for the country in a new statement",
+      "summary": "AMrym flags a new statement from the Syrian president's father in which he describes Hafez al-Assad's rule as 'very good' for the country, the kind of family-level commentary likely to cycle into Syrian political discourse as the cabinet-reshuffle and customs-law cycle plays out. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057213720376250728"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T21:14:47Z",
+      "category": "Iraq Policy",
+      "headline": "Iraq's Ministry of Education denies that unqualified students will be folded into the comprehensive admission for ministerial exams",
+      "summary": "AMrym reports the Education Ministry has formally denied that students who do not meet the eligibility threshold will be included in the comprehensive admission window for ministerial exams, an explicit walk-back on a politically sensitive concession ahead of the exam cycle. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057208438195691717"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T20:14:14Z",
+      "category": "Iraq Politics",
+      "headline": "Coordination Framework holds an emergency meeting on political developments and confirms support for PM al-Zaidi and bloc unity",
+      "summary": "AMrym reports that the Coordination Framework convened an emergency session on Wednesday to address the political file and explicitly affirmed support for PM Ali al-Zaidi and the cohesion of the bloc, an attempt to walk back the post-confidence-vote disarray ahead of the post-Eid cabinet completion. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057193200964514063"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T19:17:59Z",
+      "category": "Iraq Security",
+      "headline": "Low-flying military aircraft observed in the airspace over Mosul governorate in northern Iraq",
+      "summary": "AMrym reports low-flying military aircraft over Mosul, an unusual posture indicator that lands as Baghdad is fielding US, allied and Iranian aviation cycles across the country and the Saudi and UAE drone-incursion files are still open. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057179044907549026"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T19:10:09Z",
       "category": "Iran-US",
-      "headline": "WSJ via mediators says US-Iran talks not making notable progress",
-      "summary": "AMrym flags Wall Street Journal reporting that the mediators in the parallel US-Iran channel say the talks are not making notable progress, against the Trump pause on the May 19 strike. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056888391975780603"
+      "headline": "US media reports a heated discussion has broken out inside the White House over Iran policy",
+      "summary": "AMrym surfaces US media reporting that a heated debate has erupted inside the White House on whether to give the one-page MOU diplomatic track more time or back the Israeli posture, an internal-policy split that maps directly onto Trump's same-day 'appropriate response' wording. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057177075417591970"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T00:01:35Z",
+      "posted_at": "2026-05-20T19:09:03Z",
       "category": "Iran-US",
-      "headline": "US officials cited on a possible limited Iran strike as early as next week",
-      "summary": "US media via US officials, relayed by AMrym, says a limited strike on Iran may come as early as next week, putting a short tail on Trump's just-announced pause and lining up against the WSJ mediator readout. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056888028195385407"
+      "headline": "Trump on Iran: we are awaiting an appropriate Iranian response to avoid a larger escalation",
+      "summary": "AMrym posts Trump's same-day public framing that the US is waiting for an 'appropriate' Iranian response to the latest text in order to avoid a larger escalation, the public side of the Pakistan-mediated MOU push. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057176795569664440"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T23:59:34Z",
-      "category": "Iraq security",
-      "headline": "Iraqi Army chief of staff meets head of CTS in a preliminary session",
-      "summary": "AMrym flags a preliminary meeting between the Iraqi Army chief of staff and the head of the Counter-Terrorism Service that he frames as part of the lead-in to a coming reshuffle at the top of the security stack, with implications for the security-cabinet completion after Eid. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056887518357029101"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T19:31:18Z",
-      "category": "Iraq diplomacy",
-      "headline": "PM al-Zaidi coordinates with senior Gulf leaders on the UAE Barakah investigation and the formation of a joint committee",
-      "summary": "PM Ali al-Zaidi is coordinating with senior Gulf leaders on the investigation into the latest attack on the UAE and on standing up a joint committee on the airspace-launch incidents, ahead of the formal Iraqi-territory attribution from Abu Dhabi later in the day. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056820007225475084"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T19:29:04Z",
-      "category": "Iraq economy",
-      "headline": "PM al-Zaidi directs market monitoring and price stability on essential goods through independent oversight",
-      "summary": "PM al-Zaidi instructed the relevant ministries to monitor markets and stabilise prices on essential goods through independent follow-up, his first cabinet-level move on the cost-of-living file ahead of Eid Al-Adha. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056819448166662492"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T19:27:20Z",
-      "category": "Iraq governance",
-      "headline": "Integrity Commission widens the al-Hasnawi corruption file with a documented question on his son",
-      "summary": "AMrym flags the Integrity Commission widening the corruption file on former Health Minister Saleh al-Hasnawi with a documented question targeting his son, signalling the file is hardening rather than quieting under the new cabinet. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056819011724198340"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T18:06:12Z",
-      "category": "Iraq security",
-      "headline": "Direct on-camera clash between the Babil governor and a Hashd al-Shaabi unit",
-      "summary": "Video relayed by AMrym shows a direct confrontation between the Babil governor and a PMF force, with the governor on camera challenging the unit's pointing of launchers in his direction, an unusually public local-state versus PMF stand-off in the post-formation window. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056798591490863268"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T18:03:37Z",
-      "category": "Iraq security",
-      "headline": "Iraqi Observatory: PMF elements running repeat raids on a private compound",
-      "summary": "The Iraqi Observatory for Human Rights, via AMrym, reports that PMF elements are conducting repeated raids on a specific private compound, adding to the same week's stack of PMF-versus-civilian and PMF-versus-local-state friction points. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056797940287729802"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T18:02:13Z",
+      "posted_at": "2026-05-20T18:39:15Z",
       "category": "Iran-US",
-      "headline": "VP JD Vance: Iran has two options, an agreement or war resuming",
-      "summary": "AMrym relays VP Vance's Tuesday White House line that Iran has two options, either an agreement or the resumption of the war, which is the cleanest binary framing from the administration since the pause on the May 19 strike. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056797588108546189"
+      "headline": "Tasnim reports the US has sent a new text via Pakistan in response to Iran's most recent proposal",
+      "summary": "AMrym surfaces Tasnim reporting that the US has relayed a new text via Pakistani channels in response to Iran's latest proposal, locking the Islamabad channel as the active line on the 14-point one-page MOU. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057169298485842377"
     },
     {
       "handle": "@AMrym93884",
-      "posted_at": "2026-05-19T18:00:37Z",
-      "category": "US-Iraq",
-      "headline": "US Embassy Baghdad employee Qind Muhammad Faraj al-Janabi arrested on bribery and corruption charges",
-      "summary": "AMrym reports the arrest of a Baghdad-based US Embassy employee, named Qind Muhammad Faraj al-Janabi, on bribery and corruption charges, a sensitive case on the bilateral interface as US engagement on the security file intensifies. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2056797186294198324"
+      "posted_at": "2026-05-20T18:25:26Z",
+      "category": "Iran-US",
+      "headline": "Pakistani source confirms Field Marshal Asim Munir, the army chief of staff, will travel to Iran on Thursday",
+      "summary": "AMrym posts a Pakistani-source confirmation that Pakistan's Chief of Army Staff Field Marshal Asim Munir is heading to Iran on Thursday, the highest-level Islamabad delivery of the new US text and the most concrete sign yet that the MOU track is being actively pushed. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057165820275343727"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T18:23:10Z",
+      "category": "Iran-US",
+      "headline": "President Pezeshkian: Iran has always met its commitments and has pursued every path to avoid war",
+      "summary": "AMrym posts Iranian President Masoud Pezeshkian's same-day framing that Tehran has consistently met its commitments and has worked every diplomatic channel to avoid war, the Iranian public side of the Pakistan-mediated MOU push. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057165250261139960"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T17:20:04Z",
+      "category": "Israel-Iran",
+      "headline": "Senior Israeli official: the resumption of attacks on Iran appears to be only a matter of time",
+      "summary": "AMrym surfaces a senior Israeli official telling local media that a resumption of strikes on Iran 'appears to be only a matter of time,' the Israeli posture cutting against the Trump-Pezeshkian-Munir track and keeping the war-risk premium live on regional energy and shipping flows. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057149371607556496"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T17:16:21Z",
+      "category": "Iraq Security",
+      "headline": "Iraq's Counter-Terrorism Service opens a new Intelligence Coordination Centre, framed as a qualitative shift in operational-intelligence fusion",
+      "summary": "AMrym reports the CTS has opened a dedicated Intelligence Coordination Centre, framed by the service as a qualitative leap in fusing operational intelligence across the security architecture, landing as Baghdad is under simultaneous pressure on the drone airspace file, the AAH disarmament question and the Petraeus restructuring track. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057148436437250513"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-05-20T17:12:51Z",
+      "category": "Iraq Fiscal",
+      "headline": "Iraq's Finance Minister directs the ministry to keep working on Friday and Saturday to complete employee-salary procedures ahead of Eid",
+      "summary": "AMrym posts that the Finance Minister has ordered continued duty across the ministry on Friday and Saturday this week to complete the procedures for securing employee salaries ahead of Eid Al-Adha, the strongest signal in months that the federal cash window is tighter than the headline 2026 envelope implies. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2057147554920313202"
+    },
+    {
+      "handle": "@KurdistanWatch",
+      "posted_at": "2026-05-20T12:38:31Z",
+      "category": "Iran-Kurdish Security",
+      "headline": "KurdistanWatch reads the Mirgeh Naghshineh mine incident near Iran's Saqqez as a more revealing signal of the security environment on Iran's northwestern border than first appearances suggested",
+      "summary": "KurdistanWatch analyses the armed attack on the Mirgeh Naghshineh mine near Saqqez in Iran's Kurdistan province and parses the conflicting Iranian regime narratives, framing it either as a PJAK terrorist operation or as an unidentified armed group running an extortion-driven hit, and reads the ambiguity itself as a marker of how unsettled Iran's northwestern border posture has become.",
+      "url": "https://x.com/KurdistanWatch/status/2057078516051546330"
     },
     {
       "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-19T22:02:44Z",
-      "category": "RT of @BurggrabenH",
-      "headline": "Gold negatively correlated to oil during the Iran war, a regime-shift call for energy investors",
-      "summary": "Bacharelhalabi boosts a BurggrabenH thread arguing that since the start of the war gold has been negatively correlated to oil, an unusual macro pattern that he flags as relevant for energy investors sizing the Brent and risk-asset paths.",
-      "url": "https://x.com/BurggrabenH/status/2056858116994589003"
-    },
-    {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-19T13:37:52Z",
-      "category": "RT of @staunovo",
-      "headline": "Saudi Mawani launches the Red Sea Express container service, signal on Gulf logistics rewiring",
-      "summary": "Bacharelhalabi signal-boosts a staunovo line that Saudi Ports Authority Mawani has launched the Red Sea Express shipping service, a discrete data point on the post-Hormuz Gulf logistics rewiring and the Kingdom's positioning on Red Sea throughput.",
-      "url": "https://x.com/staunovo/status/2056731061954990245"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-20T01:14:41Z",
-      "category": "Iraq security",
-      "headline": "Knights flags Abu Ali al-Basri's friend network as a tell on the next security-cabinet round",
-      "summary": "Knights points to who else National Security Service chief Abu Ali al-Basri is friends with as relevant for sizing the next round of security-cabinet appointments, signalling the kind of background-screen work that should be running on the security portfolios before the post-Eid completion of the Zaidi line-up.",
-      "url": "https://x.com/Mikeknightsiraq/status/2056906423771005045"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-20T00:54:02Z",
-      "category": "Iraq security",
-      "headline": "Knights: CTS bench still wants the service to return to its peak posture",
-      "summary": "Quote-tweeting the broader Iraqi security-stack conversation, Knights says a lot of Counter-Terrorism Service personnel still want the service to return to its prior peak posture, an important read on the institutional appetite as the al-Zaidi cabinet works the security file.",
-      "url": "https://x.com/Mikeknightsiraq/status/2056901228580274182"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-05-19T23:29:38Z",
-      "category": "Iraq economy",
-      "headline": "Knights welcomes the new push to get Western tech companies into Iraq's telecoms sector",
-      "summary": "Knights flags the new push to bring credible Western tech companies into Iraq's telecoms sector under the al-Zaidi cabinet, an early signal on the sector-opening posture and on the kind of US-aligned economic deliverables that could land alongside the security-file pressure.",
-      "url": "https://x.com/Mikeknightsiraq/status/2056879985994957288"
+      "posted_at": "2026-05-20T15:05:28Z",
+      "category": "RT of @amwajmedia",
+      "headline": "Bacharelhalabi boosts an Amwaj debate on whether Arab oil producers have realistic alternatives to the Strait of Hormuz, contributing the line that 'politics failed the region'",
+      "summary": "Bacharelhalabi retweets an Amwaj Media debate on alternative export routes for Gulf oil producers in light of the Hormuz blockade cycle, with the retweeter's own contribution that 'politics failed the region' and other analysts weighing in on trade-corridor options and production volumes.",
+      "url": "https://x.com/amwajmedia/status/2057115496521109642"
     }
   ]
 }
