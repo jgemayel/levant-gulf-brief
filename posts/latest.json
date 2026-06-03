@@ -1,144 +1,64 @@
 {
-  "generated_at": "2026-05-21T05:50:00Z",
+  "generated_at": "2026-06-03T05:56:47Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
   "posts": [
     {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-21T05:38:16Z",
-      "category": "Iran Diplomacy",
-      "headline": "Special Qatari delegation arrives in Tehran on behalf of the Emir of Qatar as Doha re-enters the Iran-US mediation lane",
-      "summary": "AMrym flags the arrival of a special Qatari delegation in Tehran dispatched by the Emir of Qatar, with the framing that Doha is back in the Iran-US negotiating cycle alongside Pakistan and Oman after Trump's pull-back from the May 19 strike. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057335142742368646"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T21:54:00Z",
-      "category": "Iraq Security",
-      "headline": "Claim that a decision has been taken to detach the Hashd al-Shaabi from the Prime Minister's office, with parts to be folded individually into the Border Guards and the Federal Police",
-      "summary": "AMrym posts that a decision has been made to delink the Popular Mobilisation Forces from the PM's office structure and merge a portion of the Hashd individually into the Border Guards and the Federal Police, which would be the most concrete restructuring signal of the al-Zaidi era and dovetail with the Petraeus-linked US push on the militias file. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057218308739363222"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T21:56:31Z",
-      "category": "Iraq Security",
-      "headline": "Kanani and Bayati debate the PM's authority to move Hashd units, with Jurf al-Sakhr flagged as the standing exception",
-      "summary": "AMrym reports an open debate between Kanani and Bayati over the extent of the Prime Minister's authority to move Hashd units, with Jurf al-Sakhr explicitly carved out as a special-status zone, sharpening the post-confidence-vote question of who actually commands the PMF assets on the ground. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057218940724523432"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T21:35:46Z",
-      "category": "Syria Politics",
-      "headline": "Hussein al-Sharaa, father of President Ahmed al-Sharaa, says the Hafez al-Assad period was 'very good' for the country in a new statement",
-      "summary": "AMrym flags a new statement from the Syrian president's father in which he describes Hafez al-Assad's rule as 'very good' for the country, the kind of family-level commentary likely to cycle into Syrian political discourse as the cabinet-reshuffle and customs-law cycle plays out. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057213720376250728"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T21:14:47Z",
-      "category": "Iraq Policy",
-      "headline": "Iraq's Ministry of Education denies that unqualified students will be folded into the comprehensive admission for ministerial exams",
-      "summary": "AMrym reports the Education Ministry has formally denied that students who do not meet the eligibility threshold will be included in the comprehensive admission window for ministerial exams, an explicit walk-back on a politically sensitive concession ahead of the exam cycle. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057208438195691717"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T20:14:14Z",
-      "category": "Iraq Politics",
-      "headline": "Coordination Framework holds an emergency meeting on political developments and confirms support for PM al-Zaidi and bloc unity",
-      "summary": "AMrym reports that the Coordination Framework convened an emergency session on Wednesday to address the political file and explicitly affirmed support for PM Ali al-Zaidi and the cohesion of the bloc, an attempt to walk back the post-confidence-vote disarray ahead of the post-Eid cabinet completion. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057193200964514063"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T19:17:59Z",
-      "category": "Iraq Security",
-      "headline": "Low-flying military aircraft observed in the airspace over Mosul governorate in northern Iraq",
-      "summary": "AMrym reports low-flying military aircraft over Mosul, an unusual posture indicator that lands as Baghdad is fielding US, allied and Iranian aviation cycles across the country and the Saudi and UAE drone-incursion files are still open. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057179044907549026"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T19:10:09Z",
-      "category": "Iran-US",
-      "headline": "US media reports a heated discussion has broken out inside the White House over Iran policy",
-      "summary": "AMrym surfaces US media reporting that a heated debate has erupted inside the White House on whether to give the one-page MOU diplomatic track more time or back the Israeli posture, an internal-policy split that maps directly onto Trump's same-day 'appropriate response' wording. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057177075417591970"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T19:09:03Z",
-      "category": "Iran-US",
-      "headline": "Trump on Iran: we are awaiting an appropriate Iranian response to avoid a larger escalation",
-      "summary": "AMrym posts Trump's same-day public framing that the US is waiting for an 'appropriate' Iranian response to the latest text in order to avoid a larger escalation, the public side of the Pakistan-mediated MOU push. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057176795569664440"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T18:39:15Z",
-      "category": "Iran-US",
-      "headline": "Tasnim reports the US has sent a new text via Pakistan in response to Iran's most recent proposal",
-      "summary": "AMrym surfaces Tasnim reporting that the US has relayed a new text via Pakistani channels in response to Iran's latest proposal, locking the Islamabad channel as the active line on the 14-point one-page MOU. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057169298485842377"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T18:25:26Z",
-      "category": "Iran-US",
-      "headline": "Pakistani source confirms Field Marshal Asim Munir, the army chief of staff, will travel to Iran on Thursday",
-      "summary": "AMrym posts a Pakistani-source confirmation that Pakistan's Chief of Army Staff Field Marshal Asim Munir is heading to Iran on Thursday, the highest-level Islamabad delivery of the new US text and the most concrete sign yet that the MOU track is being actively pushed. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057165820275343727"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T18:23:10Z",
-      "category": "Iran-US",
-      "headline": "President Pezeshkian: Iran has always met its commitments and has pursued every path to avoid war",
-      "summary": "AMrym posts Iranian President Masoud Pezeshkian's same-day framing that Tehran has consistently met its commitments and has worked every diplomatic channel to avoid war, the Iranian public side of the Pakistan-mediated MOU push. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057165250261139960"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T17:20:04Z",
-      "category": "Israel-Iran",
-      "headline": "Senior Israeli official: the resumption of attacks on Iran appears to be only a matter of time",
-      "summary": "AMrym surfaces a senior Israeli official telling local media that a resumption of strikes on Iran 'appears to be only a matter of time,' the Israeli posture cutting against the Trump-Pezeshkian-Munir track and keeping the war-risk premium live on regional energy and shipping flows. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057149371607556496"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T17:16:21Z",
-      "category": "Iraq Security",
-      "headline": "Iraq's Counter-Terrorism Service opens a new Intelligence Coordination Centre, framed as a qualitative shift in operational-intelligence fusion",
-      "summary": "AMrym reports the CTS has opened a dedicated Intelligence Coordination Centre, framed by the service as a qualitative leap in fusing operational intelligence across the security architecture, landing as Baghdad is under simultaneous pressure on the drone airspace file, the AAH disarmament question and the Petraeus restructuring track. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057148436437250513"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-05-20T17:12:51Z",
-      "category": "Iraq Fiscal",
-      "headline": "Iraq's Finance Minister directs the ministry to keep working on Friday and Saturday to complete employee-salary procedures ahead of Eid",
-      "summary": "AMrym posts that the Finance Minister has ordered continued duty across the ministry on Friday and Saturday this week to complete the procedures for securing employee salaries ahead of Eid Al-Adha, the strongest signal in months that the federal cash window is tighter than the headline 2026 envelope implies. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2057147554920313202"
+      "handle": "@KurdistanWatch",
+      "posted_at": "2026-06-02T16:19:34Z",
+      "category": "Telecom / Regulation",
+      "headline": "Iraq's Communications and Media Commission cancels Korek Telecom settlement",
+      "summary": "Kurdistan Watch flags the CMC's cancellation of its settlement with Korek Telecom over unpaid debts of roughly 1.4 trillion Iraqi dinars, warning the move could freeze the KDP-linked operator's commercial footing.",
+      "url": "https://x.com/KurdistanWatch/status/2061845187169570951"
     },
     {
       "handle": "@KurdistanWatch",
-      "posted_at": "2026-05-20T12:38:31Z",
-      "category": "Iran-Kurdish Security",
-      "headline": "KurdistanWatch reads the Mirgeh Naghshineh mine incident near Iran's Saqqez as a more revealing signal of the security environment on Iran's northwestern border than first appearances suggested",
-      "summary": "KurdistanWatch analyses the armed attack on the Mirgeh Naghshineh mine near Saqqez in Iran's Kurdistan province and parses the conflicting Iranian regime narratives, framing it either as a PJAK terrorist operation or as an unidentified armed group running an extortion-driven hit, and reads the ambiguity itself as a marker of how unsettled Iran's northwestern border posture has become.",
-      "url": "https://x.com/KurdistanWatch/status/2057078516051546330"
+      "posted_at": "2026-06-02T12:08:39Z",
+      "category": "KRG Fiscal",
+      "headline": "Public clash over KRG non-oil revenue figures between Finance Minister and Halwest leader",
+      "summary": "The KRG Finance Minister puts monthly non-oil revenue at about 100 billion Iraqi dinars while a Halwest Movement leader counters that actual receipts exceed 400 billion a month, reopening the regional fiscal-transparency question.",
+      "url": "https://x.com/KurdistanWatch/status/2061782040970719729"
     },
     {
-      "handle": "@Bacharelhalabi",
-      "posted_at": "2026-05-20T15:05:28Z",
-      "category": "RT of @amwajmedia",
-      "headline": "Bacharelhalabi boosts an Amwaj debate on whether Arab oil producers have realistic alternatives to the Strait of Hormuz, contributing the line that 'politics failed the region'",
-      "summary": "Bacharelhalabi retweets an Amwaj Media debate on alternative export routes for Gulf oil producers in light of the Hormuz blockade cycle, with the retweeter's own contribution that 'politics failed the region' and other analysts weighing in on trade-corridor options and production volumes.",
-      "url": "https://x.com/amwajmedia/status/2057115496521109642"
+      "handle": "@AMrym93884",
+      "posted_at": "2026-06-03T05:30:22Z",
+      "category": "Gulf Airspace",
+      "headline": "After Bahrain, Kuwait and UAE also shut their airspace",
+      "summary": "Kuwait and the UAE follow Bahrain in closing their airspace amid the fresh Iranian salvo and CENTCOM strikes on Qeshm, expanding the Gulf-wide aviation shutdown overnight. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2062044197377503661"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-06-03T01:42:33Z",
+      "category": "Iran War",
+      "headline": "Coverage of Iranian drone attempts and US airstrikes on Qeshm Island",
+      "summary": "AMrym tracks the Iranian drone attempts against US assets in the Gulf and the parallel CENTCOM self-defence strikes on an IRGC ground-control station on Qeshm Island, the operational anchor of the current escalation wave. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2061986867982000576"
+    },
+    {
+      "handle": "@AMrym93884",
+      "posted_at": "2026-06-03T01:33:22Z",
+      "category": "Iraq Politics",
+      "headline": "Extended take on Coordination Framework pressures and American demands on Baghdad",
+      "summary": "AMrym lays out the live pressure on the Coordination Framework from Washington over the arms-monopoly file, slotting the AAH and Imam Ali handover moves inside an American conditionality framework on Baghdad. Translated from Arabic.",
+      "url": "https://x.com/AMrym93884/status/2061984555192701126"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-06-03T00:33:06Z",
+      "category": "Iraq Militias",
+      "headline": "Sardonic read that the latest disarmament gesture is principled self-disarmament rather than a binding handover",
+      "summary": "Mike Knight takes a wry view of the militia leader's disarmament posture, suggesting the US Government should send a congratulatory note rather than treat the announcement as a genuine state-monopoly delivery.",
+      "url": "https://x.com/Mikeknightsiraq/status/2061969390925463569"
+    },
+    {
+      "handle": "@Mikeknightsiraq",
+      "posted_at": "2026-06-03T00:22:33Z",
+      "category": "Iraq Militias",
+      "headline": "All three Iraqi groups that have pledged to disarm are inside the Sadrist trend",
+      "summary": "Knight notes that the three groups that have publicly pledged disarmament so far in Iraq all sit inside the Sadrist political and ideological orbit, flagging that the Iran-aligned core has not yet credibly moved on the arms-monopoly file.",
+      "url": "https://x.com/Mikeknightsiraq/status/2061966731862561193"
     }
   ]
 }
