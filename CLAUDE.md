@@ -132,17 +132,33 @@ Rules:
 - Commit `posts/latest.json` in the same push as the daily brief file.
 
 ## Publish (mandatory final step)
-Every run ends with a git commit and push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days.
+Every run ends with a git commit and push. Without it, the dashboard has nothing to show and the run is incomplete. Never skip this step, even on light days. This routine runs unattended on a schedule, so the publish must be fully automatic with no human in the loop. Work through the paths below in order and do not stop until a new commit is confirmed on `origin/main`.
 
-Preferred path (the working directory is always a local clone of the repo):
+Set the committer identity first so the commit verifies:
 ```
+git config user.email noreply@anthropic.com
+git config user.name Claude
 git add briefs/YYYY-MM-DD.html posts/latest.json
 git commit -m "Daily brief YYYY-MM-DD"
+```
+
+Path 1, normal push (works when the routine's GitHub connection has write access, the intended setup):
+```
 git push origin main
 ```
-Confirm `git push` prints a new commit range on `main` before declaring the run done. If push fails, run `git pull --rebase origin main` and retry; do not exit the run on a failed push.
+If it prints a new commit range on `main`, run `git status` to confirm a clean tree and the run is done.
 
-Fallback path (only if the working directory is not a git checkout): PUT to `https://api.github.com/repos/jgemayel/levant-gulf-brief/contents/briefs/YYYY-MM-DD.html` with the GitHub token. If the file exists, include its SHA; if new, omit SHA. Commit message `Daily brief YYYY-MM-DD`. Confirm the PUT response contains a `commit.sha`.
+Path 2, token push (automatic fallback when no proxy credentials are present). A push that fails with `could not read Username` or an auth error means the cloud session was started without write credentials. If a personal access token is available in the environment as `GH_TOKEN` or `GITHUB_TOKEN`, push with it:
+```
+git pull --rebase origin main
+git push "https://x-access-token:${GH_TOKEN:-$GITHUB_TOKEN}@github.com/jgemayel/levant-gulf-brief.git" main
+git fetch origin main
+```
+Confirm `origin/main` advanced. Never echo the token in full and never write it into any tracked file. The repository is public, so a token must only ever live in the environment configuration, never in a brief, in CLAUDE.md, or in a commit.
+
+Path 3, GitHub API (last resort, e.g. the working directory is not a git checkout). Using `GH_TOKEN`, PUT the base64 file content to `https://api.github.com/repos/jgemayel/levant-gulf-brief/contents/briefs/YYYY-MM-DD.html` (and again for `posts/latest.json`). If the file already exists, include its current `sha`; if new, omit it. Commit message `Daily brief YYYY-MM-DD`. Confirm each PUT response contains a `commit.sha`.
+
+If all three paths fail (no proxy credentials and no token in the environment), the brief cannot be published and the operator must fix access. Do not silently end the run: report the failure clearly so it is visible.
 
 No `index.html` edits needed; the dashboard pulls today's brief dynamically.
 
