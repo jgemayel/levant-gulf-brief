@@ -6,15 +6,23 @@ These rules apply to every daily brief. The scheduled task `levant-gulf-morning-
 The public-facing product is called `Daily news roundup`. Do not write "Built for Jimmy" or any variant in visible output (dashboard, briefs, PWA manifest, share sheets). Internal references to Jimmy as the reader are fine inside this file.
 
 ## Audience
-Jimmy advises on Syria, Iraq, Kuwait, and the Kurdistan Region of Iraq (KRG) on policy, economy, and government workstreams. Some of the items in the relevance blocks are live engagements, others are future opportunities. Keep the framing flexible.
+Jimmy follows Syria, Iraq, Kuwait, and the Kurdistan Region of Iraq (KRG) closely and wants the most important, impactful news from each, every morning. This is a news product, full stop. The job is to surface what actually matters that day, told clearly, with the real top stories leading. No project tie-ins, no opportunity framing, no advisory angle. Just the news, chosen and written well.
 
 ## Country scope
-Four sections every run, in this order: Syria, Iraq, Kuwait, Kurdistan. Kurdistan covers KRG-level government, fiscal and tax, power sector, oil and gas, banking, and major Erbil-level news. Federal Iraq stories stay in the Iraq section, Erbil-originated and KRG-specific stories go under Kurdistan. When a single event has both federal and KRG angles (budget transfers, Development Road, oil export regime), file it where the primary decision-maker sits and cross-reference in the summary.
+Four sections every run, in this order: Syria, Iraq, Kuwait, Kurdistan. Kurdistan covers KRG-level government, the economy, energy, security, and major Erbil-level news. Federal Iraq stories stay in the Iraq section, Erbil-originated and KRG-specific stories go under Kurdistan. When a single event has both federal and KRG angles (budget transfers, Development Road, oil export regime), file it where the primary decision-maker sits and cross-reference in the summary.
 
-## Major news rule
-Beyond workstream-relevant items, surface any materially major country story from the 24 to 48 hour window even when it does not map neatly to a relevance bucket. Binding political outcomes, senior leadership changes, mass-casualty security events, FX or sovereign-rating moves, headline macro prints, and any story leading the home pages of Reuters, Al Jazeera, BBC, or the country's main local outlets all qualify. Do not let the workstream lens filter out a top-of-the-wire story, a country brief that misses the day's big headline reads as out of touch. Relevance block can be omitted for pure major-news items.
+## News judgment (read this first, every run)
+The single most common failure mode is a brief that leads with stale, secondary items while missing the story that is actually dominating the region. Avoid it deliberately:
 
-Working test before publishing: scan the Reuters, Al Jazeera, and BBC world sections plus each country's leading local wire one last time. If a story is dominating coverage and is not in the brief, either fit it in or have a concrete reason it does not belong (e.g. already covered in a prior brief, outside the 24-48 hour window, wrong country).
+1. Find the lead story first. Before drafting any section, establish the one or two biggest things that happened across these four countries in the last 24 to 48 hours. Regional mega-stories (a war, a Strait of Hormuz closure or reopening, a sovereign default, a sanctions wave, a government collapse) routinely touch all four countries at once. If something that big is in play, every relevant section must reflect it. A brief that misses the day's defining event reads as out of touch and is the thing to never let happen.
+2. Rank ruthlessly inside each section. The strongest, most consequential story leads the section. Do not bury a mass-casualty event, a binding political outcome, or a major economic shock beneath a routine ceremony or a minor diplomatic readout. If a story would lead the home page of Reuters, AP, AFP, Al Jazeera, or BBC, it leads your section too.
+3. Prefer the freshest, hardest version of a story. A story from today with concrete numbers beats the same thread from two days ago. When a situation is developing fast (output figures, casualty counts, troop movements, market levels), use the latest read and date it precisely.
+4. Connect the threads. When one regional event is driving stories in multiple countries (an Iran deal lifting oil force majeure in Kuwait and ordering field ramp-ups in Iraq, say), make the linkage explicit in the summaries so the reader sees the shape of the day, not four disconnected lists.
+5. Verify before publishing. Cross-check every story against at least one strong source. Prefer top wires and established local outlets. Confirm the date falls inside the window. If a headline URL cannot be confirmed, use the most authoritative source you can verify rather than a shaky link, and never invent a URL or a fact.
+
+What qualifies as a top story: binding political outcomes, senior leadership changes, mass-casualty or major security events, wars and ceasefires, FX or sovereign-rating moves, oil and production shocks, sanctions and listings (FATF, OFAC), headline macro prints, and anything leading the wires or the country's main local outlets.
+
+Working test before publishing: scan the Reuters, AP, Al Jazeera, and BBC world sections plus each country's leading local wire one last time. If a story is dominating coverage and is not in the brief, either fit it in or have a concrete reason it does not belong (already covered in a prior brief, outside the 24-48 hour window, or wrong country).
 
 ## Source sweep
 Every run covers two layers in parallel. Both are mandatory.
@@ -48,21 +56,12 @@ Only include stories published in the last 24 to 48 hours. Assume anything older
 Every run must cross-check against the last 5 daily briefs before drafting. Read the files directly from the local `briefs/` directory (the repo is already checked out at runtime) and extract every `<h3>` headline between `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->`. If fewer than 5 dated briefs exist, check whatever is there. Refuse to publish any story whose core event is already in that set. If an event is still developing, only include it when there is a specifically new fact beyond what the prior brief already stated. When in doubt, skip rather than restate. This check is mandatory, not optional.
 
 ## High impact flag
-Be calculated. Flag a story `data-priority="high"` with the "High impact" badge only when it genuinely belongs there:
-- Moves a project or opportunity bucket in a concrete way (not thematic)
-- Binding policy, sanctions, or fiscal action now in force or imminent
-- Major geopolitical escalation or de-escalation with direct market effect
+Be calculated. Flag a story `data-priority="high"` with the "High impact" badge only when it is genuinely one of the most consequential stories of the day, on news magnitude alone:
+- A binding political outcome, war, ceasefire, or major security event
+- Sanctions, listings (FATF, OFAC), or sovereign-rating and FX moves now in force or imminent
+- A major economic or production shock with broad effect (oil output, currency, sovereign finance)
 
-Zero high-impact flags is a valid outcome. One or two is typical on a meaningful day. Never force three. Never flag a story "high impact" just to have one in every section.
-
-## Relevance blocks
-Label the block `Relevant projects / opportunities`. Buckets by country:
-- Syria: Central Bank, Banking sector, Insurance, Capital markets
-- Iraq: Central Bank, Banking sector, Fiscal reforms, Economic reforms, Mega projects
-- Kuwait: Government, Fiscal agenda (MoF), Economic Agenda, Public sector, Public housing & welfare, Municipality, Sovereign fund
-- Kurdistan: Government, Fiscal & tax, Power sector, Oil & gas, Banking sector, Economic reforms
-
-Include a block only when the link is concrete. Empty stories are fine, and major-news items that do not fit a bucket can run without a relevance block.
+Zero high-impact flags is a valid outcome. One or two is typical on a meaningful day. Never force three. Never flag a story "high impact" just to have one in every section. The badge marks news weight, nothing else.
 
 ## Writing style
 - No em dashes anywhere
@@ -79,7 +78,7 @@ Write `briefs/YYYY-MM-DD.html` using the shared template. All briefs must use th
 - The most recent brief in `briefs/` (e.g. yesterday's file) is the canonical structural template. Copy it for the shell, then rewrite the content. If the prior brief looks like it predates the shared stylesheet (has inline `:root { --bg: #0f172a; ... }`, system-sans font, orange accents, or `<h2>` country headings), do not copy it. Fall further back or use the current day's sibling files as reference.
 - Favicon `../favicon.svg` and `../apple-touch-icon.png`
 - `<!-- BRIEF_START -->` and `<!-- BRIEF_END -->` markers
-- Four sections in order: Syria, Iraq, Kuwait, Kurdistan. No cap and no target on stories per country. Include every item from the 24 to 48 hour window that is genuinely relevant to Jimmy's workstreams plus any headline-level major news, sourced from articles and local Arabic-only and Kurdish-only outlets. Country section lengths will vary day to day based on what the news actually warrants — do not hold material back to preserve a uniform shape, and do not pad thin days just to bulk up a section. A day with 10+ items in one country and 2 in another is fine if that is what the news looks like.
+- Four sections in order: Syria, Iraq, Kuwait, Kurdistan. No cap and no target on stories per country. Include every genuinely important story from the 24 to 48 hour window, led by the day's biggest news, sourced from wires, articles, and local Arabic-only and Kurdish-only outlets. Country section lengths will vary day to day based on what the news actually warrants, so do not hold material back to preserve a uniform shape, and do not pad thin days just to bulk up a section. A day with 10+ items in one country and 2 in another is fine if that is what the news looks like. No relevance, project, or opportunity blocks anywhere in the brief. The brief is pure news.
 - Story IDs follow `syria-N`, `iraq-N`, `kuwait-N`, `kurdistan-N` where N runs 1 upward per country, as long as needed
 - X / Twitter posts do NOT go inline in the brief. The brief is pure news. X content is published separately via `posts/latest.json` and rendered in the dashboard's `X updates` tab. Do not add `data-kind="post"` stories to the brief.
 - `<title>` reads `Levant & Gulf Brief · [Month] [Day], [Year]`
@@ -90,7 +89,7 @@ Write `briefs/YYYY-MM-DD.html` using the shared template. All briefs must use th
 - Footer text reads exactly `Daily news roundup. Updated at 8:30 AM Dubai time.`
 
 ### Starting from a prior template
-When copying structure from the most recent prior brief, do not copy it blindly. Earlier briefs may still use a three-section (Syria / Iraq / Kuwait) shape, a three-country meta line, or a three-country `og:description`. Today's brief must always have four sections and the four-country strings above, regardless of what the last file looked like. Also do not copy the `og:description` wording from the prior brief verbatim, since it is keyed to that date's content mix — write fresh four-country prose.
+When copying structure from the most recent prior brief, do not copy it blindly. Earlier briefs may still use a three-section (Syria / Iraq / Kuwait) shape, a three-country meta line, or a three-country `og:description`. Today's brief must always have four sections and the four-country strings above, regardless of what the last file looked like. Also do not copy the `og:description` wording from the prior brief verbatim, since it is keyed to that date's content mix. Write fresh four-country prose.
 
 ## Local Arabic and Kurdish coverage
 Arabic-only and Kurdish-only local outlets are first-class sources, not afterthoughts. Sweep them on every run (SANA, Enab Baladi AR, BBC Arabic, Al Jazeera AR for Syria; Al-Sabaah, Shafaq AR for Iraq; Al-Qabas AR, Al-Rai AR, KUNA AR for Kuwait; Rudaw AR and Kurdish, Shafaq KRG, KRG gov.krd AR for Kurdistan). When the core fact is strongest in Arabic or Kurdish, lead with that source. Provide a translated English summary in the story body, mark the date tag with `<span class="lang">AR</span>` or `<span class="lang">KU</span>`, and append `Translated from [source].` at the end of the summary.
