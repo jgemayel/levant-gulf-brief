@@ -1,64 +1,7 @@
 {
-  "generated_at": "2026-06-03T05:56:47Z",
+  "generated_at": "2026-06-21T09:36:47Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "posts": [
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-06-02T16:19:34Z",
-      "category": "Telecom / Regulation",
-      "headline": "Iraq's Communications and Media Commission cancels Korek Telecom settlement",
-      "summary": "Kurdistan Watch flags the CMC's cancellation of its settlement with Korek Telecom over unpaid debts of roughly 1.4 trillion Iraqi dinars, warning the move could freeze the KDP-linked operator's commercial footing.",
-      "url": "https://x.com/KurdistanWatch/status/2061845187169570951"
-    },
-    {
-      "handle": "@KurdistanWatch",
-      "posted_at": "2026-06-02T12:08:39Z",
-      "category": "KRG Fiscal",
-      "headline": "Public clash over KRG non-oil revenue figures between Finance Minister and Halwest leader",
-      "summary": "The KRG Finance Minister puts monthly non-oil revenue at about 100 billion Iraqi dinars while a Halwest Movement leader counters that actual receipts exceed 400 billion a month, reopening the regional fiscal-transparency question.",
-      "url": "https://x.com/KurdistanWatch/status/2061782040970719729"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-06-03T05:30:22Z",
-      "category": "Gulf Airspace",
-      "headline": "After Bahrain, Kuwait and UAE also shut their airspace",
-      "summary": "Kuwait and the UAE follow Bahrain in closing their airspace amid the fresh Iranian salvo and CENTCOM strikes on Qeshm, expanding the Gulf-wide aviation shutdown overnight. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2062044197377503661"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-06-03T01:42:33Z",
-      "category": "Iran War",
-      "headline": "Coverage of Iranian drone attempts and US airstrikes on Qeshm Island",
-      "summary": "AMrym tracks the Iranian drone attempts against US assets in the Gulf and the parallel CENTCOM self-defence strikes on an IRGC ground-control station on Qeshm Island, the operational anchor of the current escalation wave. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2061986867982000576"
-    },
-    {
-      "handle": "@AMrym93884",
-      "posted_at": "2026-06-03T01:33:22Z",
-      "category": "Iraq Politics",
-      "headline": "Extended take on Coordination Framework pressures and American demands on Baghdad",
-      "summary": "AMrym lays out the live pressure on the Coordination Framework from Washington over the arms-monopoly file, slotting the AAH and Imam Ali handover moves inside an American conditionality framework on Baghdad. Translated from Arabic.",
-      "url": "https://x.com/AMrym93884/status/2061984555192701126"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-06-03T00:33:06Z",
-      "category": "Iraq Militias",
-      "headline": "Sardonic read that the latest disarmament gesture is principled self-disarmament rather than a binding handover",
-      "summary": "Mike Knight takes a wry view of the militia leader's disarmament posture, suggesting the US Government should send a congratulatory note rather than treat the announcement as a genuine state-monopoly delivery.",
-      "url": "https://x.com/Mikeknightsiraq/status/2061969390925463569"
-    },
-    {
-      "handle": "@Mikeknightsiraq",
-      "posted_at": "2026-06-03T00:22:33Z",
-      "category": "Iraq Militias",
-      "headline": "All three Iraqi groups that have pledged to disarm are inside the Sadrist trend",
-      "summary": "Knight notes that the three groups that have publicly pledged disarmament so far in Iraq all sit inside the Sadrist political and ideological orbit, flagging that the Iran-aligned core has not yet credibly moved on the arms-monopoly file.",
-      "url": "https://x.com/Mikeknightsiraq/status/2061966731862561193"
-    }
-  ]
+  "posts": []
 }
