@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-22T05:12:08Z",
+  "generated_at": "2026-06-23T05:13:07Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter (nitter.net) returned HTTP 403 for all four handles on this sweep, via both WebFetch and direct curl. The targeted X search fallback surfaced no posts that could be verified as falling within the last 24 hours with a specific tweet URL and timestamp, so no items are emitted rather than publishing unverifiable entries.",
+  "note": "Nitter RSS returned HTTP 403 for every endpoint this run (nitter.net and an alternate instance, via WebFetch). The WebSearch from:<handle> fallback surfaced only posts that decoded to timestamps older than 24 hours, so no in-window items could be verified. Emitting no items rather than publishing unverifiable or stale entries. Same block recurred from the prior run.",
   "posts": []
 }
