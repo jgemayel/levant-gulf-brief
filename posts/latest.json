@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-22T05:12:08Z",
+  "generated_at": "2026-06-24T05:14:17Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter (nitter.net) returned HTTP 403 for all four handles on this sweep, via both WebFetch and direct curl. The targeted X search fallback surfaced no posts that could be verified as falling within the last 24 hours with a specific tweet URL and timestamp, so no items are emitted rather than publishing unverifiable entries.",
+  "note": "Nitter RSS returned HTTP 403 on every instance tried this run (nitter.net, poast.org, privacyredirect, lightbrd), via WebFetch. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets, none verifiable as falling within the last 24 hours with a specific tweet URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items.",
   "posts": []
 }
