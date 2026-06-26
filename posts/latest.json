@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-25T05:10:39Z",
+  "generated_at": "2026-06-26T05:14:47Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter RSS returned HTTP 403 on every instance tried this run (nitter.net retried, nitter.poast.org, nitter.privacyredirect.com) via WebFetch. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets, none verifiable as falling within the last 24 hours with a specific tweet URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items.",
+  "note": "Nitter RSS returned HTTP 403 (or refused the connection) on every instance tried this run: nitter.net (retried), nitter.poast.org, xcancel.com, lightbrd.com, and nitter.privacydev.net, all via WebFetch through the agent proxy. WebFetch to x.com is likewise blocked. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached material, none verifiable as falling within the last 24 hours with a specific tweet URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is the second consecutive day the X mirrors were unreachable from this environment.",
   "posts": []
 }
