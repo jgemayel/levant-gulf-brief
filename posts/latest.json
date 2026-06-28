@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T05:11:53Z",
+  "generated_at": "2026-06-28T05:14:23Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter RSS returned HTTP 403 (or refused the connection) on every instance tried this run: nitter.net (retried twice), nitter.poast.org, and nitter.privacydev.net, all via WebFetch through the agent proxy. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets, none verifiable as falling within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is the third consecutive day the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path (authenticated source or a reachable Nitter mirror).",
+  "note": "Nitter RSS returned HTTP 403 at the organization egress-policy level on every handle this run (nitter.net via WebFetch through the agent proxy), confirmed as a connect-rejected policy denial rather than an empty or transient feed, and the README forbids retrying or routing around it. The targeted WebSearch from:<handle> fallback does not honor the since: operator and surfaced only profile pages and older cached tweets (February through mid-June 2026), none verifiable inside the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome once the fallback chain is exhausted, rather than padding with undated items. This is the fourth consecutive day the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path (an authenticated X source or a reachable Nitter mirror added to the network policy).",
   "posts": []
 }
