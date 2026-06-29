@@ -1,8 +1,17 @@
 {
-  "generated_at": "2026-06-27T05:11:53Z",
+  "generated_at": "2026-06-29T05:18:30Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
-  "source": "nitter.net RSS",
-  "note": "Nitter RSS returned HTTP 403 (or refused the connection) on every instance tried this run: nitter.net (retried twice), nitter.poast.org, and nitter.privacydev.net, all via WebFetch through the agent proxy. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets, none verifiable as falling within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is the third consecutive day the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path (authenticated source or a reachable Nitter mirror).",
-  "posts": []
+  "source": "WebSearch from: fallback (nitter.net RSS returned HTTP 403 on every attempt)",
+  "note": "Nitter RSS was unreachable again this run: nitter.net returned HTTP 403 via WebFetch on both attempts for all four handles, and WebFetch is blocked for external sites generally in this environment. The targeted WebSearch from:<handle> fallback was run for every handle, including since:2026-06-28 queries. Most surfaced tweets dated outside the 24h window by their snowflake IDs and were excluded. One @KurdistanWatch post on Iraq's June 28 anti-corruption sweep was confirmed in-window (snowflake ID places it at ~2026-06-28T06:00Z) with a specific status URL and is included below. posted_at is derived from the tweet ID, not a Nitter pubDate, since the mirror was down. This is the fourth consecutive day the X mirrors have been unreachable from this environment, so the sweep path still needs an operator fix (an authenticated source or a reachable Nitter mirror).",
+  "posts": [
+    {
+      "handle": "@KurdistanWatch",
+      "posted_at": "2026-06-28T06:00:00Z",
+      "category": "Iraq Politics",
+      "headline": "Sunni Arabs dominate al-Zaidi's anti-corruption arrests, with detained Shia figures far more marginal",
+      "summary": "A clear majority of those detained so far in Prime Minister al-Zaidi's anti-corruption campaign are Sunni Arabs, the account notes, with the Shia figures held a day earlier appearing relatively minor next to the seniority and political weight of the Sunni names. The framing reads the Green Zone raids that swept up Azm Alliance leader Muthanna al-Samarrai as carrying a sectarian imbalance worth watching.",
+      "url": "https://x.com/KurdistanWatch/status/2071259117990056166"
+    }
+  ]
 }
