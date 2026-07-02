@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-01T05:11:53Z",
+  "generated_at": "2026-07-02T05:17:11Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter RSS returned HTTP 403 on every instance tried this run: nitter.net (retried, all four handles via WebFetch and curl), plus mirrors nitter.poast.org, nitter.privacydev.net, xcancel.com, and lightbrd.com. The proxy status confirms these are blocked at the network gateway (connect_rejected, policy denial), not a transient error. The targeted WebSearch from:<handle> fallback surfaced account activity but no post could be confirmed inside the 24-hour window with a specific status URL and verifiable timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is now several consecutive days the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path (an authenticated X source or an allowlisted Nitter mirror).",
+  "note": "X sweep could not be completed this run. Every Nitter path failed via WebFetch through the agent proxy: nitter.net returned HTTP 403 for all four handles, nitter.poast.org returned HTTP 403, and nitter.privacydev.net refused the connection (ECONNREFUSED). The targeted WebSearch from:<handle> since:2026-07-01 fallback surfaced only profile pages and older cached tweets, none verifiable as within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is now the fourth consecutive run the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path (an authenticated X source or a reachable Nitter mirror).",
   "posts": []
 }
