@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-02T05:17:11Z",
+  "generated_at": "2026-07-03T05:17:27Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run. Every Nitter path failed via WebFetch through the agent proxy: nitter.net returned HTTP 403 for all four handles, nitter.poast.org returned HTTP 403, and nitter.privacydev.net refused the connection (ECONNREFUSED). The targeted WebSearch from:<handle> since:2026-07-01 fallback surfaced only profile pages and older cached tweets, none verifiable as within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is now the fourth consecutive run the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path (an authenticated X source or a reachable Nitter mirror).",
+  "note": "X sweep could not be completed this run. Every Nitter path failed through the agent proxy: nitter.net, nitter.poast.org, lightbrd.com, xcancel.com, and nitter.privacyredirect.com all returned HTTP 403 (CONNECT tunnel refused) via both WebFetch and curl, indicating an egress-policy block rather than a transient outage. The targeted WebSearch from:<handle> fallback surfaced only profile pages, analysis articles, and undated cached posts, none verifiable as within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated or invented items. This is now the fifth consecutive run the X mirrors have been unreachable from this environment, so the X updates tab needs an operator fix to the sweep path: whitelist a Nitter mirror in the egress policy or wire in an authenticated X source.",
   "posts": []
 }
