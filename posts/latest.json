@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-06T05:18:36Z",
+  "generated_at": "2026-07-08T05:35:00Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, the same failure seen on recent runs. Every Nitter path returned HTTP 403 through the session egress policy: nitter.net for all four handles plus the nitter.poast.org, nitter.privacyredirect.com, nitter.tiekoetter.com, lightbrd.com and nitter.kavin.rocks mirrors. The proxy status endpoint confirms these hosts are blocked by organization egress policy, not a transient Nitter outage. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets (2025 status IDs), none verifiable as within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. The X updates tab needs an operator fix to the sweep path (an authenticated X source or an egress allow-list entry for a working mirror).",
+  "note": "X sweep could not be completed this run, the same egress failure seen on recent runs. Every Nitter path returned HTTP 403 through the session network policy: nitter.net for all four handles plus the nitter.poast.org, nitter.privacyredirect.com, lightbrd.com and xcancel.com mirrors. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets (2025 status IDs), none verifiable as within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. The X updates tab needs an operator fix to the sweep path (an authenticated X source or an egress allow-list entry for a working mirror).",
   "posts": []
 }
