@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-11T05:17:36Z",
+  "generated_at": "2026-07-12T05:19:08Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, the same egress failure seen on recent runs. Every Nitter path returned HTTP 403 through the session network policy: nitter.net for all four handles plus the nitter.poast.org mirror. The targeted WebSearch from:<handle> fallback surfaced only profile pages and older cached tweets, none verifiable as within the last 24 hours with a specific status URL and timestamp. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This is now a standing issue across runs and needs an operator fix to the sweep path (an authenticated X source or an egress allow-list entry for a working mirror), which is especially costly given the 2026 Iran war reignited on July 9 and these Kurdistan-weighted analysts are almost certainly posting heavily.",
+  "note": "X sweep could not be completed this run, the same egress failure seen on recent runs. nitter.net RSS returned HTTP 403 through the session network policy for all four handles, on two attempts. The targeted WebSearch from:<handle> since:2026-07-11 fallback surfaced only profile pages and older cached tweets. Decoding the Twitter snowflake IDs of every surfaced status confirmed they all predate the 24-hour window (oldest Dec 2025, newest April 2026), so none qualify. Per the rulebook, an empty posts array is the correct outcome after the fallback chain is exhausted rather than padding with undated items. This remains a standing issue across runs and needs an operator fix to the sweep path (an authenticated X source or an egress allow-list entry for a working Nitter mirror), which is especially costly with the 2026 Iran war reignited and these Kurdistan-weighted analysts almost certainly posting heavily.",
   "posts": []
 }
