@@ -1,8 +1,7 @@
 {
-  "generated_at": "2026-07-17T05:19:52Z",
+  "generated_at": "2026-07-23T05:17:03Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, the same egress failure logged on the July 12 run. nitter.net RSS returned HTTP 403 through the session network policy for all four handles across repeated attempts, and three fallback mirrors (nitter.poast.org, nitter.privacyredirect.com, lightbrd.com) returned 403 as well. The targeted WebSearch from:<handle> since:2026-07-16 fallback surfaced only profile pages and older cached tweets. Decoding the Twitter snowflake IDs of every surfaced status confirmed they all predate the 24-hour window (oldest Dec 2025, newest March 2026), so none qualify. Per the rulebook, an empty posts array is the correct outcome once the fallback chain is exhausted rather than padding with undated items. This is now a repeat failure and needs an operator fix to the sweep path, an authenticated X source or an egress allow-list entry for a working Nitter mirror, which is costly with the 2026 Iran war reignited and these Kurdistan-weighted analysts almost certainly posting heavily.",
   "posts": []
 }
