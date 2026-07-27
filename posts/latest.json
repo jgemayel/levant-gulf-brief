@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-26T05:15:54Z",
+  "generated_at": "2026-07-27T05:20:48Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, now the fifth consecutive failure after July 12, 17, 24 and 25. WebFetch on nitter.net/<handle>/rss returned HTTP 403 for all four handles across two fetch rounds, consistent with the egress-policy CONNECT-stage block the prior runs traced to the proxy layer rather than a transient error. Targeted WebSearch from:<handle> since:2026-07-25 fallbacks surfaced only older cached posts, none confirmable within the 24h window. Per the rulebook an empty posts array is the correct outcome once the fallback chain is exhausted rather than padding with undated items. This persistent block needs an operator fix, an authenticated X source or an egress allow-list entry for a working Nitter mirror, and it matters with the 2026 Iran war ongoing and these Kurdistan-weighted analysts almost certainly posting heavily.",
+  "note": "X sweep could not be completed this run, the sixth consecutive failure after July 12, 17, 24, 25 and 26. WebFetch on nitter.net/<handle>/rss returned HTTP 403 for all four handles, and the same block hit the poast, lite, tiekoetter and privacydev Nitter mirrors, consistent with the egress-policy CONNECT-stage block prior runs traced to the proxy layer. Targeted WebSearch from:<handle> fallbacks surfaced only older cached posts, none confirmable within the 24h window. Per the rulebook an empty posts array is the correct outcome once the fallback chain is exhausted rather than padding with undated items. This persistent block needs an operator fix, an authenticated X source or an egress allow-list entry for a working Nitter mirror, and it matters with the 2026 Iran war ongoing and these Kurdistan-weighted analysts almost certainly posting heavily.",
   "posts": []
 }
