@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-30T05:16:38Z",
+  "generated_at": "2026-08-01T05:16:21Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, the eighth consecutive failure after July 12, 17, 24, 25, 26, 28 and 29. The environment egress policy blocks nitter.net (all four /<handle>/rss endpoints return a proxy-side 403 on both the first attempt and the retry) and the alternate mirrors tried again this run (nitter.poast.org, lightbrd.com) were denied the same way, so the RSS path is structurally unavailable rather than quiet. The WebSearch fallback (from:<handle>) returned only profile pages and undated historical tweets, none verifiable as within the 24-hour window, so no items could be included without inventing timestamps or URLs. Operator action needed: allowlist a working Nitter mirror in the environment network policy, or provide an authenticated X path.",
+  "note": "X sweep could not be completed this run, now the ninth consecutive failure after July 12, 17, 24, 25, 26, 28, 29 and 30. All Nitter RSS endpoints (nitter.net plus mirrors nitter.poast.org, nitter.privacyredirect.com and xcancel.com) returned HTTP 403 on both the first attempt and the retry, so the RSS path is structurally unavailable rather than quiet. The WebSearch fallback (from:<handle>) returned only account homepages and undated historical tweets, none verifiable within the 24-hour window, so no items could be included without inventing timestamps or URLs. Operator action needed: allowlist a working Nitter mirror in the environment network policy, or provide an authenticated X path.",
   "posts": []
 }
