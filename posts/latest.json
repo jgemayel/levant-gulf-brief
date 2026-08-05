@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-04T05:21:00Z",
+  "generated_at": "2026-08-05T05:23:55Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, the eleventh consecutive failure after July 12, 17, 24, 25, 26, 28, 29, 30 and August 1 and 3. Every Nitter RSS endpoint tried (nitter.net plus mirrors nitter.poast.org, lightbrenner.com, nitter.privacyredirect.com, xcancel.com and nitter.tiekoetter.com) failed at the agent proxy with HTTP 403 CONNECT tunnel refused on both the first attempt and the retry, confirmed against the proxy status endpoint as a policy denial, so the whole X/Nitter domain class is blocked by the environment network policy rather than the handles being quiet. The WebSearch fallback (from:<handle> since:) returned only account homepages and undated historical posts from months ago, none verifiable within the 24-hour window, so no items could be included without inventing timestamps or URLs. Operator action needed: allowlist a working Nitter mirror in the environment network policy, or provide an authenticated X path.",
+  "note": "X sweep could not be completed this run, the twelfth consecutive failure after July 12, 17, 24, 25, 26, 28, 29, 30 and August 1, 3 and 4. Nitter RSS was tried on nitter.net plus mirrors nitter.poast.org, xcancel.com and nitter.privacyredirect.com and every endpoint failed at the agent proxy with HTTP 403 CONNECT tunnel refused on both WebFetch and a curl retry, confirmed against the proxy status endpoint as a policy denial, so the whole X/Nitter domain class is blocked by the environment network policy rather than the handles being quiet. The WebSearch fallback (from:<handle> since:) returned only account homepages, analysis pages and undated historical posts, none verifiable within the 24-hour window, so no items could be included without inventing timestamps or URLs. Operator action needed: allowlist a working Nitter mirror in the environment network policy, or provide an authenticated X path.",
   "posts": []
 }
