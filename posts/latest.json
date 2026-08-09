@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-08T05:17:21Z",
+  "generated_at": "2026-08-09T05:16:28Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "X sweep could not be completed this run, the thirteenth consecutive failure after July 12, 17, 24, 25, 26, 28, 29, 30 and August 1, 3, 4 and 6. WebFetch on the Nitter RSS endpoint (https://nitter.net/<handle>/rss) for all four handles returned EGRESS_BLOCKED from the agent proxy, an environment network-policy block on the whole X/Nitter domain class rather than the handles being quiet. The WebSearch fallback (from:<handle>) returned only account homepages and undated historical posts from months ago, none verifiable within the 24-hour window, so no items could be included without inventing timestamps or URLs. Operator action needed: allowlist a working Nitter mirror in the environment network policy, or provide an authenticated X path.",
+  "note": "Nitter mirrors (nitter.net, nitter.poast.org) and x.com are blocked by this run's network egress policy, and the from:<handle> WebSearch fallback did not return tweet-level items. Sweep could not be completed; posts left empty rather than padded.",
   "posts": []
 }
