@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-08-13T14:53:19Z",
+  "generated_at": "2026-08-16T05:26:24Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
-  "source": "nitter.net RSS unavailable (egress-blocked, all mirrors); WebSearch from: fallback returned only stale profile tweets with no timestamped items inside the 24h window",
+  "source": "nitter.net RSS",
+  "note": "nitter.net was unreachable this run (blocked by the network egress proxy). The documented WebSearch fallback returned no posts verifiably within the last 24 hours for any of the four handles, so no items are emitted.",
   "posts": []
 }
