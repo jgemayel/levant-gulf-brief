@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-13T14:53:19Z",
+  "generated_at": "2026-08-17T05:18:59Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
-  "source": "nitter.net RSS unavailable (egress-blocked, all mirrors); WebSearch from: fallback returned only stale profile tweets with no timestamped items inside the 24h window",
+  "source": "nitter.net RSS unavailable (egress-blocked); WebSearch from:<handle> since:2026-08-16 fallback returned only stale tweets, every captured status ID decoding to Feb-Mar 2026 (outside the 24h window), so no post could be verified with a specific URL and in-window timestamp",
   "posts": []
 }
