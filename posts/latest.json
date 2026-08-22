@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-08-21T05:22:22Z",
+  "generated_at": "2026-08-22T05:17:23Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
+  "note": "Nitter RSS endpoints blocked by the network egress proxy across instances, and unauthenticated x.com access is unavailable; WebSearch fallback returned no items datable to the last 24 hours. Empty result reflects an exhausted fallback chain, not a confirmed quiet window.",
   "posts": []
 }
