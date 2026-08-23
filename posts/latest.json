@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-22T05:17:23Z",
+  "generated_at": "2026-08-23T05:19:38Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter RSS endpoints blocked by the network egress proxy across instances, and unauthenticated x.com access is unavailable; WebSearch fallback returned no items datable to the last 24 hours. Empty result reflects an exhausted fallback chain, not a confirmed quiet window.",
+  "note": "Nitter RSS endpoints remain blocked by the network egress proxy (EGRESS_BLOCKED on nitter.net), and unauthenticated x.com access is unavailable. WebSearch fallbacks (from:<handle> and topical queries) returned only profile pages and older tweets, none datable to the last 24 hours with a verifiable status URL. Empty result reflects an exhausted fallback chain, not a confirmed quiet window.",
   "posts": []
 }
