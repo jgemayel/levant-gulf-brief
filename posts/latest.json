@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-26T05:21:24Z",
+  "generated_at": "2026-08-27T05:11:59Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
-  "note": "Nitter RSS (nitter.net) and direct x.com are both blocked by the network egress proxy for this session. The WebSearch from:<handle> fallback returned only cached tweets whose status IDs date to well outside the 24-hour window, so no post could be confirmed within window with a resolvable tweet URL. The empty result reflects an exhausted fallback chain and an infrastructure block, not a confirmed quiet window. Allowlisting nitter.net for the scheduled task is the operator fix.",
+  "note": "Nitter RSS (nitter.net) and direct x.com are both blocked by this session's network egress proxy, so the primary sweep could not run. The WebSearch from:<handle> since:2026-08-26 fallback returned only cached tweets whose status IDs resolve to dates well outside the 24-hour window, with no confirmable in-window timestamp or resolvable tweet URL. The empty result reflects an exhausted fallback chain and an infrastructure block, not a confirmed quiet window. Allowlisting nitter.net for the scheduled task is the operator fix.",
   "posts": []
 }
