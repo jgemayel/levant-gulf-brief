@@ -276,6 +276,45 @@
     outline: 2px solid var(--accent-warm);
     outline-offset: 2px;
   }
+  .mothball {
+    border: 1px solid var(--soft);
+    border-radius: 14px;
+    background: var(--chrome);
+    padding: 20px 22px;
+    margin-bottom: 28px;
+  }
+  .mothball-badge {
+    display: inline-block;
+    font-size: 10.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .mothball h2 {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .mothball p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .mothball p:last-child { margin-bottom: 0; }
+  .mothball a { color: var(--text); }
+  .mothball .mothball-aside {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    color: var(--text);
+    font-size: 13px;
+  }
 </style>
 </head>
 <body>
@@ -291,7 +330,7 @@
 <div class="wrap">
   <header class="hero">
     <h1>Levant &amp; Gulf</h1>
-    <div class="dek">Syria &middot; Iraq &middot; Kuwait &middot; Kurdistan. Updated at 8:30 AM Dubai time.</div>
+    <div class="dek">Syria &middot; Iraq &middot; Kuwait &middot; Kurdistan. Archived after August 30, 2026.</div>
     <div class="country-filter" id="country-filter" role="group" aria-label="Filter countries">
       <span class="filter-label">Showing</span>
       <button class="country-chip" type="button" data-country="syria" aria-pressed="true">Syria</button>
@@ -300,6 +339,14 @@
       <button class="country-chip" type="button" data-country="kurdistan" aria-pressed="true">Kurdistan</button>
     </div>
   </header>
+
+  <section class="mothball" aria-label="Status notice">
+    <span class="mothball-badge">Archived &middot; No longer updating</span>
+    <h2>This dashboard has been retired</h2>
+    <p>The daily Levant &amp; Gulf brief is no longer being produced, and the automated morning run has been switched off. Nothing new will land on the News or X&nbsp;updates tabs after the August 30, 2026 edition.</p>
+    <p>Everything already published stays put. Every past brief remains readable in the <a href="#/archive">Archive</a>.</p>
+    <p class="mothball-aside">Jimmy has moved to a different workflow for his morning news. If you have been leaning on this dashboard to keep up and want to know how he does it now, he is happy to walk you through it. Just ask him.</p>
+  </section>
 
   <div class="view" id="home">
     <div class="today-head">
@@ -313,7 +360,7 @@
 
   <div class="view" id="posts">
     <div class="section-label">X updates · rolling 24h</div>
-    <div class="posts-intro" id="posts-intro">Rolling 24-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq. Kurdistan-weighted, refreshed on every scheduled run.</div>
+    <div class="posts-intro" id="posts-intro">Rolling 24-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq. This feed is no longer being refreshed.</div>
     <div id="posts-content">
       <div class="loading">Loading posts...</div>
     </div>
@@ -545,7 +592,7 @@ async function loadPosts() {
     const windowHours = feed.window_hours || 24;
     if (intro) {
       const when = formatGeneratedAt(feed.generated_at);
-      intro.textContent = `Rolling ${windowHours}-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq.${when ? ' Last refreshed ' + when + '.' : ''}`;
+      intro.textContent = `Rolling ${windowHours}-hour sweep of @KurdistanWatch, @AMrym93884, @Bacharelhalabi, and @Mikeknightsiraq.${when ? ' Last refreshed ' + when + '.' : ''} This feed is no longer being refreshed.`;
     }
 
     container.innerHTML = '';

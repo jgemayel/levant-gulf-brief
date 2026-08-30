@@ -1,6 +1,8 @@
 # Levant & Gulf Morning Brief — Operating Rules
 
-These rules apply to every daily brief. The scheduled task `levant-gulf-morning-brief` and any manual refresh must follow them.
+> **RETIRED as of August 30, 2026.** This product has been mothballed. The scheduled run has been stopped and the dashboard carries a retirement notice. Do not produce or publish new briefs or X sweeps. The archive under `briefs/` is preserved as-is. If a run fires anyway, stop without publishing. The rules below are kept for historical reference only.
+
+These rules applied to every daily brief while the product was live. The scheduled task `levant-gulf-morning-brief` and any manual refresh had to follow them.
 
 ## Product naming
 The public-facing product is called `Daily news roundup`. Do not write "Built for Jimmy" or any variant in visible output (dashboard, briefs, PWA manifest, share sheets). Internal references to Jimmy as the reader are fine inside this file.
