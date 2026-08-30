@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-08-28T05:15:38Z",
+  "generated_at": "2026-08-30T05:19:25Z",
   "window_hours": 24,
   "handles": ["@KurdistanWatch", "@AMrym93884", "@Bacharelhalabi", "@Mikeknightsiraq"],
   "source": "nitter.net RSS",
+  "note": "nitter.net was unreachable at sweep time (blocked by the network egress proxy on this run). The WebSearch fallback surfaced only cached posts with no timestamp inside the 24-hour window, so no item could be verified as fresh. Empty by fallback exhaustion, not a quiet feed.",
   "posts": []
 }
